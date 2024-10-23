@@ -1,10 +1,10 @@
-# $\pi^2$ Trading
+# $\Pi^2$ Trading
 
 *NB: work in progress README file*
 
 ## The Interactive Platform for Stock Portfolio Analysis and Optimization
 
-**$\pi^2$ Trading** is a cutting-edge interactive platform designed to assist both novice and professional investors in analyzing, creating, and optimizing their stock portfolios. Developed in Python and integrated with Streamlit, this tool harnesses advanced data science technologies to provide strategic and informed investment management solutions through an optimal user experience.
+**$\Pi^2$ Trading** is a cutting-edge interactive platform designed to assist both novice and professional investors in analyzing, creating, and optimizing their stock portfolios. Developed in Python and integrated with Streamlit, this tool harnesses advanced data science technologies to provide strategic and informed investment management solutions through an optimal user experience.
 
 ### Key Features
 - **Action Research**: Leverage an interactive search bar integrated with Python for real-time stock searching.
