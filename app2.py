@@ -1,71 +1,72 @@
-# Libraries
-
 import streamlit as st
-import geopandas as gpd
 import yfinance as yf
 import pandas as pd
-import pydeck as pdk
+import matplotlib.pyplot as plt
 
-# Load world shape data using GeoPandas
-@st.cache
-def load_world_data():
-    return gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+# Function to fetch stock data
+def fetch_stock_data(tickers, start_date):
+    stock_data = {}
+    for ticker in tickers:
+        stock = yf.Ticker(ticker)
+        stock_data[ticker] = stock.history(start=start_date)['Close']
+    return pd.DataFrame(stock_data)
 
-# Fetch companies for the selected country
-def fetch_companies_by_country(country):
-    # Example: For simplicity, we'll just use a static list for each country.
-    # In a real-world scenario, you can use an API (like Yahoo Finance or a custom dataset).
-    companies_data = {
-        "United States": ["Apple", "Google", "Microsoft", "Amazon"],
-        "Canada": ["Shopify", "Royal Bank of Canada", "Enbridge"],
-        "Germany": ["Volkswagen", "Siemens", "Deutsche Bank"],
-        "Japan": ["Toyota", "Sony", "Nintendo"],
-    }
-    return companies_data.get(country, [])
+# Function to calculate portfolio performance
+def calculate_portfolio_performance(data, weights):
+    # Normalize the stock data by dividing by the first value
+    normalized_data = data / data.iloc[0]
+    # Multiply by weights to get portfolio value over time
+    portfolio_performance = (normalized_data * weights).sum(axis=1)
+    return portfolio_performance
 
-# Main function to handle UI
-def main():
-    st.title("World Stock Market Selector")
+# Streamlit UI
+st.title("Portfolio Performance Viewer")
 
-    # Load world map data
-    world = load_world_data()
+# Step 1: Select stocks
+st.sidebar.header("Portfolio Configuration")
+tickers = st.sidebar.multiselect(
+    "Select stock tickers:",
+    options=["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "FB", "NVDA", "NFLX", "BABA", "V"],
+    default=["AAPL", "MSFT", "GOOGL"]
+)
 
-    # Display the map using PyDeck
-    st.subheader("Select a country by clicking on it:")
+# Step 2: Select weights for each stock
+if tickers:
+    weights = []
+    st.sidebar.subheader("Set Weights for Each Stock")
+    for ticker in tickers:
+        weight = st.sidebar.slider(f"Weight for {ticker}:", 0.0, 1.0, 0.2, 0.01)
+        weights.append(weight)
 
-    # Create a PyDeck map for user interaction
-    geojson_layer = pdk.Layer(
-        "GeoJsonLayer",
-        data=world,
-        pickable=True,
-        stroked=True,
-        filled=True,
-        extruded=False,
-        get_fill_color="[200, 30, 0, 160]",
-        get_line_color=[255, 255, 255],
-    )
+    # Ensure weights sum to 1
+    total_weight = sum(weights)
+    weights = [w / total_weight for w in weights]  # Normalize weights if they don't sum to 1
 
-    view_state = pdk.ViewState(latitude=0, longitude=0, zoom=1)
+    # Step 3: Select start date for investing
+    start_date = st.sidebar.date_input("Start date:", pd.to_datetime("2020-01-01"))
 
-    # Display the map
-    r = pdk.Deck(layers=[geojson_layer], initial_view_state=view_state, tooltip={"text": "{name}"})
-    selected_data = st.pydeck_chart(r)
+    # Step 4: Display the portfolio table
+    st.subheader("Portfolio Overview")
+    portfolio_data = pd.DataFrame({
+        "Stock": tickers,
+        "Weight": weights
+    })
+    st.table(portfolio_data)
 
-    # If user clicks on the map, show the selected country and companies
-    if selected_data is not None:
-        st.write("You selected: ", selected_data)  # `selected_data` needs to map the click event to a country
+    # Fetch stock data for selected stocks
+    stock_data = fetch_stock_data(tickers, start_date)
 
-        # Example to map selection back to country, this would be based on real data from the map click event
-        selected_country = selected_data.get('name', 'No Country Selected')  # This would be parsed from event
+    # Step 5: Calculate portfolio performance
+    portfolio_performance = calculate_portfolio_performance(stock_data, weights)
 
-        st.write(f"Companies in {selected_country}:")
-        
-        # Fetch and display companies
-        companies = fetch_companies_by_country(selected_country)
-        if companies:
-            st.write(companies)
-        else:
-            st.write("No company data available for this country.")
-
-if __name__ == '__main__':
-    main()
+    # Step 6: Plot portfolio performance
+    st.subheader("Portfolio Performance")
+    plt.figure(figsize=(10, 6))
+    plt.plot(portfolio_performance.index, portfolio_performance, label="Portfolio Performance", color="blue")
+    plt.title("Portfolio Performance Over Time")
+    plt.xlabel("Date")
+    plt.ylabel("Portfolio Value")
+    plt.grid(True)
+    st.pyplot(plt)
+else:
+    st.write("Please select at least one stock.")
