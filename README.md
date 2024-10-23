@@ -23,7 +23,3 @@
 
 ### Conclusion
 OptiStocks aims to make sophisticated portfolio analysis and optimization tools accessible to investors at all levels, providing the means for well-informed investment decisions through an easy-to-use and feature-rich platform.
-
----
-
-This description efficiently conveys the purpose, functionality, and future directions of the OptiStocks platform, positioning it as a valuable tool for investors looking to enhance their investment strategies.
