@@ -28,7 +28,7 @@ def calculate_portfolio_performance(data, weights):
     return portfolio_performance
 
 # Streamlit UI
-st.title("Portfolio Performance Viewer")
+st.title(f"$\pi^2$ Trading")
 
 # Step 1: Input stock tickers (any stock, not predefined)
 st.sidebar.header("Portfolio Configuration")
