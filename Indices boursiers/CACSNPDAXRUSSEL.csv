@@ -1,0 +1,2521 @@
+Company,Ticker,Ind
+LVMH,MC.PA,CAC 40
+Hermès,RMS.PA,CAC 40
+L'Oréal,OR.PA,CAC 40
+Schneider Electric,SU.PA,CAC 40
+TotalEnergies,TTE.PA,CAC 40
+Sanofi,SAN.PA,CAC 40
+Airbus,AIR.PA,CAC 40
+Air Liquide,AI.PA,CAC 40
+EssilorLuxottica,EL.PA,CAC 40
+Safran,SAF.PA,CAC 40
+Axa,CS.PA,CAC 40
+BNP Paribas,BNP.PA,CAC 40
+Vinci,DG.PA,CAC 40
+Crédit Agricole,ACA.PA,CAC 40
+Saint-Gobain,SGO.PA,CAC 40
+Dassault Systèmes,DSY.PA,CAC 40
+Danone,BN.PA,CAC 40
+Engie,ENGI.PA,CAC 40
+Stellantis,STLAP.PA,CAC 40
+Pernod Ricard,RI.PA,CAC 40
+Thales,HO.PA,CAC 40
+Capgemini,CAP.PA,CAC 40
+Kering,KER.PA,CAC 40
+Legrand,LR.PA,CAC 40
+Orange,ORA.PA,CAC 40
+Publicis,PUB.PA,CAC 40
+STMicroelectronics,STMPA.PA,CAC 40
+Michelin,ML.PA,CAC 40
+Veolia,VIE.PA,CAC 40
+Société Générale,GLE.PA,CAC 40
+ArcelorMittal,MT.AS,CAC 40
+Renault,RNO.PA,CAC 40
+Bouygues,EN.PA,CAC 40
+Unibail-Rodamco-Westfield,URW.PA,CAC 40
+Vivendi,VIV.PA,CAC 40
+Accor,AC.PA,CAC 40
+Eurofins Scientific,ERF.PA,CAC 40
+Carrefour,CA.PA,CAC 40
+Edenred,EDEN.PA,CAC 40
+Teleperformance,TEP.PA,CAC 40
+Apple Inc.,AAPL,S&P 500
+Nvidia,NVDA,S&P 500
+Microsoft,MSFT,S&P 500
+Alphabet Inc. (Class C),GOOG,S&P 500
+Alphabet Inc. (Class A),GOOGL,S&P 500
+Amazon,AMZN,S&P 500
+Meta Platforms,META,S&P 500
+Berkshire Hathaway,BRK-B,S&P 500
+"Tesla, Inc.",TSLA,S&P 500
+Lilly (Eli),LLY,S&P 500
+Broadcom,AVGO,S&P 500
+Walmart,WMT,S&P 500
+JPMorgan Chase,JPM,S&P 500
+Visa Inc.,V,S&P 500
+ExxonMobil,XOM,S&P 500
+UnitedHealth Group,UNH,S&P 500
+Oracle Corporation,ORCL,S&P 500
+Mastercard,MA,S&P 500
+Home Depot (The),HD,S&P 500
+Procter & Gamble,PG,S&P 500
+Johnson & Johnson,JNJ,S&P 500
+Costco,COST,S&P 500
+AbbVie,ABBV,S&P 500
+Bank of America,BAC,S&P 500
+Netflix,NFLX,S&P 500
+Coca-Cola Company (The),KO,S&P 500
+Salesforce,CRM,S&P 500
+Chevron Corporation,CVX,S&P 500
+T-Mobile US,TMUS,S&P 500
+Merck & Co.,MRK,S&P 500
+Advanced Micro Devices,AMD,S&P 500
+PepsiCo,PEP,S&P 500
+Linde plc,LIN,S&P 500
+Accenture,ACN,S&P 500
+Cisco,CSCO,S&P 500
+Wells Fargo,WFC,S&P 500
+McDonald's,MCD,S&P 500
+IBM,IBM,S&P 500
+Thermo Fisher Scientific,TMO,S&P 500
+Adobe Inc.,ADBE,S&P 500
+Blackstone Inc.,BX,S&P 500
+Philip Morris International,PM,S&P 500
+Abbott Laboratories,ABT,S&P 500
+ServiceNow,NOW,S&P 500
+GE Aerospace,GE,S&P 500
+Morgan Stanley,MS,S&P 500
+American Express,AXP,S&P 500
+Texas Instruments,TXN,S&P 500
+Caterpillar Inc.,CAT,S&P 500
+Qualcomm,QCOM,S&P 500
+Intuitive Surgical,ISRG,S&P 500
+Verizon,VZ,S&P 500
+Danaher Corporation,DHR,S&P 500
+Walt Disney Company (The),DIS,S&P 500
+NextEra Energy,NEE,S&P 500
+Amgen,AMGN,S&P 500
+RTX Corporation,RTX,S&P 500
+Intuit,INTU,S&P 500
+Uber,UBER,S&P 500
+Goldman Sachs,GS,S&P 500
+Pfizer,PFE,S&P 500
+AT&T,T,S&P 500
+Comcast,CMCSA,S&P 500
+S&P Global,SPGI,S&P 500
+Lowe's,LOW,S&P 500
+Applied Materials,AMAT,S&P 500
+BlackRock,BLK,S&P 500
+Booking Holdings,BKNG,S&P 500
+Progressive Corporation,PGR,S&P 500
+Honeywell,HON,S&P 500
+Union Pacific Corporation,UNP,S&P 500
+Eaton Corporation,ETN,S&P 500
+Stryker Corporation,SYK,S&P 500
+Charles Schwab Corporation,SCHW,S&P 500
+Lockheed Martin,LMT,S&P 500
+KKR,KKR,S&P 500
+TJX Companies,TJX,S&P 500
+Boston Scientific,BSX,S&P 500
+Arista Networks,ANET,S&P 500
+Vertex Pharmaceuticals,VRTX,S&P 500
+ConocoPhillips,COP,S&P 500
+Citigroup,C,S&P 500
+"Nike, Inc.",NKE,S&P 500
+Chubb Limited,CB,S&P 500
+Palo Alto Networks,PANW,S&P 500
+United Parcel Service,UPS,S&P 500
+Micron Technology,MU,S&P 500
+Automatic Data Processing,ADP,S&P 500
+Medtronic,MDT,S&P 500
+Fiserv,FI,S&P 500
+Prologis,PLD,S&P 500
+Analog Devices,ADI,S&P 500
+Deere & Company,DE,S&P 500
+Starbucks,SBUX,S&P 500
+Gilead Sciences,GILD,S&P 500
+Marsh McLennan,MMC,S&P 500
+Bristol Myers Squibb,BMY,S&P 500
+American Tower,AMT,S&P 500
+HCA Healthcare,HCA,S&P 500
+Southern Company,SO,S&P 500
+Regeneron Pharmaceuticals,REGN,S&P 500
+Lam Research,LRCX,S&P 500
+Palantir Technologies,PLTR,S&P 500
+Elevance Health,ELV,S&P 500
+Boeing,BA,S&P 500
+Intercontinental Exchange,ICE,S&P 500
+Intel,INTC,S&P 500
+Mondelez International,MDLZ,S&P 500
+Duke Energy,DUK,S&P 500
+Sherwin-Williams,SHW,S&P 500
+Trane Technologies,TT,S&P 500
+KLA Corporation,KLAC,S&P 500
+Cigna,CI,S&P 500
+Altria,MO,S&P 500
+Moody's Corporation,MCO,S&P 500
+Equinix,EQIX,S&P 500
+Dell Technologies,DELL,S&P 500
+Cintas,CTAS,S&P 500
+Amphenol,APH,S&P 500
+Airbnb,ABNB,S&P 500
+Waste Management,WM,S&P 500
+PayPal,PYPL,S&P 500
+Constellation Energy,CEG,S&P 500
+General Dynamics,GD,S&P 500
+CME Group,CME,S&P 500
+Zoetis,ZTS,S&P 500
+GE Vernova,GEV,S&P 500
+Welltower,WELL,S&P 500
+Colgate-Palmolive,CL,S&P 500
+Chipotle Mexican Grill,CMG,S&P 500
+Parker Hannifin,PH,S&P 500
+Motorola Solutions,MSI,S&P 500
+Aon,AON,S&P 500
+Northrop Grumman,NOC,S&P 500
+Synopsys,SNPS,S&P 500
+Illinois Tool Works,ITW,S&P 500
+U.S. Bancorp,USB,S&P 500
+TransDigm Group,TDG,S&P 500
+PNC Financial Services,PNC,S&P 500
+CrowdStrike,CRWD,S&P 500
+Marriott International,MAR,S&P 500
+Ecolab,ECL,S&P 500
+Carrier Global,CARR,S&P 500
+Air Products,APD,S&P 500
+EOG Resources,EOG,S&P 500
+CVS Health,CVS,S&P 500
+3M,MMM,S&P 500
+O'Reilly Auto Parts,ORLY,S&P 500
+Target Corporation,TGT,S&P 500
+Becton Dickinson,BDX,S&P 500
+Freeport-McMoRan,FCX,S&P 500
+Cadence Design Systems,CDNS,S&P 500
+FedEx,FDX,S&P 500
+Newmont,NEM,S&P 500
+McKesson Corporation,MCK,S&P 500
+Simon Property Group,SPG,S&P 500
+CSX Corporation,CSX,S&P 500
+Williams Companies,WMB,S&P 500
+Republic Services,RSG,S&P 500
+Arthur J. Gallagher & Co.,AJG,S&P 500
+Aflac,AFL,S&P 500
+Emerson Electric,EMR,S&P 500
+Fortinet,FTNT,S&P 500
+Autodesk,ADSK,S&P 500
+NXP Semiconductors,NXPI,S&P 500
+D. R. Horton,DHI,S&P 500
+Schlumberger,SLB,S&P 500
+Public Storage,PSA,S&P 500
+MetLife,MET,S&P 500
+Capital One,COF,S&P 500
+Travelers Companies (The),TRV,S&P 500
+General Motors,GM,S&P 500
+Truist Financial,TFC,S&P 500
+Roper Technologies,ROP,S&P 500
+Hilton Worldwide,HLT,S&P 500
+Norfolk Southern Railway,NSC,S&P 500
+ONEOK,OKE,S&P 500
+BNY Mellon,BK,S&P 500
+Kinder Morgan,KMI,S&P 500
+Realty Income,O,S&P 500
+Digital Realty,DLR,S&P 500
+Paccar,PCAR,S&P 500
+United Rentals,URI,S&P 500
+Sempra,SRE,S&P 500
+PG&E Corporation,PCG,S&P 500
+Phillips 66,PSX,S&P 500
+AutoZone,AZO,S&P 500
+Diamondback Energy,FANG,S&P 500
+American Electric Power,AEP,S&P 500
+W. W. Grainger,GWW,S&P 500
+Monster Beverage,MNST,S&P 500
+Royal Caribbean Group,RCL,S&P 500
+Johnson Controls,JCI,S&P 500
+Marathon Petroleum,MPC,S&P 500
+Paychex,PAYX,S&P 500
+Dominion Energy,D,S&P 500
+Allstate,ALL,S&P 500
+American International Group,AIG,S&P 500
+Ameriprise Financial,AMP,S&P 500
+Copart,CPRT,S&P 500
+Fidelity National Information Services,FIS,S&P 500
+Fair Isaac,FICO,S&P 500
+Crown Castle,CCI,S&P 500
+Occidental Petroleum,OXY,S&P 500
+Ross Stores,ROST,S&P 500
+Charter Communications,CHTR,S&P 500
+Keurig Dr Pepper,KDP,S&P 500
+Lennar,LEN,S&P 500
+MSCI,MSCI,S&P 500
+L3Harris,LHX,S&P 500
+Cencora,COR,S&P 500
+Kimberly-Clark,KMB,S&P 500
+Quanta Services,PWR,S&P 500
+Cummins,CMI,S&P 500
+Public Service Enterprise Group,PEG,S&P 500
+Prudential Financial,PRU,S&P 500
+TE Connectivity,TEL,S&P 500
+Kenvue,KVUE,S&P 500
+Ford Motor Company,F,S&P 500
+Monolithic Power Systems,MPWR,S&P 500
+Constellation Brands,STZ,S&P 500
+Fastenal,FAST,S&P 500
+"Nasdaq, Inc.",NDAQ,S&P 500
+Vistra Corp.,VST,S&P 500
+Kraft Heinz,KHC,S&P 500
+Hess Corporation,HES,S&P 500
+Edwards Lifesciences,EW,S&P 500
+Valero Energy,VLO,S&P 500
+Corteva,CTVA,S&P 500
+Otis Worldwide,OTIS,S&P 500
+Old Dominion,ODFL,S&P 500
+Howmet Aerospace,HWM,S&P 500
+Kroger,KR,S&P 500
+CBRE Group,CBRE,S&P 500
+Exelon,EXC,S&P 500
+Microchip Technology,MCHP,S&P 500
+GE HealthCare,GEHC,S&P 500
+Arch Capital Group,ACGL,S&P 500
+Corning Inc.,GLW,S&P 500
+Gartner,IT,S&P 500
+Ingersoll Rand,IR,S&P 500
+Las Vegas Sands,LVS,S&P 500
+IQVIA,IQV,S&P 500
+Ametek,AME,S&P 500
+Electronic Arts,EA,S&P 500
+General Mills,GIS,S&P 500
+Verisk Analytics,VRSK,S&P 500
+Agilent Technologies,A,S&P 500
+Yum! Brands,YUM,S&P 500
+Idexx Laboratories,IDXX,S&P 500
+Cognizant,CTSH,S&P 500
+Extra Space Storage,EXR,S&P 500
+Consolidated Edison,ED,S&P 500
+Iron Mountain,IRM,S&P 500
+Targa Resources,TRGP,S&P 500
+Hershey Company (The),HSY,S&P 500
+Lululemon Athletica,LULU,S&P 500
+Sysco,SYY,S&P 500
+Baker Hughes,BKR,S&P 500
+Xcel Energy,XEL,S&P 500
+Dow Inc.,DOW,S&P 500
+Discover Financial,DFS,S&P 500
+Delta Air Lines,DAL,S&P 500
+Hartford (The),HIG,S&P 500
+DuPont,DD,S&P 500
+HP Inc.,HPQ,S&P 500
+ResMed,RMD,S&P 500
+Martin Marietta Materials,MLM,S&P 500
+Vici Properties,VICI,S&P 500
+Vulcan Materials Company,VMC,S&P 500
+Equifax,EFX,S&P 500
+Nucor,NUE,S&P 500
+Axon Enterprise,AXON,S&P 500
+Edison International,EIX,S&P 500
+AvalonBay Communities,AVB,S&P 500
+Wabtec,WAB,S&P 500
+M&T Bank,MTB,S&P 500
+Centene Corporation,CNC,S&P 500
+Estée Lauder Companies (The),EL,S&P 500
+Xylem Inc.,XYL,S&P 500
+WEC Energy Group,WEC,S&P 500
+eBay,EBAY,S&P 500
+Humana,HUM,S&P 500
+Garmin,GRMN,S&P 500
+Rockwell Automation,ROK,S&P 500
+Raymond James Financial,RJF,S&P 500
+CoStar Group,CSGP,S&P 500
+Brown & Brown,BRO,S&P 500
+ON Semiconductor,ON,S&P 500
+Dexcom,DXCM,S&P 500
+Fifth Third Bancorp,FITB,S&P 500
+Equity Residential,EQR,S&P 500
+PPG Industries,PPG,S&P 500
+Tractor Supply,TSCO,S&P 500
+Willis Towers Watson,WTW,S&P 500
+Entergy,ETR,S&P 500
+CDW,CDW,S&P 500
+"NVR, Inc.",NVR,S&P 500
+LyondellBasell,LYB,S&P 500
+Take-Two Interactive,TTWO,S&P 500
+Ansys,ANSS,S&P 500
+Carnival,CCL,S&P 500
+Kellanova,K,S&P 500
+PulteGroup,PHM,S&P 500
+Mettler Toledo,MTD,S&P 500
+Ventas,VTR,S&P 500
+American Water Works,AWK,S&P 500
+Cardinal Health,CAH,S&P 500
+Supermicro,SMCI,S&P 500
+Live Nation Entertainment,LYV,S&P 500
+State Street Corporation,STT,S&P 500
+Archer Daniels Midland,ADM,S&P 500
+DTE Energy,DTE,S&P 500
+Biogen,BIIB,S&P 500
+Keysight Technologies,KEYS,S&P 500
+SBA Communications,SBAC,S&P 500
+Fortive,FTV,S&P 500
+International Flavors & Fragrances,IFF,S&P 500
+Veralto,VLTO,S&P 500
+Tyler Technologies,TYL,S&P 500
+Devon Energy,DVN,S&P 500
+Dover Corporation,DOV,S&P 500
+FirstEnergy,FE,S&P 500
+Broadridge Financial Solutions,BR,S&P 500
+Global Payments,GPN,S&P 500
+Host Hotels & Resorts,HST,S&P 500
+Hewlett Packard Enterprise,HPE,S&P 500
+Church & Dwight,CHD,S&P 500
+T. Rowe Price,TROW,S&P 500
+Corpay,CPAY,S&P 500
+Halliburton,HAL,S&P 500
+NetApp,NTAP,S&P 500
+United Airlines Holdings,UAL,S&P 500
+PPL Corporation,PPL,S&P 500
+Hubbell Incorporated,HUBB,S&P 500
+West Pharmaceutical Services,WST,S&P 500
+Erie Indemnity,ERIE,S&P 500
+Eversource Energy,ES,S&P 500
+Smurfit WestRock,SW,S&P 500
+Ameren,AEE,S&P 500
+Weyerhaeuser,WY,S&P 500
+Deckers Brands,DECK,S&P 500
+Brown–Forman,BF-B,S&P 500
+Western Digital,WDC,S&P 500
+GoDaddy,GDDY,S&P 500
+Leidos,LDOS,S&P 500
+W. R. Berkley Corporation,WRB,S&P 500
+Huntington Bancshares,HBAN,S&P 500
+"Rollins, Inc.",ROL,S&P 500
+Cboe Global Markets,CBOE,S&P 500
+Steris,STE,S&P 500
+Atmos Energy,ATO,S&P 500
+Teledyne Technologies,TDY,S&P 500
+PTC Inc.,PTC,S&P 500
+EQT Corporation,EQT,S&P 500
+Seagate Technology,STX,S&P 500
+Regions Financial Corporation,RF,S&P 500
+Cincinnati Financial,CINF,S&P 500
+Synchrony Financial,SYF,S&P 500
+CMS Energy,CMS,S&P 500
+Cooper Companies (The),COO,S&P 500
+Invitation Homes,INVH,S&P 500
+Zimmer Biomet,ZBH,S&P 500
+Builders FirstSource,BLDR,S&P 500
+McCormick & Company,MKC,S&P 500
+Tyson Foods,TSN,S&P 500
+First Solar,FSLR,S&P 500
+Expedia Group,EXPE,S&P 500
+Principal Financial Group,PFG,S&P 500
+Moderna,MRNA,S&P 500
+Packaging Corporation of America,PKG,S&P 500
+Northern Trust,NTRS,S&P 500
+Alexandria Real Estate Equities,ARE,S&P 500
+Best Buy,BBY,S&P 500
+Steel Dynamics,STLD,S&P 500
+Essex Property Trust,ESS,S&P 500
+Clorox,CLX,S&P 500
+Ball Corporation,BALL,S&P 500
+Omnicom Group,OMC,S&P 500
+Waters Corporation,WAT,S&P 500
+LabCorp,LH,S&P 500
+CenterPoint Energy,CNP,S&P 500
+Darden Restaurants,DRI,S&P 500
+Molina Healthcare,MOH,S&P 500
+Hologic,HOLX,S&P 500
+Baxter International,BAX,S&P 500
+Mid-America Apartment Communities,MAA,S&P 500
+Zebra Technologies,ZBRA,S&P 500
+Citizens Financial Group,CFG,S&P 500
+Warner Bros. Discovery,WBD,S&P 500
+NRG Energy,NRG,S&P 500
+Fox Corporation (Class B),FOX,S&P 500
+Fox Corporation (Class A),FOXA,S&P 500
+Masco,MAS,S&P 500
+Verisign,VRSN,S&P 500
+Teradyne,TER,S&P 500
+Dollar General,DG,S&P 500
+Loews Corporation,L,S&P 500
+Quest Diagnostics,DGX,S&P 500
+Coterra,CTRA,S&P 500
+J.B. Hunt,JBHT,S&P 500
+Jacobs Solutions,J,S&P 500
+Southwest Airlines,LUV,S&P 500
+FactSet,FDS,S&P 500
+Ulta Beauty,ULTA,S&P 500
+Snap-on,SNA,S&P 500
+KeyCorp,KEY,S&P 500
+Hormel Foods,HRL,S&P 500
+International Paper,IP,S&P 500
+Expeditors International,EXPD,S&P 500
+Everest Group,EG,S&P 500
+"UDR, Inc.",UDR,S&P 500
+Insulet Corporation,PODD,S&P 500
+Gen Digital,GEN,S&P 500
+Avery Dennison,AVY,S&P 500
+Pentair,PNR,S&P 500
+Align Technology,ALGN,S&P 500
+Healthpeak Properties,DOC,S&P 500
+Kimco Realty,KIM,S&P 500
+Aptiv,APTV,S&P 500
+Amcor,AMCR,S&P 500
+Alliant Energy,LNT,S&P 500
+Stanley Black & Decker,SWK,S&P 500
+NiSource,NI,S&P 500
+Genuine Parts Company,GPC,S&P 500
+Akamai Technologies,AKAM,S&P 500
+"BXP, Inc.",BXP,S&P 500
+IDEX Corporation,IEX,S&P 500
+Textron,TXT,S&P 500
+Skyworks Solutions,SWKS,S&P 500
+News Corp (Class A),NWSA,S&P 500
+News Corp (Class B),NWS,S&P 500
+CF Industries,CF,S&P 500
+Universal Health Services,UHS,S&P 500
+Trimble Inc.,TRMB,S&P 500
+Marathon Oil,MRO,S&P 500
+Pool Corporation,POOL,S&P 500
+Dollar Tree,DLTR,S&P 500
+Domino's,DPZ,S&P 500
+Revvity,RVTY,S&P 500
+Evergy,EVRG,S&P 500
+Nordson Corporation,NDSN,S&P 500
+Jabil,JBL,S&P 500
+Celanese,CE,S&P 500
+Conagra Brands,CAG,S&P 500
+Campbell Soup Company,CPB,S&P 500
+Viatris,VTRS,S&P 500
+DaVita,DVA,S&P 500
+Jack Henry & Associates,JKHY,S&P 500
+Regency Centers,REG,S&P 500
+Juniper Networks,JNPR,S&P 500
+Camden Property Trust,CPT,S&P 500
+Bunge Global,BG,S&P 500
+Allegion,ALLE,S&P 500
+Solventum,SOLV,S&P 500
+Incyte,INCY,S&P 500
+C.H. Robinson,CHRW,S&P 500
+Eastman Chemical Company,EMN,S&P 500
+J.M. Smucker Company (The),SJM,S&P 500
+"F5, Inc.",FFIV,S&P 500
+Ralph Lauren Corporation,RL,S&P 500
+MGM Resorts,MGM,S&P 500
+AES Corporation,AES,S&P 500
+Molson Coors Beverage Company,TAP,S&P 500
+CarMax,KMX,S&P 500
+Interpublic Group of Companies (The),IPG,S&P 500
+A. O. Smith,AOS,S&P 500
+Albemarle Corporation,ALB,S&P 500
+Teleflex,TFX,S&P 500
+Lamb Weston,LW,S&P 500
+MarketAxess,MKTX,S&P 500
+Enphase Energy,ENPH,S&P 500
+EPAM Systems,EPAM,S&P 500
+Wynn Resorts,WYNN,S&P 500
+Bio-Techne,TECH,S&P 500
+Catalent,CTLT,S&P 500
+Franklin Resources,BEN,S&P 500
+"Tapestry, Inc.",TPR,S&P 500
+Dayforce,DAY,S&P 500
+Norwegian Cruise Line Holdings,NCLH,S&P 500
+Pinnacle West,PNW,S&P 500
+Assurant,AIZ,S&P 500
+Generac,GNRC,S&P 500
+Huntington Ingalls Industries,HII,S&P 500
+LKQ Corporation,LKQ,S&P 500
+Globe Life,GL,S&P 500
+Match Group,MTCH,S&P 500
+Charles River Laboratories,CRL,S&P 500
+Federal Realty Investment Trust,FRT,S&P 500
+Mohawk Industries,MHK,S&P 500
+Paycom,PAYC,S&P 500
+Caesars Entertainment,CZR,S&P 500
+Qorvo,QRVO,S&P 500
+Hasbro,HAS,S&P 500
+APA Corporation,APA,S&P 500
+Henry Schein,HSIC,S&P 500
+Mosaic Company (The),MOS,S&P 500
+Walgreens Boots Alliance,WBA,S&P 500
+Invesco,IVZ,S&P 500
+FMC Corporation,FMC,S&P 500
+BorgWarner,BWA,S&P 500
+Paramount Global,PARA,S&P 500
+Amentum,AMTM,S&P 500
+SAP,SAP.DE,DAX40
+Siemens,SIE.DE,DAX40
+Deutsche Telekom,DTE.DE,DAX40
+Allianz,ALV.DE,DAX40
+Airbus,AIR.DE,DAX40
+Merck,MRK.DE,DAX40
+Munich Re,MUV2.DE,DAX40
+Porsche,P911.DE,DAX40
+Mercedes-Benz Group,MBG.DE,DAX40
+Siemens Healthineers,SHL.DE,DAX40
+BMW,BMW.DE,DAX40
+Volkswagen Group,VOW3.DE,DAX40
+Deutsche Post,DHL.DE,DAX40
+BASF,BAS.DE,DAX40
+Infineon Technologies,IFX.DE,DAX40
+Deutsche Börse,DB1.DE,DAX40
+Adidas,ADS.DE,DAX40
+E.ON,EOAN.DE,DAX40
+Henkel,HEN3.DE,DAX40
+Deutsche Bank,DBK.DE,DAX40
+Daimler Truck,DTG.DE,DAX40
+Hannover Re,HNR1.DE,DAX40
+Beiersdorf,BEI.DE,DAX40
+Siemens Energy,ENR.DE,DAX40
+Vonovia,VNA.DE,DAX40
+Bayer,BAYN.DE,DAX40
+RWE,RWE.DE,DAX40
+Rheinmetall,RHM.DE,DAX40
+Commerzbank,CBK.DE,DAX40
+Fresenius,FRE.DE,DAX40
+Heidelberg Materials,HEI.DE,DAX40
+MTU Aero Engines,MTX.DE,DAX40
+Symrise,SY1.DE,DAX40
+Sartorius,SRT3.DE,DAX40
+Porsche SE,PAH3.DE,DAX40
+Continental,CON.DE,DAX40
+Covestro,1COV.DE,DAX40
+Brenntag,BNR.DE,DAX40
+Qiagen,QIA.DE,DAX40
+Zalando,ZAL.DE,DAX40
+MICROSTRATEGY Inc,MSTR,Russell 200
+CARVANA CO.,CVNA,Russell 200
+"Super Micro Computer, Inc.",SMCI,Russell 200
+COMFORT SYSTEMS USA INC,FIX,Russell 200
+"Duolingo, Inc.",DUOL,Russell 200
+FTAI Aviation Ltd.,FTAI,Russell 200
+"Sprouts Farmers Market, Inc.",SFM,Russell 200
+"HEALTHPEAK PROPERTIES, INC.",DOC,Russell 200
+INSMED Inc,INSM,Russell 200
+Summit Therapeutics Inc.,SMMT,Russell 200
+Permian Resources Corp,PR,Russell 200
+"Rocket Lab USA, Inc.",RKLB,Russell 200
+"Aurora Innovation, Inc.",AUR,Russell 200
+Credo Technology Group Holding Ltd,CRDO,Russell 200
+"Coca-Cola Consolidated, Inc.",COKE,Russell 200
+"Vaxcyte, Inc.",PCVX,Russell 200
+"AAON, INC.",AAON,Russell 200
+APi Group Corp,APG,Russell 200
+APPLIED INDUSTRIAL TECHNOLOGIES INC,AIT,Russell 200
+PARSONS CORP,PSN,Russell 200
+"BELLRING BRANDS, INC.",BRBR,Russell 200
+"MACOM Technology Solutions Holdings, Inc.",MTSI,Russell 200
+Hamilton Lane INC,HLNE,Russell 200
+APPFOLIO INC,APPF,Russell 200
+CARPENTER TECHNOLOGY CORP,CRS,Russell 200
+FLUOR CORP,FLR,Russell 200
+"POWERSCHOOL HOLDINGS, INC.",PWSC,Russell 200
+Kinetik Holdings Inc.,KNTK,Russell 200
+"Leonardo DRS, Inc.",DRS,Russell 200
+Altair Engineering Inc.,ALTR,Russell 200
+MUELLER INDUSTRIES INC,MLI,Russell 200
+"Summit Materials, Inc.",SUM,Russell 200
+"Intra-Cellular Therapies, Inc.",ITCI,Russell 200
+"HEALTHEQUITY, INC.",HQY,Russell 200
+"Light & Wonder, Inc.",LNW,Russell 200
+Fabrinet,FN,Russell 200
+SouthState Corp,SSB,Russell 200
+ATI INC,ATI,Russell 200
+"ENSIGN GROUP, INC",ENSG,Russell 200
+"Cerevel Therapeutics Holdings, Inc.",CERE,Russell 200
+CHART INDUSTRIES INC,GTLS,Russell 200
+ONTO INNOVATION INC.,ONTO,Russell 200
+UFP INDUSTRIES INC,UFPI,Russell 200
+"MARATHON DIGITAL HOLDINGS, INC.",MARA,Russell 200
+"Revolution Medicines, Inc.",RVMD,Russell 200
+"SPX Technologies, Inc.",SPXC,Russell 200
+"IonQ, Inc.",IONQ,Russell 200
+ABERCROMBIE & FITCH CO /DE/,ANF,Russell 200
+"Simpson Manufacturing Co., Inc.",SSD,Russell 200
+COMMVAULT SYSTEMS INC,CVLT,Russell 200
+GLAUKOS Corp,GKOS,Russell 200
+"ExlService Holdings, Inc.",EXLS,Russell 200
+Chord Energy Corp,WLLBW,Russell 200
+Chord Energy Corp,CHRD,Russell 200
+"e.l.f. Beauty, Inc.",ELF,Russell 200
+OLD NATIONAL BANCORP /IN/,ONB,Russell 200
+Jackson Financial Inc.,JXN,Russell 200
+Matador Resources Co,MTDR,Russell 200
+MODINE MANUFACTURING CO,MOD,Russell 200
+WATTS WATER TECHNOLOGIES INC,WTS,Russell 200
+Taylor Morrison Home Corp,TMHC,Russell 200
+StepStone Group Inc.,STEP,Russell 200
+"DILLARD'S, INC.",DDS,Russell 200
+SPS COMMERCE INC,SPSC,Russell 200
+"Ryman Hospitality Properties, Inc.",RHP,Russell 200
+CASELLA WASTE SYSTEMS INC,CWST,Russell 200
+BEACON ROOFING SUPPLY INC,BECN,Russell 200
+COMMERCIAL METALS Co,CMC,Russell 200
+"Hims & Hers Health, Inc.",HIMS,Russell 200
+"CSW INDUSTRIALS, INC.",CSWI,Russell 200
+"MADRIGAL PHARMACEUTICALS, INC.",MDGL,Russell 200
+Zurn Elkay Water Solutions Corp,ZWS,Russell 200
+"Upstart Holdings, Inc.",UPST,Russell 200
+"Nuvalent, Inc.",NUVL,Russell 200
+BADGER METER INC,BMI,Russell 200
+"Q2 Holdings, Inc.",QTWO,Russell 200
+"Lumen Technologies, Inc.",LUMN,Russell 200
+"AST SpaceMobile, Inc.",ASTS,Russell 200
+EchoStar CORP,SATS,Russell 200
+Meritage Homes CORP,MTH,Russell 200
+HERC HOLDINGS INC,HRI,Russell 200
+"Squarespace, Inc.",SQSP,Russell 200
+"AMKOR TECHNOLOGY, INC.",AMKR,Russell 200
+"GLACIER BANCORP, INC.",GBCI,Russell 200
+Brookfield Infrastructure Corp,BIPC,Russell 200
+CORCEPT THERAPEUTICS INC,CORT,Russell 200
+NUSCALE POWER Corp,SMR,Russell 200
+INDEPENDENT BANK CORP,INDB,Russell 200
+"Lantheus Holdings, Inc.",LNTH,Russell 200
+Bloom Energy Corp,BE,Russell 200
+"Joby Aviation, Inc.",JOBY,Russell 200
+HOME BANCSHARES INC,HOMB,Russell 200
+Mr. Cooper Group Inc.,COOP,Russell 200
+RAMBUS INC,RMBS,Russell 200
+Zeta Global Holdings Corp.,ZETA,Russell 200
+"HALOZYME THERAPEUTICS, INC.",HALO,Russell 200
+MERIT MEDICAL SYSTEMS INC,MMSI,Russell 200
+UMB FINANCIAL CORP,UMBF,Russell 200
+Blueprint Medicines Corp,BPMC,Russell 200
+SELECTIVE INSURANCE GROUP INC,SIGI,Russell 200
+CORVEL CORP,CRVL,Russell 200
+Weatherford International plc,WFRD,Russell 200
+"Installed Building Products, Inc.",IBP,Russell 200
+Skyline Champion Corp,SKY,Russell 200
+Essent Group Ltd.,ESNT,Russell 200
+"STERLING INFRASTRUCTURE, INC.",STRL,Russell 200
+NOVANTA INC,NOVT,Russell 200
+FEDERAL SIGNAL CORP /DE/,FSS,Russell 200
+Terreno Realty Corp,TRNO,Russell 200
+CYTOKINETICS INC,CYTK,Russell 200
+"F&G Annuities & Life, Inc.",FG,Russell 200
+PIPER SANDLER COMPANIES,PIPR,Russell 200
+KITE REALTY GROUP TRUST,KRG,Russell 200
+"RadNet, Inc.",RDNT,Russell 200
+FIRST FINANCIAL BANKSHARES INC,FFIN,Russell 200
+Shake Shack Inc.,SHAK,Russell 200
+Knife River Corp,KNF,Russell 200
+"BRINKER INTERNATIONAL, INC",EAT,Russell 200
+"ACI WORLDWIDE, INC.",ACIW,Russell 200
+"ESSENTIAL PROPERTIES REALTY TRUST, INC.",EPRT,Russell 200
+KB HOME,KBH,Russell 200
+"QUALYS, INC.",QLYS,Russell 200
+BALCHEM CORP,BCPC,Russell 200
+GROUP 1 AUTOMOTIVE INC,GPI,Russell 200
+CNX Resources Corp,CNX,Russell 200
+DYCOM INDUSTRIES INC,DY,Russell 200
+ChampionX Corp,CHX,Russell 200
+GATX CORP,GATX,Russell 200
+Altus Midstream Co,ALTM,Russell 200
+CABOT CORP,CBT,Russell 200
+Moelis & Co,MC,Russell 200
+UNITED BANKSHARES INC/WV,UBSI,Russell 200
+"IES Holdings, Inc.",IESC,Russell 200
+VARONIS SYSTEMS INC,VRNS,Russell 200
+WORKIVA INC,WK,Russell 200
+"Viking Therapeutics, Inc.",VKTX,Russell 200
+"Construction Partners, Inc.",ROAD,Russell 200
+BOISE CASCADE Co,BCC,Russell 200
+"Southwest Gas Holdings, Inc.",SWX,Russell 200
+Equitrans Midstream Corp,ETRN,Russell 200
+"Enact Holdings, Inc.",ACT,Russell 200
+"PennyMac Financial Services, Inc.",PFSI,Russell 200
+MGE ENERGY INC,MGEE,Russell 200
+"Red Rock Resorts, Inc.",RRR,Russell 200
+VALLEY NATIONAL BANCORP,VLY,Russell 200
+"Cactus, Inc.",WHD,Russell 200
+Magnolia Oil & Gas Corp,MGY,Russell 200
+"TG THERAPEUTICS, INC.",TGTX,Russell 200
+"Arcosa, Inc.",ACA,Russell 200
+"ITRON, INC.",ITRI,Russell 200
+"Tenable Holdings, Inc.",TENB,Russell 200
+"Intapp, Inc.",INTA,Russell 200
+"Krystal Biotech, Inc.",KRYS,Russell 200
+"ServisFirst Bancshares, Inc.",SFBS,Russell 200
+RADIAN GROUP INC,RDN,Russell 200
+SITIME Corp,SITM,Russell 200
+"COHEN & STEERS, INC.",CNS,Russell 200
+INSIGHT ENTERPRISES INC,NSIT,Russell 200
+"Kontoor Brands, Inc.",KTB,Russell 200
+ASBURY AUTOMOTIVE GROUP INC,ABG,Russell 200
+LANCASTER COLONY CORP,LANC,Russell 200
+"Matson, Inc.",MATX,Russell 200
+"Life Time Group Holdings, Inc.",LTH,Russell 200
+Alkermes plc.,ALKS,Russell 200
+"CareTrust REIT, Inc.",CTRE,Russell 200
+"BridgeBio Pharma, Inc.",BBIO,Russell 200
+HANCOCK WHITNEY CORP,HWC,Russell 200
+IMPINJ INC,PI,Russell 200
+NEW JERSEY RESOURCES CORP,NJR,Russell 200
+Enstar Group LTD,ESGR,Russell 200
+SEMTECH CORP,SMTC,Russell 200
+MACERICH CO,MAC,Russell 200
+"SOUNDHOUND AI, INC.",SOUN,Russell 200
+BELDEN INC.,BDC,Russell 200
+PORTLAND GENERAL ELECTRIC CO /OR/,POR,Russell 200
+"InterDigital, Inc.",IDCC,Russell 200
+FRANKLIN ELECTRIC CO INC,FELE,Russell 200
+PROCEPT BioRobotics Corp,PRCT,Russell 200
+Freshworks Inc.,FRSH,Russell 200
+EXPONENT INC,EXPO,Russell 200
+SL GREEN REALTY CORP,SLG,Russell 200
+Noble Corp plc,NE,Russell 200
+"Phillips Edison & Company, Inc.",PECO,Russell 200
+"Stride, Inc.",LRN,Russell 200
+RUSH ENTERPRISES INC \TX\,RUSHA,Russell 200
+RUSH ENTERPRISES INC \TX\,RUSHB,Russell 200
+CAL-MAINE FOODS INC,CALM,Russell 200
+"Axsome Therapeutics, Inc.",AXSM,Russell 200
+"C3.ai, Inc.",AI,Russell 200
+Ameris Bancorp,ABCB,Russell 200
+KADANT INC,KAI,Russell 200
+"M.D.C. HOLDINGS, INC.",MDC,Russell 200
+"FirstCash Holdings, Inc.",FCFS,Russell 200
+"INDEPENDENCE REALTY TRUST, INC.",IRT,Russell 200
+"ORMAT TECHNOLOGIES, INC.",ORA,Russell 200
+Atlas Energy Solutions Inc. Class A Common Stock,AESI,Russell 200
+"TRINET GROUP, INC.",TNET,Russell 200
+ENCORE WIRE CORP,WIRE,Russell 200
+URBAN OUTFITTERS INC,URBN,Russell 200
+"Arcellx, Inc.",ACLX,Russell 200
+Integer Holdings Corp,ITGR,Russell 200
+AeroVironment Inc,AVAV,Russell 200
+"CIVITAS RESOURCES, INC.",CIVI,Russell 200
+NATIONAL BEVERAGE CORP,FIZZ,Russell 200
+"Sweetgreen, Inc.",SG,Russell 200
+"Goosehead Insurance, Inc.",GSHD,Russell 200
+PLEXUS CORP,PLXS,Russell 200
+MURPHY OIL CORP,MUR,Russell 200
+BOX INC,BOX,Russell 200
+SM Energy Co,SM,Russell 200
+"Archrock, Inc.",AROC,Russell 200
+"Guardant Health, Inc.",GH,Russell 200
+"Axos Financial, Inc.",AX,Russell 200
+AMERICAN EQUITY INVESTMENT LIFE HOLDING CO,AEL,Russell 200
+SKYWEST INC,SKYW,Russell 200
+"ADMA BIOLOGICS, INC.",ADMA,Russell 200
+"RXO, Inc.",RXO,Russell 200
+AVIENT CORP,AVNT,Russell 200
+"Boot Barn Holdings, Inc.",BOOT,Russell 200
+Acushnet Holdings Corp.,GOLF,Russell 200
+"BGC Group, Inc.",BGC,Russell 200
+BLACK HILLS CORP /SD/,BKH,Russell 200
+INTERNATIONAL BANCSHARES CORP,IBOC,Russell 200
+Primoris Services Corp,PRIM,Russell 200
+"MAXIMUS, INC.",MMS,Russell 200
+"Global Business Travel Group, Inc.",GBTG,Russell 200
+GOLAR LNG LTD,GLNG,Russell 200
+"Avidity Biosciences, Inc.",RNA,Russell 200
+INTER PARFUMS INC,IPAR,Russell 200
+Hillman Solutions Corp.,HLMN,Russell 200
+"Victory Capital Holdings, Inc.",VCTR,Russell 200
+"M/I HOMES, INC.",MHO,Russell 200
+"Frontdoor, Inc.",FTDR,Russell 200
+ADVANCED ENERGY INDUSTRIES INC,AEIS,Russell 200
+"Sabra Health Care REIT, Inc.",SBRA,Russell 200
+GRANITE CONSTRUCTION INC,GVA,Russell 200
+COMSTOCK RESOURCES INC,CRK,Russell 200
+PNM Resources Inc,PNM,Russell 200
+UNITED STATES LIME & MINERALS INC,USLM,Russell 200
+MERCURY GENERAL CORP,MCY,Russell 200
+SANMINA CORP,SANM,Russell 200
+"Dorman Products, Inc.",DORM,Russell 200
+"Braze, Inc.",BRZE,Russell 200
+BANCFIRST CORP /OK/,BANF,Russell 200
+Prestige Consumer Healthcare Inc.,PBH,Russell 200
+SPIRE MISSOURI INC,SR,Russell 200
+"ONE Gas, Inc.",OGS,Russell 200
+"Mirion Technologies, Inc.",MIR,Russell 200
+"Immunovant, Inc.",IMVT,Russell 200
+"ALPINE IMMUNE SCIENCES, INC.",ALPN,Russell 200
+"NORTHERN OIL & GAS, INC.",NOG,Russell 200
+Hilton Grand Vacations Inc.,HGV,Russell 200
+FULLER H B CO,FUL,Russell 200
+"KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",KTOS,Russell 200
+"Remitly Global, Inc.",RELY,Russell 200
+BLACKBAUD INC,BLKB,Russell 200
+Enpro Inc.,NPO,Russell 200
+"Riot Platforms, Inc.",RIOT,Russell 200
+Graham Holdings Co,GHC,Russell 200
+BRINKS CO,BCO,Russell 200
+"CLEANSPARK, INC.",CLSK,Russell 200
+GEO GROUP INC,GEO,Russell 200
+"Alight, Inc. / Delaware",ALIT,Russell 200
+California Resources Corp,CRC,Russell 200
+"CNO Financial Group, Inc.",CNO,Russell 200
+"Oscar Health, Inc.",OSCR,Russell 200
+HAEMONETICS CORP,HAE,Russell 200
+CAVCO INDUSTRIES INC.,CVCO,Russell 200
+"CBIZ, Inc.",CBZ,Russell 200
+TEXAS CAPITAL BANCSHARES INC/TX,TCBI,Russell 200
+United Community Banks Inc-GA,UCBI,Russell 200
+TANGER INC.,SKT,Russell 200
+"CarGurus, Inc.",CARG,Russell 200
+"RESIDEO TECHNOLOGIES, INC.",REZI,Russell 200
+"ALKAMI TECHNOLOGY, INC.",ALKT,Russell 200
+"Mueller Water Products, Inc.",MWA,Russell 200
+ASSOCIATED BANC-CORP,ASB,Russell 200
+VERRA MOBILITY Corp,VRRM,Russell 200
+"BLACKLINE, INC.",BL,Russell 200
+ASGN Inc,ASGN,Russell 200
+Scholar Rock Holding Corp,SRRK,Russell 200
+NELNET INC,NNI,Russell 200
+Simply Good Foods Co,SMPL,Russell 200
+International Game Technology PLC,IGT,Russell 200
+TELEPHONE & DATA SYSTEMS INC /DE/,TDS,Russell 200
+"Globalstar, Inc.",GSAT,Russell 200
+John Bean Technologies CORP,JBT,Russell 200
+"Tri Pointe Homes, Inc.",TPH,Russell 200
+Artisan Partners Asset Management Inc.,APAM,Russell 200
+"Eastern Bankshares, Inc.",EBC,Russell 200
+"Option Care Health, Inc.",OPCH,Russell 200
+GRIFFON CORP,GFF,Russell 200
+"COGENT COMMUNICATIONS HOLDINGS, INC.",CCOI,Russell 200
+FULTON FINANCIAL CORP,FULT,Russell 200
+Payoneer Global Inc.,PAYO,Russell 200
+"Apple Hospitality REIT, Inc.",APLE,Russell 200
+PJT Partners Inc.,PJT,Russell 200
+EnerSys,ENS,Russell 200
+GMS Inc.,GMS,Russell 200
+SIGNET JEWELERS LTD,SIG,Russell 200
+Atlantic Union Bankshares Corp,AUB,Russell 200
+"Clear Secure, Inc.",YOU,Russell 200
+KORN FERRY,KFY,Russell 200
+ALLETE INC,ALE,Russell 200
+"PTC THERAPEUTICS, INC.",PTCT,Russell 200
+WD 40 CO,WDFC,Russell 200
+ESCO TECHNOLOGIES INC,ESE,Russell 200
+AGILYSYS INC,AGYS,Russell 200
+ACV Auctions Inc.,ACVA,Russell 200
+"Hannon Armstrong Sustainable Infrastructure Capital, Inc.",HASI,Russell 200
+COPT DEFENSE PROPERTIES,CDP,Russell 200
+CONSOL Energy Inc.,CEIX,Russell 200
+"Kodiak Gas Services, Inc.",KGS,Russell 200
+Sylvamo Corp,SLVM,Russell 200
+"DigitalOcean Holdings, Inc.",DOCN,Russell 200
+"Walker & Dunlop, Inc.",WD,Russell 200
+UNIFIRST CORP,UNF,Russell 200
+"Axonics, Inc.",AXNX,Russell 200
+CATHAY GENERAL BANCORP,CATY,Russell 200
+URANIUM ENERGY CORP,UEC,Russell 200
+"COMMUNITY BANK SYSTEM, INC.",CBU,Russell 200
+FIRST INTERSTATE BANCSYSTEM INC,FIBK,Russell 200
+"Compass, Inc.",COMP,Russell 200
+POWER INTEGRATIONS INC,POWI,Russell 200
+SILICON LABORATORIES INC.,SLAB,Russell 200
+ABM INDUSTRIES INC /DE/,ABM,Russell 200
+"RHYTHM PHARMACEUTICALS, INC.",RYTM,Russell 200
+Atmus Filtration Technologies Inc.,ATMU,Russell 200
+TEREX CORP,TEX,Russell 200
+HECLA MINING CO/DE/,HL,Russell 200
+PBF Energy Inc.,PBF,Russell 200
+"Asana, Inc.",ASAN,Russell 200
+"AvePoint, Inc.",AVPT,Russell 200
+"ENVESTNET, INC.",ENV,Russell 200
+WSFS FINANCIAL CORP,WSFS,Russell 200
+"WARRIOR MET COAL, INC.",HCC,Russell 200
+"Janux Therapeutics, Inc.",JANX,Russell 200
+Cushman & Wakefield plc,CWK,Russell 200
+"INSTRUCTURE HOLDINGS, INC.",INST,Russell 200
+"Academy Sports & Outdoors, Inc.",ASO,Russell 200
+"CymaBay Therapeutics, Inc.",CBAY,Russell 200
+POTLATCHDELTIC CORP,PCH,Russell 200
+Adtalem Global Education Inc.,ATGE,Russell 200
+"Helmerich & Payne, Inc.",HP,Russell 200
+NATIONAL HEALTH INVESTORS INC,NHI,Russell 200
+POWELL INDUSTRIES INC,POWL,Russell 200
+Super Group (SGHC) Ltd,SGHC,Russell 200
+FIRST ADVANTAGE CORP,FA,Russell 200
+"Excelerate Energy, Inc.",EE,Russell 200
+AMERICAN EAGLE OUTFITTERS INC,AEO,Russell 200
+Cadence BanCorp,CADE,Russell 200
+"AGIOS PHARMACEUTICALS, INC.",AGIO,Russell 200
+"Alarm.com Holdings, Inc.",ALRM,Russell 200
+Denali Therapeutics Inc.,DNLI,Russell 200
+FIRST BANCORP /PR/,FBP,Russell 200
+"VERACYTE, INC.",VCYT,Russell 200
+StoneX Group Inc.,SNEX,Russell 200
+SENSIENT TECHNOLOGIES CORP,SXT,Russell 200
+"GREIF, INC",GEFB,Russell 200
+"GREIF, INC",GEF,Russell 200
+NorthWestern Corp,NWE,Russell 200
+Crescent Energy Co,CRGY,Russell 200
+"Lemonade, Inc.",LMND,Russell 200
+J&J SNACK FOODS CORP,JJSF,Russell 200
+Otter Tail Corp,OTTR,Russell 200
+United Parks & Resorts Inc.,PRKS,Russell 200
+Archer Aviation Inc.,ACHR,Russell 200
+"Broadstone Net Lease, Inc.",BNL,Russell 200
+"BLACKSTONE MORTGAGE TRUST, INC.",BXMT,Russell 200
+GENWORTH FINANCIAL INC,GNW,Russell 200
+Douglas Emmett Inc,DEI,Russell 200
+"STEVEN MADDEN, LTD.",SHOO,Russell 200
+CVB FINANCIAL CORP,CVBF,Russell 200
+GULFPORT ENERGY CORP,GPOR,Russell 200
+Valaris Ltd,VAL,Russell 200
+"Rush Street Interactive, Inc.",RSI,Russell 200
+"ImmunityBio, Inc.",IBRX,Russell 200
+FORMFACTOR INC,FORM,Russell 200
+PATTERSON UTI ENERGY INC,PTEN,Russell 200
+SYNAPTICS Inc,SYNA,Russell 200
+OUTFRONT Media Inc.,OUT,Russell 200
+Atkore Inc.,ATKR,Russell 200
+AMERICAN STATES WATER CO,AWR,Russell 200
+"NMI Holdings, Inc.",NMIH,Russell 200
+"Crinetics Pharmaceuticals, Inc.",CRNX,Russell 200
+"SpringWorks Therapeutics, Inc.",SWTX,Russell 200
+"BankUnited, Inc.",BKU,Russell 200
+"Hub Group, Inc.",HUBG,Russell 200
+"BREAD FINANCIAL HOLDINGS, INC.",BFH,Russell 200
+PARK NATIONAL CORP /OH/,PRK,Russell 200
+TRINITY INDUSTRIES INC,TRN,Russell 200
+"INSPERITY, INC.",NSP,Russell 200
+"Alpha Metallurgical Resources, Inc.",AMR,Russell 200
+ACADIA REALTY TRUST,AKR,Russell 200
+PATRICK INDUSTRIES INC,PATK,Russell 200
+"Fluence Energy, Inc.",FLNC,Russell 200
+"Vera Therapeutics, Inc.",VERA,Russell 200
+INNOVATIVE INDUSTRIAL PROPERTIES INC,IIPR,Russell 200
+BANK OF HAWAII CORP,BOH,Russell 200
+SIMMONS FIRST NATIONAL CORP,SFNC,Russell 200
+Hanesbrands Inc.,HBI,Russell 200
+"Kiniksa Pharmaceuticals, Ltd.",KNSA,Russell 200
+"Green Brick Partners, Inc.",GRBK,Russell 200
+"Inari Medical, Inc.",NARI,Russell 200
+Twist Bioscience Corp,TWST,Russell 200
+OSI SYSTEMS INC,OSIS,Russell 200
+Liberty Energy Inc.,LBRT,Russell 200
+TEGNA INC,TGNA,Russell 200
+"Edgewise Therapeutics, Inc.",EWTX,Russell 200
+LCI INDUSTRIES,LCII,Russell 200
+MCGRATH RENTCORP,MGRC,Russell 200
+"ARCH RESOURCES, INC.",ARCH,Russell 200
+TERAWULF INC.,WULF,Russell 200
+Biohaven Ltd.,BHVN,Russell 200
+AVISTA CORP,AVA,Russell 200
+Seadrill Ltd,SDRL,Russell 200
+PROGRESS SOFTWARE CORP /MA,PRGS,Russell 200
+CHESAPEAKE UTILITIES CORP,CPK,Russell 200
+INNOSPEC INC.,IOSP,Russell 200
+CALIFORNIA WATER SERVICE GROUP,CWT,Russell 200
+MASONITE INTERNATIONAL CORP,DOOR,Russell 200
+"AMICUS THERAPEUTICS, INC.",FOLD,Russell 200
+APPIAN CORP,APPN,Russell 200
+"Dream Finders Homes, Inc.",DFH,Russell 200
+WAFD INC,WAFD,Russell 200
+StoneCo Ltd,STNE,Russell 200
+HEARTLAND FINANCIAL USA INC,HTLF,Russell 200
+"Palomar Holdings, Inc.",PLMR,Russell 200
+OCEANEERING INTERNATIONAL INC,OII,Russell 200
+AMBARELLA INC,AMBA,Russell 200
+ST JOE Co,JOE,Russell 200
+"Morphic Holding, Inc.",MORF,Russell 200
+"Kymera Therapeutics, Inc.",KYMR,Russell 200
+CALERES INC,BRP,Russell 200
+Urban Edge Properties,UE,Russell 200
+"Four Corners Property Trust, Inc.",FCPT,Russell 200
+GOODYEAR TIRE & RUBBER CO /OH/,GT,Russell 200
+"Dyne Therapeutics, Inc.",DYN,Russell 200
+PAR TECHNOLOGY CORP,PAR,Russell 200
+"LAUREATE EDUCATION, INC.",LAUR,Russell 200
+AZZ INC,AZZ,Russell 200
+PEABODY ENERGY CORP,BTU,Russell 200
+Warby Parker Inc.,WRBY,Russell 200
+"ENERGIZER HOLDINGS, INC.",ENR,Russell 200
+Vericel Corp,VCEL,Russell 200
+HAWKINS INC,HWKN,Russell 200
+Towne Bank-Portsmouth VA,TOWN,Russell 200
+ACADIA PHARMACEUTICALS INC,ACAD,Russell 200
+"ARROWHEAD PHARMACEUTICALS, INC.",ARWR,Russell 200
+"Enova International, Inc.",ENVA,Russell 200
+"Independent Bank Group, Inc.",IBTX,Russell 200
+"LifeStance Health Group, Inc.",LFST,Russell 200
+FIRST FINANCIAL BANCORP /OH/,FFBC,Russell 200
+PRICESMART INC,PSMT,Russell 200
+"Rapid7, Inc.",RPD,Russell 200
+QUAKER CHEMICAL CORP,KWR,Russell 200
+LivaNova PLC,LIVN,Russell 200
+DIODES INC /DEL/,DIOD,Russell 200
+"Surgery Partners, Inc.",SGRY,Russell 200
+"Bancorp, Inc.",TBBK,Russell 200
+"Century Communities, Inc.",CCS,Russell 200
+LXP Industrial Trust,LXP,Russell 200
+"Coeur Mining, Inc.",CDE,Russell 200
+Six Flags Entertainment Corp,SIX,Russell 200
+PROVIDENT FINANCIAL SERVICES INC,PFS,Russell 200
+MYR GROUP INC.,MYRG,Russell 200
+NEOGEN CORP,NEOG,Russell 200
+"BANC OF CALIFORNIA, INC.",BANC,Russell 200
+"Amneal Pharmaceuticals, Inc.",AMRX,Russell 200
+CENTRAL GARDEN & PET CO,CENT,Russell 200
+CENTRAL GARDEN & PET CO,CENTA,Russell 200
+PERFICIENT INC,PRFT,Russell 200
+Grindr Inc.,GRND,Russell 200
+BUCKLE INC,BKE,Russell 200
+HNI CORP,HNI,Russell 200
+PACIFIC PREMIER BANCORP INC,PPBI,Russell 200
+Flywire Corp,FLYW,Russell 200
+SELECT MEDICAL HOLDINGS CORP,SEM,Russell 200
+FB Financial Corp,FBK,Russell 200
+ARBOR REALTY TRUST INC,ABR,Russell 200
+"NEWMARK GROUP, INC.",NMRK,Russell 200
+"AMKOR TECHNOLOGY, INC.",AMK,Russell 200
+Scorpio Tankers Inc.,STNG,Russell 200
+Pactiv Evergreen Inc.,PTVE,Russell 200
+"Atlanta Braves Holdings, Inc.",BATRK,Russell 200
+"Atlanta Braves Holdings, Inc.",BATRA,Russell 200
+"Keros Therapeutics, Inc.",KROS,Russell 200
+TIDEWATER INC,TDW,Russell 200
+Vista Outdoor Inc.,VSTO,Russell 200
+SiriusPoint Ltd,SPNT,Russell 200
+VISTEON CORP,VC,Russell 200
+KULICKE & SOFFA INDUSTRIES INC,KLIC,Russell 200
+"FOREIGN TRADE BANK OF LATIN AMERICA, INC.",BLX,Russell 200
+"CATALYST PHARMACEUTICALS, INC.",CPRX,Russell 200
+"IOVANCE BIOTHERAPEUTICS, INC.",IOVA,Russell 200
+Cheesecake Factory Inc-The,CAKE,Russell 200
+ENERPAC TOOL GROUP CORP,EPAC,Russell 200
+"Enfusion, Inc.",ENFN,Russell 200
+VICOR CORP,VICR,Russell 200
+"Revolve Group, Inc.",RVLV,Russell 200
+MINERALS TECHNOLOGIES INC,MTX,Russell 200
+"iRhythm Technologies, Inc.",IRTC,Russell 200
+SEACOAST BANKING CORP OF FLORIDA,SBCF,Russell 200
+"Privia Health Group, Inc.",PRVA,Russell 200
+FIRST MERCHANTS CORP,FRME,Russell 200
+BANNER CORP,BANR,Russell 200
+TTM TECHNOLOGIES INC,TTMI,Russell 200
+YELP INC,YELP,Russell 200
+ALBANY INTERNATIONAL CORP /DE/,AIN,Russell 200
+"JOHN WILEY & SONS, INC.",WLY,Russell 200
+ARCBEST CORP /DE/,ARCB,Russell 200
+"ICF International, Inc.",ICFI,Russell 200
+SolarWinds Corp,SWI,Russell 200
+"LGI Homes, Inc.",LGIH,Russell 200
+"Protagonist Therapeutics, Inc",PTGX,Russell 200
+STANDEX INTERNATIONAL CORP/DE/,SXI,Russell 200
+VISHAY INTERTECHNOLOGY INC,VSH,Russell 200
+"ZIFF DAVIS, INC.",ZD,Russell 200
+"PGT Innovations, Inc.",PGTI,Russell 200
+AAR CORP,AIR,Russell 200
+"MAGNITE, INC.",MGNI,Russell 200
+WERNER ENTERPRISES INC,WERN,Russell 200
+"Strategic Education, Inc.",STRA,Russell 200
+PagSeguro Digital Ltd.,PAGS,Russell 200
+"Sunstone Hotel Investors, Inc.",SHO,Russell 200
+GERON CORP,GERN,Russell 200
+"Triumph Financial, Inc.",TFIN,Russell 200
+Cipher Mining Inc.,CIFR,Russell 200
+InvenTrust Properties Corp.,IVT,Russell 200
+BARNES GROUP INC,B,Russell 200
+AXCELIS TECHNOLOGIES INC,ACLS,Russell 200
+"Sovos Brands, Inc.",SOVO,Russell 200
+Fidelis Insurance Holdings Ltd,FIHL,Russell 200
+Tornado Global Hydrovacs Ltd,TGH,Russell 200
+RENASANT CORP,RNST,Russell 200
+ALAMO GROUP INC,ALG,Russell 200
+VECTOR GROUP LTD,VGR,Russell 200
+"CoreCivic, Inc.",CXW,Russell 200
+WESBANCO INC,WSBC,Russell 200
+"Longboard Pharmaceuticals, Inc.",LBPH,Russell 200
+EXTREME NETWORKS INC,EXTR,Russell 200
+GCM Grosvenor Inc.,GCMG,Russell 200
+NBT BANCORP INC,NBTB,Russell 200
+"Alignment Healthcare, Inc.",ALHC,Russell 200
+VSE CORP,VSEC,Russell 200
+LIGAND PHARMACEUTICALS INC,LGND,Russell 200
+TRUSTMARK CORP,TRMK,Russell 200
+Callon Petroleum Co,CPE,Russell 200
+FEDERAL AGRICULTURAL MORTGAGE CORP,AGM,Russell 200
+"AvidXchange Holdings, Inc.",AVDX,Russell 200
+"Hillenbrand, Inc.",HI,Russell 200
+SONIC AUTOMOTIVE INC,SAH,Russell 200
+"Stock Yards Bancorp, Inc.",SYBT,Russell 200
+MATERION Corp,MTRN,Russell 200
+VIAVI SOLUTIONS INC.,VIAV,Russell 200
+LEMAITRE VASCULAR INC,LMAT,Russell 200
+Vizio Holding Corp.,VZIO,Russell 200
+Paysafe Ltd,PSFE,Russell 200
+Perella Weinberg Partners,PWP,Russell 200
+"Apogee Therapeutics, Inc.",APGE,Russell 200
+"IDEAYA Biosciences, Inc.",IDYA,Russell 200
+"DigitalBridge Group, Inc.",DBRG,Russell 200
+RETAIL OPPORTUNITY INVESTMENTS CORP,ROIC,Russell 200
+CONMED Corp,CNMD,Russell 200
+"Deciphera Pharmaceuticals, Inc.",DCPH,Russell 200
+"Worthington Steel, Inc.",WS,Russell 200
+"EVERTEC, Inc.",EVTC,Russell 200
+ENTERPRISE FINANCIAL SERVICES CORP,EFSC,Russell 200
+JETBLUE AIRWAYS CORP,JBLU,Russell 200
+UFP TECHNOLOGIES INC,UFPT,Russell 200
+"TransMedics Group, Inc.",TMDX,Russell 200
+CENTURY ALUMINUM CO,CENX,Russell 200
+"UPWORK, INC",UPWK,Russell 200
+EverCommerce Inc.,EVCM,Russell 200
+NEOGENOMICS INC,NEO,Russell 200
+"Sprinklr, Inc.",CXM,Russell 200
+Wave Life Sciences Ltd.,WVE,Russell 200
+NEXTNAV INC.,NN,Russell 200
+"TRUPANION, INC.",TRUP,Russell 200
+"Skyward Specialty Insurance Group, Inc.",SKWD,Russell 200
+Equity Commonwealth,EQC,Russell 200
+"H&E Equipment Services, Inc.",HEES,Russell 200
+Addus HomeCare Corp,ADUS,Russell 200
+Huron Consulting Group Inc.,HURN,Russell 200
+"CALIX, INC",CALX,Russell 200
+"PureCycle Technologies, Inc.",PCT,Russell 200
+KENNAMETAL INC,KMT,Russell 200
+"OPENLANE, Inc.",KAR,Russell 200
+"GIBRALTAR INDUSTRIES, INC.",ROCK,Russell 200
+"MasterBrand, Inc.",MBC,Russell 200
+"OMNICELL, INC.",OMCL,Russell 200
+"Mirum Pharmaceuticals, Inc.",MIRM,Russell 200
+EPLUS INC,PLUS,Russell 200
+Rover Metals Corp,ROVR,Russell 200
+GREENBRIER COMPANIES INC,GBX,Russell 200
+Beam Therapeutics Inc.,BEAM,Russell 200
+"Amphastar Pharmaceuticals, Inc.",AMPH,Russell 200
+ONESPAWORLD HOLDINGS Ltd,OSW,Russell 200
+STEWART INFORMATION SERVICES CORP,STC,Russell 200
+Stagwell Inc,STGW,Russell 200
+"Akero Therapeutics, Inc.",AKRO,Russell 200
+"SEMrush Holdings, Inc.",SEMR,Russell 200
+OFG BANCORP,OFG,Russell 200
+"Live Oak Bancshares, Inc.",LOB,Russell 200
+"WORTHINGTON ENTERPRISES, INC.",WOR,Russell 200
+"EXP World Holdings, Inc.",EXPI,Russell 200
+"Vita Coco Company, Inc.",COCO,Russell 200
+Supernus Pharmaceuticals Inc,SUPN,Russell 200
+"Camping World Holdings, Inc.",CWH,Russell 200
+Hilltop Holdings Inc.,HTH,Russell 200
+ARGAN INC,AGX,Russell 200
+"LiveRamp Holdings, Inc.",RAMP,Russell 200
+"PATTERSON COMPANIES, INC.",PDCO,Russell 200
+"PATHWARD FINANCIAL, INC.",CASH,Russell 200
+"FOOT LOCKER, INC.",FL,Russell 200
+VERINT SYSTEMS INC,VRNT,Russell 200
+CIMPRESS plc,CMPR,Russell 200
+DiamondRock Hospitality Co,DRH,Russell 200
+Jamf Holding Corp.,JAMF,Russell 200
+Golden Ocean Group Ltd,GOGL,Russell 200
+Brookfield Business Corp,BBUC,Russell 200
+FIRST BANCORP /NC/,FBNC,Russell 200
+"PROG Holdings, Inc.",PRG,Russell 200
+ROGERS CORP,ROG,Russell 200
+NATIONAL HEALTHCARE CORP,NHC,Russell 200
+PC CONNECTION INC,CNXN,Russell 200
+"Tarsus Pharmaceuticals, Inc.",TARS,Russell 200
+CITY HOLDING CO,CHCO,Russell 200
+Apollo Medical Holdings Inc,AMEH,Russell 200
+"Harmony Biosciences Holdings, Inc.",HRMY,Russell 200
+WEIS MARKETS INC,WMK,Russell 200
+EVgo Inc.,EVGO,Russell 200
+"V2X, Inc.",VVX,Russell 200
+LIONS GATE ENTERTAINMENT CORP /CN/,LGFB,Russell 200
+LIONS GATE ENTERTAINMENT CORP /CN/,LGFA,Russell 200
+"Chefs' Warehouse, Inc.",CHEF,Russell 200
+"N-able, Inc.",NABL,Russell 200
+FIRST COMMONWEALTH FINANCIAL CORP /PA/,FCF,Russell 200
+"PagerDuty, Inc.",PD,Russell 200
+"RECURSION PHARMACEUTICALS, INC.",RXRX,Russell 200
+LAKELAND FINANCIAL CORP,LKFN,Russell 200
+"UPBOUND GROUP, INC.",UPBD,Russell 200
+"Marqeta, Inc.",MQ,Russell 200
+Sitio Royalties Corp.,STR,Russell 200
+"HighPeak Energy, Inc.",HPK,Russell 200
+Safehold Inc.,SAFE,Russell 200
+EDGEWELL PERSONAL CARE Co,EPC,Russell 200
+"Perimeter Solutions, SA",PRM,Russell 200
+LA-Z-BOY INC,LZB,Russell 200
+MANNKIND CORP,MNKD,Russell 200
+"Disc Medicine, Inc.",IRON,Russell 200
+"International Seaways, Inc.",INSW,Russell 200
+"Northwest Bancshares, Inc.",NWBI,Russell 200
+Tronox Holdings plc,TROX,Russell 200
+TALOS ENERGY INC.,TALO,Russell 200
+CVR ENERGY INC,CVI,Russell 200
+"O-I Glass, Inc. /DE/",OI,Russell 200
+WOLVERINE WORLD WIDE INC /DE/,WWW,Russell 200
+"Sprout Social, Inc.",SPT,Russell 200
+"Distribution Solutions Group, Inc.",DSGR,Russell 200
+"Columbia Financial, Inc.",CLBK,Russell 200
+NextDecade Corp.,NEXT,Russell 200
+"Empire State Realty Trust, Inc.",ESRT,Russell 200
+"APOGEE ENTERPRISES, INC.",APOG,Russell 200
+"National Western Life Group, Inc.",NWLI,Russell 200
+Patria Investments Ltd,PAX,Russell 200
+Merchants Bancorp,MBIN,Russell 200
+National Bank Holdings Corp,NBHC,Russell 200
+Madison Square Garden Entertainment Corp.,MSGE,Russell 200
+PERDOCEO EDUCATION Corp,PRDO,Russell 200
+DANA INC,DAN,Russell 200
+"Krispy Kreme, Inc.",DNUT,Russell 200
+Compass Diversified Holdings,CODI,Russell 200
+Bank of N.T. Butterfield & Son Ltd,NTB,Russell 200
+Xencor Inc,XNCR,Russell 200
+Costamare Inc.,CMRE,Russell 200
+INTEGRAL AD SCIENCE HOLDING CORP.,IAS,Russell 200
+SJW GROUP,SJW,Russell 200
+LendingClub Corp,LC,Russell 200
+GETTY REALTY CORP /MD/,GTY,Russell 200
+"HELIOS TECHNOLOGIES, INC.",HLIO,Russell 200
+Pebblebrook Hotel Trust,PEB,Russell 200
+BENCHMARK ELECTRONICS INC,BHE,Russell 200
+"Select Water Solutions, Inc.",WTTR,Russell 200
+"VIRTUS INVESTMENT PARTNERS, INC.",VRTS,Russell 200
+Sonos Inc,SONO,Russell 200
+"MILLERKNOLL, INC.",MLKN,Russell 200
+"Celldex Therapeutics, Inc.",CLDX,Russell 200
+"MeridianLink, Inc.",MLNK,Russell 200
+"Customers Bancorp, Inc.",CUBI,Russell 200
+"Donnelley Financial Solutions, Inc.",DFIN,Russell 200
+LTC PROPERTIES INC,LTC,Russell 200
+Solaris Oilfield Infrastructure Inc,SOI,Russell 200
+CONSTELLIUM SE,CSTM,Russell 200
+Knowles Corp,KN,Russell 200
+"RxSight, Inc.",RXST,Russell 200
+"TreeHouse Foods, Inc.",THS,Russell 200
+"ARVINAS, INC.",ARVN,Russell 200
+"BrightView Holdings, Inc.",BV,Russell 200
+NORTHWEST NATURAL GAS CO,NWN,Russell 200
+NICOLET BANKSHARES INC,NIC,Russell 200
+"American Assets Trust, Inc.",AAT,Russell 200
+HORACE MANN EDUCATORS CORP /DE/,HMN,Russell 200
+"Ultra Clean Holdings, Inc.",UCTT,Russell 200
+SANDY SPRING BANCORP INC,SASR,Russell 200
+DYNAVAX TECHNOLOGIES CORP,DVAX,Russell 200
+Bowlero Corp.,BOWL,Russell 200
+Ingevity Corp,NGVT,Russell 200
+STEPAN CO,SCL,Russell 200
+Kosmos Energy Ltd.,KOS,Russell 200
+WORLD KINECT CORP,WKC,Russell 200
+"AtriCure, Inc.",ATRC,Russell 200
+"WisdomTree, Inc.",WT,Russell 200
+Enovix Corp,ENVX,Russell 200
+"Stellar Bancorp, Inc.",STEL,Russell 200
+WINNEBAGO INDUSTRIES INC,WGO,Russell 200
+Adient plc,ADNT,Russell 200
+"Global Net Lease, Inc.",GNL,Russell 200
+"Veritex Holdings, Inc.",VBTX,Russell 200
+HELEN OF TROY LTD,HELE,Russell 200
+Sterling Check Corp.,STER,Russell 200
+PAPA JOHNS INTERNATIONAL INC,PZZA,Russell 200
+CTS CORP,CTS,Russell 200
+"Xenia Hotels & Resorts, Inc.",XHR,Russell 200
+FRESH DEL MONTE PRODUCE INC,FDP,Russell 200
+S&T BANCORP INC,STBA,Russell 200
+HOPE BANCORP INC,HOPE,Russell 200
+"Duckhorn Portfolio, Inc.",NAPA,Russell 200
+BIOCRYST PHARMACEUTICALS INC,BCRX,Russell 200
+NAVIENT CORP,NAVI,Russell 200
+"Veris Residential, Inc.",VRE,Russell 200
+TENNANT CO,TNC,Russell 200
+RLJ Lodging Trust,RLJ,Russell 200
+TARO PHARMACEUTICAL INDUSTRIES LTD,TARO,Russell 200
+NETSCOUT SYSTEMS INC,NTCT,Russell 200
+TRICO BANCSHARES /,TCBK,Russell 200
+"REV Group, Inc.",REVG,Russell 200
+HELIX ENERGY SOLUTIONS GROUP INC,HLX,Russell 200
+CSG SYSTEMS INTERNATIONAL INC,CSGS,Russell 200
+"Marcus & Millichap, Inc.",MMI,Russell 200
+MONARCH CASINO & RESORT INC,MCRI,Russell 200
+1ST SOURCE CORP,SRCE,Russell 200
+"MAXLINEAR, INC",MXL,Russell 200
+DNOW Inc.,DNOW,Russell 200
+"Andersons, Inc.",ANDE,Russell 200
+VEECO INSTRUMENTS INC,VECO,Russell 200
+Infinera Corp,INFN,Russell 200
+"UMH PROPERTIES, INC.",UMH,Russell 200
+"Arcus Biosciences, Inc.",RCUS,Russell 200
+"Xometry, Inc.",XMTR,Russell 200
+"Neumora Therapeutics, Inc.",NMRA,Russell 200
+"Viridian Therapeutics, Inc.\DE",VRDN,Russell 200
+SAPIENS INTERNATIONAL CORP N V,SPNS,Russell 200
+"Savers Value Village, Inc.",SVV,Russell 200
+"DHT Holdings, Inc.",DHT,Russell 200
+EXPRO GROUP HOLDINGS N.V.,XPRO,Russell 200
+"Kennedy-Wilson Holdings, Inc.",KW,Russell 200
+Opendoor Technologies Inc.,OPEN,Russell 200
+PHOTRONICS INC,PLAB,Russell 200
+FIRST BUSEY CORP /NV/,BUSE,Russell 200
+"P10, Inc.",PX,Russell 200
+QCR HOLDINGS INC,QCRH,Russell 200
+Nextracker Inc.,NXT,Russell 200
+InMode Ltd.,INMD,Russell 200
+INTERFACE INC,TILE,Russell 200
+WESTAMERICA BANCORPORATION,WABC,Russell 200
+"Travere Therapeutics, Inc.",TVTX,Russell 200
+ZUORA INC,ZUO,Russell 200
+"Vital Farms, Inc.",VITL,Russell 200
+"Schrodinger, Inc.",SDGR,Russell 200
+Ladder Capital Corp,LADR,Russell 200
+"Aris Water Solutions, Inc.",ARIS,Russell 200
+HARMONIC INC,HLIT,Russell 200
+STEELCASE INC,SCS,Russell 200
+MYRIAD GENETICS INC,MYGN,Russell 200
+Allegiant Travel CO,ALGT,Russell 200
+REPUBLIC BANCORP INC /KY/,RBCAA,Russell 200
+Sabre Corp,SABR,Russell 200
+Topgolf Callaway Brands Corp.,MODG,Russell 200
+"Matterport, Inc./DE",MTTR,Russell 200
+U S PHYSICAL THERAPY INC /NV,USPH,Russell 200
+"NAPCO SECURITY TECHNOLOGIES, INC",NSSC,Russell 200
+"Dave & Buster's Entertainment, Inc.",PLAY,Russell 200
+Elme Communities,ELME,Russell 200
+"Cadre Holdings, Inc.",CDRE,Russell 200
+TRIUMPH GROUP INC,TGI,Russell 200
+SFL Corp Ltd.,SFL,Russell 200
+"Thoughtworks Holding, Inc.",TWKS,Russell 200
+"Air Transport Services Group, Inc.",ATSG,Russell 200
+"EVERBRIDGE, INC.",EVBG,Russell 200
+UNITED NATURAL FOODS INC,UNFI,Russell 200
+"DIAMOND OFFSHORE DRILLING, INC.",DO,Russell 200
+"OCULAR THERAPEUTIX, INC",OCUL,Russell 200
+Arcutis Biotherapeutics Inc,ARQT,Russell 200
+"Amplitude, Inc.",AMPL,Russell 200
+Forestar Group Inc.,FOR,Russell 200
+Uniti Group Inc.,UNIT,Russell 200
+"Ameresco, Inc.",AMRC,Russell 200
+Syndax Pharmaceuticals Inc,SNDX,Russell 200
+"CompoSecure, Inc.",CMPO,Russell 200
+"Nurix Therapeutics, Inc.",NRIX,Russell 200
+TUTOR PERINI CORP,TPC,Russell 200
+"GRID DYNAMICS HOLDINGS, INC.",GDYN,Russell 200
+PITNEY BOWES INC /DE/,PBI,Russell 200
+"Alexander & Baldwin, Inc.",ALEX,Russell 200
+Dole plc,DOLE,Russell 200
+UNIVERSAL CORP /VA/,UVV,Russell 200
+WINMARK CORP,WINA,Russell 200
+LINDSAY CORP,LNN,Russell 200
+"Dime Community Bancshares, Inc. /NY/",DCOM,Russell 200
+"Fastly, Inc.",FSLY,Russell 200
+"MIMEDX GROUP, INC.",MDXG,Russell 200
+"LEGALZOOM.COM, INC.",LZ,Russell 200
+"Intellia Therapeutics, Inc.",NTLA,Russell 200
+"Utz Brands, Inc.",UTZ,Russell 200
+MARTEN TRANSPORT LTD,MRTN,Russell 200
+"BYLINE BANCORP, INC.",BY,Russell 200
+IMAX CORP,IMAX,Russell 200
+Quanex Building Products CORP,NX,Russell 200
+UNIVERSAL TECHNICAL INSTITUTE INC,UTI,Russell 200
+Adeia Inc.,ADEA,Russell 200
+JBG SMITH Properties,JBGS,Russell 200
+RPC INC,RES,Russell 200
+ALPHA & OMEGA SEMICONDUCTOR Ltd,AOSL,Russell 200
+"AGILITI, INC. \DE",AGTI,Russell 200
+G III APPAREL GROUP LTD /DE/,GIII,Russell 200
+"ARS Pharmaceuticals, Inc.",SPRY,Russell 200
+"Alphatec Holdings, Inc.",ATEC,Russell 200
+"Day One Biopharmaceuticals, Inc.",DAWN,Russell 200
+TEEKAY TANKERS LTD.,TNK,Russell 200
+Sphere Entertainment Co.,SPHR,Russell 200
+"NV5 Global, Inc.",NVEE,Russell 200
+"GERMAN AMERICAN BANCORP, INC.",GABC,Russell 200
+INGLES MARKETS INC,IMKTA,Russell 200
+Liberty Latin America Ltd.,LILA,Russell 200
+Liberty Latin America Ltd.,LILAK,Russell 200
+IDT CORP,IDT,Russell 200
+"Custom Truck One Source, Inc.",CTOS,Russell 200
+A10 Networks Inc,ATEN,Russell 200
+"Frontier Group Holdings, Inc.",ULCC,Russell 200
+WILLIS LEASE FINANCE CORP,WLFC,Russell 200
+"HARROW, INC.",HROW,Russell 200
+NOVAVAX INC,NVAX,Russell 200
+AMERICAN WOODMARK CORP,AMWD,Russell 200
+ENERGY FUELS INC,UUUU,Russell 200
+"Coursera, Inc.",COUR,Russell 200
+"CareDx, Inc.",CDNA,Russell 200
+"Employers Holdings, Inc.",EIG,Russell 200
+ProFrac Holding Corp.,ACDC,Russell 200
+Blue Bird Corp,BLBD,Russell 200
+"Sally Beauty Holdings, Inc.",SBH,Russell 200
+KAISER ALUMINUM CORP,KALU,Russell 200
+"Evolent Health, Inc.",EVH,Russell 200
+INNODATA INC,INOD,Russell 200
+AdaptHealth Corp.,AHCO,Russell 200
+BERKSHIRE HILLS BANCORP INC,BHLB,Russell 200
+"Cannae Holdings, Inc.",CNNE,Russell 200
+KAMAN Corp,KAMN,Russell 200
+"ARDELYX, INC.",ARDX,Russell 200
+GENTHERM Inc,THRM,Russell 200
+SAFETY INSURANCE GROUP INC,SAFT,Russell 200
+CENTRUS ENERGY CORP,LEU,Russell 200
+FOX FACTORY HOLDING CORP,FOXF,Russell 200
+NETSTREIT Corp.,NTST,Russell 200
+Viant Technology Inc.,DSP,Russell 200
+"Arlo Technologies, Inc.",ARLO,Russell 200
+"Progyny, Inc.",PGNY,Russell 200
+"Eve Holding, Inc.",EVEX,Russell 200
+Aurinia Pharmaceuticals Inc.,AUPH,Russell 200
+"CRA INTERNATIONAL, INC.",CRAI,Russell 200
+OppFi Inc.,OPFI,Russell 200
+"Pediatrix Medical Group, Inc.",MD,Russell 200
+OXFORD INDUSTRIES INC,OXM,Russell 200
+"Easterly Government Properties, Inc.",DEA,Russell 200
+"Udemy, Inc.",UDMY,Russell 200
+Cars.com Inc.,CARS,Russell 200
+BEL FUSE INC /NJ,BELFB,Russell 200
+"Apollo Commercial Real Estate Finance, Inc.",ARI,Russell 200
+"QUINSTREET, INC",QNST,Russell 200
+PEOPLES BANCORP INC,PEBO,Russell 200
+"SCANSOURCE, INC.",SCSC,Russell 200
+"UNIVERSAL LOGISTICS HOLDINGS, INC.",ULH,Russell 200
+STAAR SURGICAL CO,STAA,Russell 200
+"XPEL, Inc.",XPEL,Russell 200
+"ARTIVION, INC.",AORT,Russell 200
+"U.S. SILICA HOLDINGS, INC.",SLCA,Russell 200
+Ready Capital Corp,RC,Russell 200
+"HCI Group, Inc.",HCI,Russell 200
+COHU INC,COHU,Russell 200
+TWO HARBORS INVESTMENT CORP.,TWO,Russell 200
+"Phreesia, Inc.",PHR,Russell 200
+APARTMENT INVESTMENT & MANAGEMENT CO,AIV,Russell 200
+Flex LNG Ltd.,FLNG,Russell 200
+"ROCKET PHARMACEUTICALS, INC.",RCKT,Russell 200
+Planet Labs PBC,PL,Russell 200
+Redfin Corp,RDFN,Russell 200
+"Cricut, Inc.",CRCT,Russell 200
+OCEANFIRST FINANCIAL CORP,OCFC,Russell 200
+"First Watch Restaurant Group, Inc.",FWRG,Russell 200
+DIGI INTERNATIONAL INC,DGII,Russell 200
+CHIMERA INVESTMENT CORP,CIM,Russell 200
+"Innoviva, Inc.",INVA,Russell 200
+MRC GLOBAL INC.,MRC,Russell 200
+Olo Inc.,OLO,Russell 200
+KRONOS WORLDWIDE INC,KRO,Russell 200
+DXP ENTERPRISES INC,DXPE,Russell 200
+ANI PHARMACEUTICALS INC,ANIP,Russell 200
+"MODEL N, INC.",MODN,Russell 200
+"Sinclair, Inc.",SBGI,Russell 200
+PDF SOLUTIONS INC,PDFS,Russell 200
+"Delek US Holdings, Inc.",DK,Russell 200
+"KURA SUSHI USA, INC.",KRUS,Russell 200
+"PROS Holdings, Inc.",PRO,Russell 200
+"NexPoint Residential Trust, Inc.",NXRT,Russell 200
+BIOLIFE SOLUTIONS INC,BLFS,Russell 200
+NOVAGOLD RESOURCES INC,NG,Russell 200
+PennyMac Mortgage Investment Trust,PMT,Russell 200
+CENTERSPACE,CSR,Russell 200
+Everi Holdings Inc.,EVRI,Russell 200
+"Vital Energy, Inc.",VTLE,Russell 200
+BrightSphere Investment Group Inc.,BSIG,Russell 200
+FIRST BANCSHARES INC /MS/,FBMS,Russell 200
+"Pulse Biosciences, Inc.",PLSE,Russell 200
+"CommScope Holding Company, Inc.",COMM,Russell 200
+Allscripts Healthcare Solutions Inc,MDRX,Russell 200
+KFORCE INC,KFRC,Russell 200
+ENCORE CAPITAL GROUP INC,ECPG,Russell 200
+CECO ENVIRONMENTAL CORP,CECO,Russell 200
+"Piedmont Office Realty Trust, Inc.",PDM,Russell 200
+COLUMBUS MCKINNON CORP,CMCO,Russell 200
+Embecta Corp.,EMBC,Russell 200
+"CRACKER BARREL OLD COUNTRY STORE, INC",CBRL,Russell 200
+"Origin Bancorp, Inc.",OBK,Russell 200
+"Enliven Therapeutics, Inc.",ELVN,Russell 200
+"Turning Point Brands, Inc.",TPB,Russell 200
+"Vimeo, Inc.",VMEO,Russell 200
+BARRETT BUSINESS SERVICES INC,BBSI,Russell 200
+"Limbach Holdings, Inc.",LMB,Russell 200
+ALEXANDERS INC,ALX,Russell 200
+BROOKLINE BANCORP INC,BRKL,Russell 200
+Silk Road Medical Inc,SILK,Russell 200
+"MFA FINANCIAL, INC.",MFA,Russell 200
+Brookdale Senior Living Inc.,BKD,Russell 200
+"ICHOR HOLDINGS, LTD.",ICHR,Russell 200
+Advantage Solutions Inc.,ADV,Russell 200
+ASPEN AEROGELS INC,ASPN,Russell 200
+Ellington Financial Inc.,EFC,Russell 200
+Amalgamated Financial Corp.,AMAL,Russell 200
+TOMPKINS FINANCIAL CORP,TMP,Russell 200
+"Vir Biotechnology, Inc.",VIR,Russell 200
+GORMAN RUPP CO,GRC,Russell 200
+MIDDLESEX WATER CO,MSEX,Russell 200
+"LiveWire Group, Inc.",LVWR,Russell 200
+"Shutterstock, Inc.",SSTK,Russell 200
+"Bloomin' Brands, Inc.",BLMN,Russell 200
+Xerox Holdings Corp,XRX,Russell 200
+"Yext, Inc.",YEXT,Russell 200
+"Thermon Group Holdings, Inc.",THR,Russell 200
+SP Plus Corp,SP,Russell 200
+HOVNANIAN ENTERPRISES INC,HOV,Russell 200
+"OPKO HEALTH, INC.",OPK,Russell 200
+OWENS & MINOR INC/VA/,OMI,Russell 200
+TRIMAS CORP,TRS,Russell 200
+Bank First Corp,BFC,Russell 200
+Ivanhoe Electric Inc.,IE,Russell 200
+HIBBETT INC,HIBB,Russell 200
+COMMUNITY TRUST BANCORP INC /KY/,CTBI,Russell 200
+BlueLinx Holdings Inc.,BXC,Russell 200
+Amerant Bancorp Inc.,AMTB,Russell 200
+"Armour Residential REIT, Inc.",ARR,Russell 200
+"Aveanna Healthcare Holdings, Inc.",AVAH,Russell 200
+AMERISAFE INC,AMSF,Russell 200
+SOUTHSIDE BANCSHARES INC,SBSI,Russell 200
+GLOBAL INDUSTRIAL Co,GIC,Russell 200
+Dril-Quip Inc,DRQ,Russell 200
+Burke & Herbert Financial Services Corp.,BHRB,Russell 200
+"SunCoke Energy, Inc.",SXC,Russell 200
+"Franklin BSP Realty Trust, Inc.",FBRT,Russell 200
+COASTAL FINANCIAL CORP,CCB,Russell 200
+"Paramount Group, Inc.",PGRE,Russell 200
+"Janus International Group, Inc.",JBI,Russell 200
+"ConnectOne Bancorp, Inc.",CNOB,Russell 200
+BEAZER HOMES USA INC,BZH,Russell 200
+DELUXE CORP,DLX,Russell 200
+Bristow Group Inc.,VTOL,Russell 200
+"Pennant Group, Inc.",PNTG,Russell 200
+Orion S.A.,OEC,Russell 200
+AMN HEALTHCARE SERVICES INC,AMN,Russell 200
+MGP INGREDIENTS INC,MGPI,Russell 200
+"Weave Communications, Inc.",WEAV,Russell 200
+Proto Labs Inc,PRLB,Russell 200
+SANFILIPPO JOHN B & SON INC,JBSS,Russell 200
+"Natural Grocers by Vitamin Cottage, Inc.",NGVC,Russell 200
+"FIRST MID BANCSHARES, INC.",FMBH,Russell 200
+DORIAN LPG LTD.,LPG,Russell 200
+DUCOMMUN INC /DE/,DCO,Russell 200
+PREMIER FINANCIAL CORP,PFC,Russell 200
+DYNEX CAPITAL INC,DX,Russell 200
+"Cogent Biosciences, Inc.",COGT,Russell 200
+"NERDWALLET, INC.",NRDS,Russell 200
+"Accel Entertainment, Inc.",ACEL,Russell 200
+HEALTHSTREAM INC,HSTM,Russell 200
+"Emerald Holding, Inc.",EEX,Russell 200
+FORWARD AIR CORP,FWRD,Russell 200
+"HYSTER-YALE MATERIALS HANDLING, INC.",HY,Russell 200
+CBL & ASSOCIATES PROPERTIES INC,CBL,Russell 200
+"SAUL CENTERS, INC.",BFS,Russell 200
+"E2open Parent Holdings, Inc.",ETWO,Russell 200
+HireRight Holdings Corp,HRT,Russell 200
+BRANDYWINE REALTY TRUST,BDN,Russell 200
+"COLLEGIUM PHARMACEUTICAL, INC",COLL,Russell 200
+HEARTLAND EXPRESS INC,HTLD,Russell 200
+TRANSCAT INC,TRNS,Russell 200
+"Energy Recovery, Inc.",ERII,Russell 200
+"Nextdoor Holdings, Inc.",KIND,Russell 200
+UNITIL CORP,UTL,Russell 200
+VIAD CORP,VVI,Russell 200
+REDWOOD TRUST INC,RWT,Russell 200
+"SILVERBOW RESOURCES, INC.",SBOW,Russell 200
+Capitol Federal Financial Inc,CFFN,Russell 200
+HAWAIIAN HOLDINGS INC,HA,Russell 200
+CALERES INC,CAL,Russell 200
+UNIVEST FINANCIAL Corp,UVSP,Russell 200
+Nuvation Bio Inc.,NUVB,Russell 200
+Ecovyst Inc.,ECVT,Russell 200
+MATTHEWS INTERNATIONAL CORP,MATW,Russell 200
+PHIBRO ANIMAL HEALTH CORP,PAHC,Russell 200
+Gogo Inc.,GOGO,Russell 200
+Core Laboratories NV,CLB,Russell 200
+Northeast Bank,NBN,Russell 200
+"PetIQ, Inc.",PETQ,Russell 200
+SunOpta Inc.,STKL,Russell 200
+TechTarget Inc,TTGT,Russell 200
+"GOLDEN ENTERTAINMENT, INC.",GDEN,Russell 200
+HEIDRICK & STRUGGLES INTERNATIONAL INC,HSII,Russell 200
+"PAR PACIFIC HOLDINGS, INC.",PARR,Russell 200
+"Poseida Therapeutics, Inc.",PSTX,Russell 200
+JACK IN THE BOX INC,JACK,Russell 200
+"Array Technologies, Inc.",ARRY,Russell 200
+HEALTHCARE SERVICES GROUP INC,HCSG,Russell 200
+"JELD-WEN Holding, Inc.",JELD,Russell 200
+DAKTRONICS INC /SD/,DAKT,Russell 200
+CASTLE BIOSCIENCES INC,CSTL,Russell 200
+Liquidia Corp,LQDA,Russell 200
+Atlanticus Holdings Corp,ATLC,Russell 200
+Adaptive Biotechnologies Corp,ADPT,Russell 200
+Zymeworks Inc.,ZYME,Russell 200
+"Mission Produce, Inc.",AVO,Russell 200
+TELLURIAN INC. /DE/,TELL,Russell 200
+"Replimune Group, Inc.",REPL,Russell 200
+HERITAGE FINANCIAL CORP /WA/,HFWA,Russell 200
+Bumble Inc.,BMBL,Russell 200
+"HACKETT GROUP, INC.",HCKT,Russell 200
+GUESS INC,GES,Russell 200
+SHOE CARNIVAL INC,SCVL,Russell 200
+Redwire Corp,RDW,Russell 200
+"ACM Research, Inc.",ACMR,Russell 200
+PROASSURANCE CORP,PRA,Russell 200
+TimkenSteel Corporation,TMST,Russell 200
+"MetroCity Bankshares, Inc.",MCBS,Russell 200
+"Claros Mortgage Trust, Inc.",CMTG,Russell 200
+EAGLE BANCORP INC,EGBN,Russell 200
+LAKELAND BANCORP INC,LBAI,Russell 200
+"National Vision Holdings, Inc.",EYE,Russell 200
+Borr Drilling Ltd,BORR,Russell 200
+"Armada Hoffler Properties, Inc.",AHH,Russell 200
+"FIGS, Inc.",FIGS,Russell 200
+"PLIANT THERAPEUTICS, INC.",PLRX,Russell 200
+"AVANOS MEDICAL, INC.",AVNS,Russell 200
+FTAI Infrastructure Inc.,FIP,Russell 200
+ASTEC INDUSTRIES INC,ASTE,Russell 200
+"Couchbase, Inc.",BASE,Russell 200
+"Pacira BioSciences, Inc.",PCRX,Russell 200
+CENTRAL PACIFIC FINANCIAL CORP,CPF,Russell 200
+"MALIBU BOATS, INC.",MBUU,Russell 200
+"CROSSFIRST BANKSHARES, INC.",CFB,Russell 200
+Eagle Bulk Shipping Inc.,EGLE,Russell 200
+"Paragon 28, Inc.",FNA,Russell 200
+Great Lakes Dredge & Dock CORP,GLDD,Russell 200
+ProPetro Holding Corp.,PUMP,Russell 200
+AdvanSix Inc.,ASIX,Russell 200
+"Plymouth Industrial REIT, Inc.",PLYM,Russell 200
+"Cytek Biosciences, Inc.",CTKB,Russell 200
+OLD SECOND BANCORP INC,OSBC,Russell 200
+"89bio, Inc.",ETNB,Russell 200
+WABASH NATIONAL Corp,WNC,Russell 200
+"Business First Bancshares, Inc.",BFST,Russell 200
+BJs RESTAURANTS INC,BJRI,Russell 200
+FIRST COMMUNITY BANKSHARES INC /VA/,FCBC,Russell 200
+"Kura Oncology, Inc.",KURA,Russell 200
+"Granite Ridge Resources, Inc.",GRNT,Russell 200
+MILLER INDUSTRIES INC /TN/,MLR,Russell 200
+TIPTREE INC.,TIPT,Russell 200
+HERBALIFE LTD.,HLF,Russell 200
+Snap One Holdings Corp.,SNPO,Russell 200
+"Erasca, Inc.",ERAS,Russell 200
+"ZIPRECRUITER, INC.",ZIP,Russell 200
+"BrightSpire Capital, Inc.",BRSP,Russell 200
+MERCANTILE BANK CORP,MBWM,Russell 200
+ARKO Corp.,ARKO,Russell 200
+ATRION CORP,ATRI,Russell 200
+SITE Centers Corp.,SITC,Russell 200
+"Evolus, Inc.",EOLS,Russell 200
+"MONRO, INC.",MNRO,Russell 200
+"indie Semiconductor, Inc.",INDI,Russell 200
+DAILY JOURNAL CORP,DJCO,Russell 200
+UNITED FIRE GROUP INC,UFCS,Russell 200
+PRA GROUP INC,PRAA,Russell 200
+INDEPENDENT BANK CORP /MI/,IBCP,Russell 200
+"Corsair Gaming, Inc.",CRSR,Russell 200
+HORIZON BANCORP INC /IN/,HBNC,Russell 200
+KKR Real Estate Finance Trust Inc.,KREF,Russell 200
+AMERICAN AXLE & MANUFACTURING HOLDINGS INC,AXL,Russell 200
+"Avid Bioservices, Inc.",CDMO,Russell 200
+ODP Corp,ODP,Russell 200
+Ryerson Holding Corp,RYI,Russell 200
+Target Hospitality Corp.,TH,Russell 200
+"Vitesse Energy, Inc.",VTS,Russell 200
+"i3 Verticals, Inc.",IIIV,Russell 200
+HAYNES INTERNATIONAL INC,HAYN,Russell 200
+Portillo's Inc.,PTLO,Russell 200
+LIQUIDITY SERVICES INC,LQDT,Russell 200
+"Shoals Technologies Group, Inc.",SHLS,Russell 200
+ETHAN ALLEN INTERIORS INC,ETD,Russell 200
+"Sun Country Airlines Holdings, Inc.",SNCY,Russell 200
+HANMI FINANCIAL CORP,HAFC,Russell 200
+"PubMatic, Inc.",PUBM,Russell 200
+PERPETUA RESOURCES CORP.,PPTA,Russell 200
+"Tyra Biosciences, Inc.",TYRA,Russell 200
+"Gannett Co., Inc.",GCI,Russell 200
+"Xponential Fitness, Inc.",XPOF,Russell 200
+ORRSTOWN FINANCIAL SERVICES INC,ORRF,Russell 200
+"Entrada Therapeutics, Inc.",TRDA,Russell 200
+HarborOne Bancorp Inc,HONE,Russell 200
+"Clear Channel Outdoor Holdings, Inc.",CCO,Russell 200
+Kearny Financial Corp-MD,KRNY,Russell 200
+"GREAT SOUTHERN BANCORP, INC.",GSBC,Russell 200
+"COVENANT LOGISTICS GROUP, INC.",CVLG,Russell 200
+"Priority Technology Holdings, Inc.",PRTH,Russell 200
+GLADSTONE COMMERCIAL CORP,GOOD,Russell 200
+"HBT Financial, Inc.",HBT,Russell 200
+"MediaAlpha, Inc.",MAX,Russell 200
+"Annexon, Inc.",ANNX,Russell 200
+PROTHENA CORP PUBLIC LTD CO,PRTA,Russell 200
+Digimarc CORP,DMRC,Russell 200
+NABORS INDUSTRIES LTD,NBR,Russell 200
+Hippo Holdings Inc.,HIPO,Russell 200
+SCHOLASTIC CORP,SCHL,Russell 200
+"Latham Group, Inc.",SWIM,Russell 200
+HAIN CELESTIAL GROUP INC,HAIN,Russell 200
+SHENANDOAH TELECOMMUNICATIONS CO/VA/,SHEN,Russell 200
+"SOUTHERN MISSOURI BANCORP, INC.",SMBC,Russell 200
+Whitestone REIT,WSR,Russell 200
+EQUITY BANCSHARES INC,EQBK,Russell 200
+"STANDARD MOTOR PRODUCTS, INC.",SMP,Russell 200
+Metropolitan Bank Holding Corp.,MCB,Russell 200
+Koppers Holdings Inc.,KOP,Russell 200
+"Summit Hotel Properties, Inc.",INN,Russell 200
+"LINDBLAD EXPEDITIONS HOLDINGS, INC.",LIND,Russell 200
+"NETGEAR, INC.",NTGR,Russell 200
+"Cullinan Oncology, Inc.",CGEM,Russell 200
+Bally's Corp,BALY,Russell 200
+"ANAPTYSBIO, INC",ANAB,Russell 200
+REX AMERICAN RESOURCES Corp,REX,Russell 200
+"TPG RE Finance Trust, Inc.",TRTX,Russell 200
+USANA HEALTH SCIENCES INC,USNA,Russell 200
+"BigBear.ai Holdings, Inc.",BBAI,Russell 200
+"Relay Therapeutics, Inc.",RLAY,Russell 200
+MARCUS CORP,MCS,Russell 200
+MARINEMAX INC,HZO,Russell 200
+Orthofix Medical Inc.,OFIX,Russell 200
+CEVA INC,CEVA,Russell 200
+FIVE STAR BANCORP,FSBC,Russell 200
+Repay Holdings Corp,RPAY,Russell 200
+"Evolv Technologies Holdings, Inc.",EVLV,Russell 200
+"Butterfly Network, Inc.",BFLY,Russell 200
+Navitas Semiconductor Corp,NVTS,Russell 200
+Biglari Holdings Inc.,BH,Russell 200
+VALHI INC /DE/,VHI,Russell 200
+OneSpan Inc.,OSPN,Russell 200
+Westrock Coffee Co,WEST,Russell 200
+"MidWestOne Financial Group, Inc.",MOFG,Russell 200
+"A-Mark Precious Metals, Inc.",AMRK,Russell 200
+WORLD ACCEPTANCE CORP,WRLD,Russell 200
+RMR GROUP INC.,RMR,Russell 200
+IRADIMED CORP,IRMD,Russell 200
+AMERICAN COASTAL INSURANCE Corp,ACIC,Russell 200
+Arbutus Biopharma Corp,ABUS,Russell 200
+TRUSTCO BANK CORP N Y,TRST,Russell 200
+Primo Water Corp,PRMW,Russell 200
+"Riley Exploration Permian, Inc.",REPX,Russell 200
+"Velocity Financial, Inc.",VEL,Russell 200
+CAMDEN NATIONAL CORP,CAC,Russell 200
+Open Lending Corp,LPRO,Russell 200
+NEWPARK RESOURCES INC,NR,Russell 200
+Vivid Seats Inc.,SEAT,Russell 200
+"Oric Pharmaceuticals, Inc.",ORIC,Russell 200
+"Ramaco Resources, Inc.",METCB,Russell 200
+GENCO SHIPPING & TRADING LTD,GNK,Russell 200
+Green Plains Inc.,GPRE,Russell 200
+CAPITAL CITY BANK GROUP INC,CCBG,Russell 200
+"Eos Energy Enterprises, Inc.",EOSE,Russell 200
+"Mativ Holdings, Inc.",MATV,Russell 200
+MESA LABORATORIES INC /CO/,MLAB,Russell 200
+OVERSEAS SHIPHOLDING GROUP INC,OSG,Russell 200
+"CANTALOUPE, INC.",CTLP,Russell 200
+"Stoke Therapeutics, Inc.",STOK,Russell 200
+"ADTRAN Holdings, Inc.",ADTN,Russell 200
+PREFORMED LINE PRODUCTS CO,PLPC,Russell 200
+"Esquire Financial Holdings, Inc.",ESQ,Russell 200
+"International Money Express, Inc.",IMXI,Russell 200
+Varex Imaging Corp,VREX,Russell 200
+InnovAge Holding Corp.,INNV,Russell 200
+"Altimmune, Inc.",ALT,Russell 200
+CONDUENT Inc,CNDT,Russell 200
+"EverQuote, Inc.",EVER,Russell 200
+SpartanNash Co,SPTN,Russell 200
+"CHUY'S HOLDINGS, INC.",CHUY,Russell 200
+"Axogen, Inc.",AXGN,Russell 200
+HERITAGE COMMERCE CORP,HTBK,Russell 200
+STURM RUGER & CO INC,RGR,Russell 200
+ANAVEX LIFE SCIENCES CORP.,AVXL,Russell 200
+"HomeTrust Bancshares, Inc.",HTBI,Russell 200
+OMEROS CORP,OMER,Russell 200
+"Funko, Inc.",FNKO,Russell 200
+Ranpak Holdings Corp.,PACK,Russell 200
+BRC Inc.,BRCC,Russell 200
+PEAPACK GLADSTONE FINANCIAL CORP,PGC,Russell 200
+First Foundation Inc.,FFWM,Russell 200
+Anterix Inc.,ATEX,Russell 200
+"SOUTH PLAINS FINANCIAL, INC.",SPFI,Russell 200
+"LSB INDUSTRIES, INC.",LXU,Russell 200
+"UNIVERSAL INSURANCE HOLDINGS, INC.",UVE,Russell 200
+ONE LIBERTY PROPERTIES INC,OLP,Russell 200
+BUILD-A-BEAR WORKSHOP INC,BBW,Russell 200
+"Climb Global Solutions, Inc.",CLMB,Russell 200
+Karat Packaging Inc.,KRT,Russell 200
+WASHINGTON TRUST BANCORP INC,WASH,Russell 200
+"AlTi Global, Inc.",ALTI,Russell 200
+DIVERSIFIED HEALTHCARE TRUST,DHC,Russell 200
+UNISYS CORP,UIS,Russell 200
+Savara Inc,SVRA,Russell 200
+"CTO Realty Growth, Inc.",CTO,Russell 200
+"Altus Power, Inc.",AMPS,Russell 200
+Hingham Institution for Savings,HIFS,Russell 200
+"Willdan Group, Inc.",WLDN,Russell 200
+"Orchid Island Capital, Inc.",ORC,Russell 200
+Legacy Housing Corp,LEGH,Russell 200
+Clean Energy Fuels Corp.,CLNE,Russell 200
+AMBAC FINANCIAL GROUP INC,AMBC,Russell 200
+"Mineralys Therapeutics, Inc.",MLYS,Russell 200
+NATIONAL PRESTO INDUSTRIES INC,NPK,Russell 200
+"Reservoir Media, Inc.",RSVR,Russell 200
+"FRP HOLDINGS, INC.",FRPH,Russell 200
+CARRIAGE SERVICES INC,CSV,Russell 200
+SMARTFINANCIAL INC.,SMBK,Russell 200
+ENVIRI Corp,NVRI,Russell 200
+"Fulgent Genetics, Inc.",FLGT,Russell 200
+LSI INDUSTRIES INC,LYTS,Russell 200
+"Simulations Plus, Inc.",SLP,Russell 200
+"SMITH & WESSON BRANDS, INC.",SWBI,Russell 200
+enCore Energy Corp.,EU,Russell 200
+Farmland Partners Inc.,FPI,Russell 200
+CROSS COUNTRY HEALTHCARE INC,CCRN,Russell 200
+fuboTV Inc. /FL,FUBO,Russell 200
+CASS INFORMATION SYSTEMS INC,CASS,Russell 200
+FARMERS NATIONAL BANC CORP /OH/,FMNB,Russell 200
+"BigCommerce Holdings, Inc.",BIGC,Russell 200
+"Olema Pharmaceuticals, Inc.",OLMA,Russell 200
+Ribbon Communications Inc.,RBBN,Russell 200
+"Rackspace Technology, Inc.",RXT,Russell 200
+FIRST FINANCIAL CORP /IN/,THFF,Russell 200
+"CARROLS RESTAURANT GROUP, INC.",TAST,Russell 200
+"Cartesian Therapeutics, Inc.",RNAC,Russell 200
+"DOUGLAS DYNAMICS, INC",PLOW,Russell 200
+"Danimer Scientific, Inc.",DNMR,Russell 200
+TEEKAY CORP,TK,Russell 200
+CNB FINANCIAL CORP/PA,CCNE,Russell 200
+"Phathom Pharmaceuticals, Inc.",PHAT,Russell 200
+Global Medical REIT Inc.,GMRE,Russell 200
+CAMBRIDGE BANCORP,CATC,Russell 200
+ASTRONICS CORP,ATRO,Russell 200
+"Midland States Bancorp, Inc.",MSBI,Russell 200
+INSTEEL INDUSTRIES INC,IIIN,Russell 200
+Lovesac Co,LOVE,Russell 200
+"Stitch Fix, Inc.",SFIX,Russell 200
+COMPASS MINERALS INTERNATIONAL INC,CMP,Russell 200
+SURMODICS INC,SRDX,Russell 200
+NORTHWEST PIPE CO,NWPX,Russell 200
+CorMedix Inc.,CRMD,Russell 200
+SHORE BANCSHARES INC,SHBI,Russell 200
+"Montrose Environmental Group, Inc.",MEG,Russell 200
+"Thryv Holdings, Inc.",THRY,Russell 200
+DONEGAL GROUP INC,DGICA,Russell 200
+NORDIC AMERICAN TANKERS Ltd,NAT,Russell 200
+"Humacyte, Inc.",HUMA,Russell 200
+Hyliion Holdings Corp.,HYLN,Russell 200
+"Northfield Bancorp, Inc.",NFBK,Russell 200
+RAYONIER ADVANCED MATERIALS INC.,RYAM,Russell 200
+"Astria Therapeutics, Inc.",ATXS,Russell 200
+"IGM Biosciences, Inc.",IGMS,Russell 200
+Croda International PLC,CRDA,Russell 200
+"SI-BONE, Inc.",SIBN,Russell 200
+NEW YORK MORTGAGE TRUST INC,NYMT,Russell 200
+ORTHOPEDIATRICS CORP,KIDS,Russell 200
+ACCO BRANDS Corp,ACCO,Russell 200
+"Montauk Renewables, Inc.",MNTK,Russell 200
+UNIVERSAL HEALTH REALTY INCOME TRUST,UHT,Russell 200
+PROKIDNEY CORP.,PROK,Russell 200
+"EyePoint Pharmaceuticals, Inc.",EYPT,Russell 200
+"Xeris Biopharma Holdings, Inc.",XERS,Russell 200
+"Consolidated Communications Holdings, Inc.",CNSL,Russell 200
+Sunnova Energy International Inc.,NOVA,Russell 200
+"ENNIS, INC.",EBF,Russell 200
+ALERUS FINANCIAL CORP,ALRS,Russell 200
+"RADIUS RECYCLING, INC.",RDUS,Russell 200
+EASTMAN KODAK CO,KODK,Russell 200
+GREEN DOT CORP,GDOT,Russell 200
+"Terns Pharmaceuticals, Inc.",TERN,Russell 200
+BAR HARBOR BANKSHARES,BHB,Russell 200
+Bandwidth Inc.,BAND,Russell 200
+PEOPLES FINANCIAL SERVICES CORP.,PFIS,Russell 200
+"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.",PACB,Russell 200
+"Monte Rosa Therapeutics, Inc.",GLUE,Russell 200
+ARROW FINANCIAL CORP,AROW,Russell 200
+IRONWOOD PHARMACEUTICALS INC,IRWD,Russell 200
+HALLADOR ENERGY CO,HNRG,Russell 200
+"Sharecare, Inc.",SHCR,Russell 200
+Definitive Healthcare Corp.,DH,Russell 200
+"NexPoint Real Estate Finance, Inc.",NREF,Russell 200
+Applied Digital Corp.,APLD,Russell 200
+"B&G Foods, Inc.",BGS,Russell 200
+GRAFTECH INTERNATIONAL LTD,EAF,Russell 200
+"GREENLIGHT CAPITAL RE, LTD.",GLRE,Russell 200
+MID PENN BANCORP INC,MPB,Russell 200
+Community Healthcare Trust Inc,CHCT,Russell 200
+Anywhere Real Estate Inc.,HOUS,Russell 200
+"Verve Therapeutics, Inc.",VERV,Russell 200
+"NLIGHT, INC.",LASR,Russell 200
+UroGen Pharma Ltd.,URGN,Russell 200
+"Sana Biotechnology, Inc.",SANA,Russell 200
+"Red Violet, Inc.",RDVT,Russell 200
+"LendingTree, Inc.",TREE,Russell 200
+INVESTORS TITLE CO,ITIC,Russell 200
+GREENE COUNTY BANCORP INC,GCBC,Russell 200
+MACATAWA BANK CORP,MCBC,Russell 200
+Invesco Mortgage Capital Inc.,IVR,Russell 200
+AMERICAN NATIONAL BANKSHARES INC.,AMNB,Russell 200
+LINCOLN EDUCATIONAL SERVICES CORP,LINC,Russell 200
+"Dine Brands Global, Inc.",DIN,Russell 200
+TETRA TECHNOLOGIES INC,TTI,Russell 200
+KELLY SERVICES INC,KELYA,Russell 200
+1 800 FLOWERS COM INC,FLWS,Russell 200
+"Hudson Pacific Properties, Inc.",HPP,Russell 200
+FLUSHING FINANCIAL CORP,FFIC,Russell 200
+"Health Catalyst, Inc.",HCAT,Russell 200
+Seneca Foods Corp,SENEA,Russell 200
+Oil-Dri Corp of America,ODC,Russell 200
+FARO TECHNOLOGIES INC,FARO,Russell 200
+YORK WATER CO,YORW,Russell 200
+VAALCO ENERGY INC /DE/,EGY,Russell 200
+METHODE ELECTRONICS INC,MEI,Russell 200
+Gambling.com Group Ltd,GAMB,Russell 200
+"Bakkt Holdings, Inc.",BKKT,Russell 200
+"SelectQuote, Inc.",SLQT,Russell 200
+"Third Harmonic Bio, Inc.",THRD,Russell 200
+Emergent BioSolutions Inc.,EBS,Russell 200
+Bowman Consulting Group Ltd.,BWMN,Russell 200
+Capital Bancorp Inc,CBNK,Russell 200
+"Theravance Biopharma, Inc.",TBPH,Russell 200
+Arcturus Therapeutics Holdings Inc.,ARCT,Russell 200
+"TREACE MEDICAL CONCEPTS, INC.",TMCI,Russell 200
+"Omega Flex, Inc.",OFLX,Russell 200
+"Third Coast Bancshares, Inc.",TCBX,Russell 200
+"ZEVRA THERAPEUTICS, INC.",ZVRA,Russell 200
+"Consensus Cloud Solutions, Inc.",CCSI,Russell 200
+Limoneira CO,LMNR,Russell 200
+FRANKLIN COVEY CO,FC,Russell 200
+SIGA TECHNOLOGIES INC,SIGA,Russell 200
+VALUE LINE INC,VALU,Russell 200
+Organogenesis Holdings Inc.,ORGO,Russell 200
+Peakstone Realty Trust,PKST,Russell 200
+NORTHRIM BANCORP INC,NRIM,Russell 200
+"Kimball Electronics, Inc.",KE,Russell 200
+"PlayAGS, Inc.",AGS,Russell 200
+Chatham Lodging Trust,CLDT,Russell 200
+Ardmore Shipping Corp,ASC,Russell 200
+MeiraGTx Holdings plc,MGTX,Russell 200
+Celcuity Inc.,CELC,Russell 200
+Olympic Steel Inc,ZEUS,Russell 200
+"OmniAb, Inc.",OABI,Russell 200
+COMMUNITY HEALTH SYSTEMS INC,CYH,Russell 200
+CALAVO GROWERS INC,CVGW,Russell 200
+Libero Copper & Gold Corp,LBC,Russell 200
+BOSTON OMAHA Corp,BOC,Russell 200
+"RCI HOSPITALITY HOLDINGS, INC.",RICK,Russell 200
+VILLAGE SUPER MARKET INC,VLGEA,Russell 200
+"Y-mAbs Therapeutics, Inc.",YMAB,Russell 200
+MOVADO GROUP INC,MOV,Russell 200
+RIGEL PHARMACEUTICALS INC,RIGL,Russell 200
+"Quad/Graphics, Inc.",QUAD,Russell 200
+Service Properties Trust,SVC,Russell 200
+"SHYFT GROUP, INC.",SHYF,Russell 200
+MAUI LAND & PINEAPPLE CO INC,MLP,Russell 200
+ENTERPRISE BANCORP INC /MA/,EBTC,Russell 200
+UNITY BANCORP INC /NJ/,UNTY,Russell 200
+NATIONAL RESEARCH CORP,NRC,Russell 200
+DIAMOND HILL INVESTMENT GROUP INC,DHIL,Russell 200
+"Allogene Therapeutics, Inc.",ALLO,Russell 200
+FARMERS & MERCHANTS BANCORP INC,FMAO,Russell 200
+Quanterix Corp,QTRX,Russell 200
+Clearwater Paper Corp,CLW,Russell 200
+"KalVista Pharmaceuticals, Inc.",KALV,Russell 200
+"SAFE BULKERS, INC.",SB,Russell 200
+TITAN INTERNATIONAL INC,TWI,Russell 200
+MYERS INDUSTRIES INC,MYE,Russell 200
+SIERRA BANCORP,BSRR,Russell 200
+ACACIA RESEARCH CORP,ACTG,Russell 200
+Bank7 Corp.,BSVN,Russell 200
+TACTILE SYSTEMS TECHNOLOGY INC,TCMD,Russell 200
+ALLIENT INC,ALNT,Russell 200
+"Carter Bankshares, Inc.",CARE,Russell 200
+PARK OHIO HOLDINGS CORP,PKOH,Russell 200
+REGENXBIO Inc.,RGNX,Russell 200
+"LANDS' END, INC.",LE,Russell 200
+OOMA INC,OOMA,Russell 200
+"WideOpenWest, Inc.",WOW,Russell 200
+GLADSTONE LAND Corp,LAND,Russell 200
+"CapStar Financial Holdings, Inc.",CSTR,Russell 200
+"Semler Scientific, Inc.",SMLR,Russell 200
+TEJON RANCH CO,TRC,Russell 200
+RBB Bancorp,RBB,Russell 200
+"Clearfield, Inc.",CLFD,Russell 200
+"ACELYRIN, Inc.",SLRN,Russell 200
+GUARANTY BANCSHARES INC /TX/,GNTY,Russell 200
+GENESCO INC,GCO,Russell 200
+DocGo Inc.,DCGO,Russell 200
+Waterstone Financial Inc,WSBF,Russell 200
+Bridgewater Bancshares Inc,BWB,Russell 200
+SANDRIDGE ENERGY INC,SD,Russell 200
+First Business Financial Services Inc,FBIZ,Russell 200
+Sleep Number Corp,SNBR,Russell 200
+RED RIVER BANCSHARES INC,RRBI,Russell 200
+GRAY TELEVISION INC,GTN,Russell 200
+"Aura Biosciences, Inc.",AURA,Russell 200
+FINANCIAL INSTITUTIONS INC,FISI,Russell 200
+"Revance Therapeutics, Inc.",RVNC,Russell 200
+J. Jill Inc,JILL,Russell 200
+"SANGAMO THERAPEUTICS, INC",SGMO,Russell 200
+"Leslie's, Inc.",LESL,Russell 200
+MITEK SYSTEMS INC,MITK,Russell 200
+"Airsculpt Technologies, Inc.",AIRS,Russell 200
+NL INDUSTRIES INC,NL,Russell 200
+Landsea Homes Corp,LSEA,Russell 200
+"NorthEast Community Bancorp, Inc./MD/",NECB,Russell 200
+Consolidated Water Co. Ltd.,CWCO,Russell 200
+AMC Networks Inc.,AMCX,Russell 200
+"Traeger, Inc.",COOK,Russell 200
+Bank of Marin Bancorp,BMRC,Russell 200
+COMPX INTERNATIONAL INC,CIX,Russell 200
+"Enhabit, Inc.",EHAB,Russell 200
+"HOME BANCORP, INC.",HBCP,Russell 200
+Genie Energy Ltd.,GNE,Russell 200
+8X8 INC /DE/,EGHT,Russell 200
+WEST BANCORPORATION INC,WTBA,Russell 200
+ZimVie Inc.,ZIMV,Russell 200
+ACNB CORP,ACNB,Russell 200
+"USCB FINANCIAL HOLDINGS, INC.",USCB,Russell 200
+Xperi Inc.,XPER,Russell 200
+"SkyWater Technology, Inc",SKYT,Russell 200
+Waldencast plc,WALD,Russell 200
+"Prime Medicine, Inc.",PRME,Russell 200
+Kodiak Sciences Inc.,KOD,Russell 200
+Zumiez Inc,ZUMZ,Russell 200
+PAM Transportation Services Inc,PTSI,Russell 200
+"Larimar Therapeutics, Inc.",LRMR,Russell 200
+LUXFER HOLDINGS PLC,LXFR,Russell 200
+HAVERTY FURNITURE COMPANIES INC,HVT,Russell 200
+"NU SKIN ENTERPRISES, INC.",NUS,Russell 200
+"Microvast Holdings, Inc.",MVST,Russell 200
+Torrid Holdings Inc.,CURV,Russell 200
+Ares Commercial Real Estate Corp,ACRE,Russell 200
+"Daseke, Inc.",DSKE,Russell 200
+"4D Molecular Therapeutics, Inc.",FDMT,Russell 200
+"Concrete Pumping Holdings, Inc.",BBCP,Russell 200
+"MAXCYTE, INC.",MXCT,Russell 200
+"Ranger Energy Services, Inc.",RNGR,Russell 200
+"DOMO, INC.",DOMO,Russell 200
+"TrueCar, Inc.",TRUE,Russell 200
+"Tango Therapeutics, Inc.",TNGX,Russell 200
+PRIMEENERGY RESOURCES CORP,PNRG,Russell 200
+"Bark, Inc.",BARK,Russell 200
+"Bit Digital, Inc",BTBT,Russell 200
+"European Wax Center, Inc.",EWCZ,Russell 200
+"Southern States Bancshares, Inc.",SSBK,Russell 200
+"NewtekOne, Inc.",NEWT,Russell 200
+NVE CORP /NEW/,NVEC,Russell 200
+"Gevo, Inc.",GEVO,Russell 200
+3D SYSTEMS CORP,DDD,Russell 200
+"El Pollo Loco Holdings, Inc.",LOCO,Russell 200
+Foghorn Therapeutics Inc.,FHTX,Russell 200
+"FS Bancorp, Inc.",FSBW,Russell 200
+American Software Inc-GA,AMSWA,Russell 200
+Turtle Beach Corp,HEAR,Russell 200
+"CIVISTA BANCSHARES, INC.",CIVB,Russell 200
+Nano-X Imaging Ltd.,NNOX,Russell 200
+"iHeartMedia, Inc.",IHRT,Russell 200
+MANITOWOC CO INC,MTW,Russell 200
+"Cryoport, Inc.",CYRX,Russell 200
+"NATHANS FAMOUS, INC.",NATH,Russell 200
+MBIA INC,MBI,Russell 200
+SOUTHERN FIRST BANCSHARES INC,SFST,Russell 200
+"CS Disco, Inc.",LAW,Russell 200
+"NI Holdings, Inc.",NODK,Russell 200
+XOMA Corp,XOMA,Russell 200
+BRT Apartments Corp.,BRT,Russell 200
+"Design Therapeutics, Inc.",DSGN,Russell 200
+"Eventbrite, Inc.",EB,Russell 200
+biote Corp.,BTMD,Russell 200
+"ClearPoint Neuro, Inc.",CLPT,Russell 200
+"Mayville Engineering Company, Inc.",MEC,Russell 200
+Titan Machinery Inc.,TITN,Russell 200
+"SmartRent, Inc.",SMRT,Russell 200
+ARTESIAN RESOURCES CORP,ARTNA,Russell 200
+"MasterCraft Boat Holdings, Inc.",MCFT,Russell 200
+"Blade Air Mobility, Inc.",BLDE,Russell 200
+"Sage Therapeutics, Inc.",SAGE,Russell 200
+JOHNSON OUTDOORS INC,JOUT,Russell 200
+"Intrepid Potash, Inc.",IPI,Russell 200
+"Voyager Therapeutics, Inc.",VYGR,Russell 200
+"Amylyx Pharmaceuticals, Inc.",AMLX,Russell 200
+"RADIANT LOGISTICS, INC",RLGT,Russell 200
+"OIL STATES INTERNATIONAL, INC",OIS,Russell 200
+CITIZENS FINANCIAL SERVICES INC,CZFS,Russell 200
+AMERICAS CARMART INC,CRMT,Russell 200
+"Kaltura, Inc.",KLTR,Russell 200
+CHOICEONE FINANCIAL SERVICES INC,COFS,Russell 200
+"Orange County Bancorp, Inc. /DE/",OBT,Russell 200
+Ispire Technology Inc.,ISPR,Russell 200
+"VIEMED HEALTHCARE, INC.",VMD,Russell 200
+"Spok Holdings, Inc",SPOK,Russell 200
+IBEX Ltd,IBEX,Russell 200
+Regional Management Corp.,RM,Russell 200
+MARINE PRODUCTS CORP,MPX,Russell 200
+PURE CYCLE CORP,PCYO,Russell 200
+AEHR TEST SYSTEMS,AEHR,Russell 200
+"Postal Realty Trust, Inc.",PSTL,Russell 200
+AerSale Corp,ASLE,Russell 200
+"CODEXIS, INC.",CDXS,Russell 200
+"CVRx, Inc.",CVRX,Russell 200
+OneWater Marine Inc.,ONEW,Russell 200
+WEYCO GROUP INC,WEYS,Russell 200
+Holley Inc.,HLLY,Russell 200
+"John Marshall Bancorp, Inc.",JMSB,Russell 200
+CERUS CORP,CERS,Russell 200
+DENNY'S Corp,DENN,Russell 200
+"FORRESTER RESEARCH, INC.",FORR,Russell 200
+FIRST OF LONG ISLAND CORP,FLIC,Russell 200
+"Lightwave Logic, Inc.",LWLG,Russell 200
+BayCom Corp,BCML,Russell 200
+Security National Financial Corp,SNFCA,Russell 200
+Designer Brands Inc.,DBI,Russell 200
+Berry Corp (bry),BRY,Russell 200
+"Chicago Atlantic Real Estate Finance, Inc.",REFI,Russell 200
+"First Bancorp, Inc /ME/",FNLC,Russell 200
+Cerence Inc.,CRNC,Russell 200
+"Transphorm, Inc.",TGAN,Russell 200
+JAKKS PACIFIC INC,JAKK,Russell 200
+CITIZENS & NORTHERN CORP,CZNC,Russell 200
+BlackSky Technology Inc.,BKSY,Russell 200
+GENCOR INDUSTRIES INC,GENC,Russell 200
+Outbrain Inc.,OB,Russell 200
+"Ponce Financial Group, Inc.",PDLB,Russell 200
+"Expensify, Inc.",EXFY,Russell 200
+"Aaron's Company, Inc.",AAN,Russell 200
+PCB BANCORP,PCB,Russell 200
+"Vishay Precision Group, Inc.",VPG,Russell 200
+Sanara MedTech Inc.,SMTI,Russell 200
+COLONY BANKCORP INC,CBAN,Russell 200
+CADIZ INC,CDZI,Russell 200
+"ITERIS, INC.",ITI,Russell 200
+"Pioneer Bancorp, Inc./MD",PBFS,Russell 200
+Primis Financial Corp.,FRST,Russell 200
+"Global Water Resources, Inc.",GWRS,Russell 200
+POTBELLY CORP,PBPB,Russell 200
+FIDELITY D & D BANCORP INC,FDBC,Russell 200
+NATURES SUNSHINE PRODUCTS INC,NATR,Russell 200
+PARK AEROSPACE CORP,PKE,Russell 200
+"United Homes Group, Inc.",UHG,Russell 200
+"Aldeyra Therapeutics, Inc.",ALDX,Russell 200
+"TILE SHOP HOLDINGS, INC.",TTSH,Russell 200
+PLUMAS BANCORP,PLBC,Russell 200
+"BEYOND MEAT, INC.",BYND,Russell 200
+First Bank-Hamilton NJ,FRBA,Russell 200
+"iTeos Therapeutics, Inc.",ITOS,Russell 200
+"ATN International, Inc.",ATNI,Russell 200
+"RING ENERGY, INC.",REI,Russell 200
+IMMERSION CORP,IMMR,Russell 200
+ANGIODYNAMICS INC,ANGO,Russell 200
+"Mersana Therapeutics, Inc.",MRSN,Russell 200
+ORASURE TECHNOLOGIES INC,OSUR,Russell 200
+"Accolade, Inc.",ACCD,Russell 200
+"RESOURCES CONNECTION, INC.",RGP,Russell 200
+"Mistras Group, Inc.",MG,Russell 200
+MVB FINANCIAL CORP,MVBF,Russell 200
+Nerdy Inc.,NRDY,Russell 200
+AMERICAN REALTY INVESTORS INC,ARL,Russell 200
+Vanda Pharmaceuticals Inc.,VNDA,Russell 200
+"BEYOND, INC.",BYON,Russell 200
+"PARKE BANCORP, INC.",PKBK,Russell 200
+ON24 INC.,ONTF,Russell 200
+"Aclaris Therapeutics, Inc.",ACRS,Russell 200
+Forafric Global PLC,AFRI,Russell 200
+FATE THERAPEUTICS INC,FATE,Russell 200
+Computer Programs & Systems Inc,CPSI,Russell 200
+"EVI INDUSTRIES, INC.",EVI,Russell 200
+HUDSON TECHNOLOGIES INC /NY,HDSN,Russell 200
+W&T OFFSHORE INC,WTI,Russell 200
+Oak Valley Bancorp,OVLY,Russell 200
+TIMBERLAND BANCORP INC,TSBK,Russell 200
+TREDEGAR CORP,TG,Russell 200
+"Tenaya Therapeutics, Inc.",TNYA,Russell 200
+IROBOT CORP,IRBT,Russell 200
+ALTA EQUIPMENT GROUP INC.,ALTG,Russell 200
+Pangaea Logistics Solutions Ltd.,PANL,Russell 200
+"Energy Vault Holdings, Inc.",NRGV,Russell 200
+"HERON THERAPEUTICS, INC. /DE/",HRTX,Russell 200
+"Inspired Entertainment, Inc.",INSE,Russell 200
+CHEMUNG FINANCIAL CORP,CHMG,Russell 200
+Ocwen Financial Corp,OCN,Russell 200
+"Bankwell Financial Group, Inc.",BWFG,Russell 200
+TRANSCONTINENTAL REALTY INVESTORS INC,TCI,Russell 200
+"Anika Therapeutics, Inc.",ANIK,Russell 200
+"Lyell Immunopharma, Inc.",LYEL,Russell 200
+"CHEGG, INC",CHGG,Russell 200
+Amplify Energy Corp.,AMPY,Russell 200
+"Alpine Income Property Trust, Inc.",PINE,Russell 200
+"Sterling Bancorp, Inc.",SBT,Russell 200
+PENNS WOODS BANCORP INC,PWOD,Russell 200
+ModivCare Inc,MODV,Russell 200
+ZYNEX INC,ZYXI,Russell 200
+"FVCBankcorp, Inc.",FVCB,Russell 200
+Cooper-Standard Holdings Inc.,CPS,Russell 200
+"Luminar Technologies, Inc./DE",LAZR,Russell 200
+ASURE SOFTWARE INC,ASUR,Russell 200
+MIDDLEFIELD BANC CORP,MBCN,Russell 200
+"PLAYSTUDIOS, Inc.",MYPS,Russell 200
+Silvercrest Asset Management Group Inc.,SAMG,Russell 200
+C & F FINANCIAL CORP,CFFI,Russell 200
+Blue Foundry Bancorp,BLFY,Russell 200
+"Atea Pharmaceuticals, Inc.",AVIR,Russell 200
+"TTEC Holdings, Inc.",TTEC,Russell 200
+NORWOOD FINANCIAL CORP,NWFL,Russell 200
+"GoHealth, Inc.",GOCO,Russell 200
+Himalaya Shipping Ltd.,HSHP,Russell 200
+EVANS BANCORP INC,EVBN,Russell 200
+"Princeton Bancorp, Inc.",BPRN,Russell 200
+"RE/MAX Holdings, Inc.",RMAX,Russell 200
+Pulmonx Corp,LUNG,Russell 200
+LCNB CORP,LCNB,Russell 200
+"Nautilus Biotechnology, Inc.",NAUT,Russell 200
+KINGSWAY FINANCIAL SERVICES INC,KFS,Russell 200
+Braemar Hotels & Resorts Inc.,BHR,Russell 200
+"Zentalis Pharmaceuticals, Inc.",ZNTL,Russell 200
+"Aeva Technologies, Inc.",AEVA,Russell 200
+"TrueBlue, Inc.",TBI,Russell 200
+"LEXICON PHARMACEUTICALS, INC.",LXRX,Russell 200
+Performant Financial Corp,PFMT,Russell 200
+CODORUS VALLEY BANCORP INC,CVLY,Russell 200
+NACCO INDUSTRIES INC,NC,Russell 200
+"SUTRO BIOPHARMA, INC.",STRO,Russell 200
+Piedmont Lithium Inc.,PLL,Russell 200
+"City Office REIT, Inc.",CIO,Russell 200
+Inogen Inc,INGN,Russell 200
+"CONSUMER PORTFOLIO SERVICES, INC.",CPSS,Russell 200
+FutureFuel Corp.,FF,Russell 200
+"PRECIGEN, INC.",PGEN,Russell 200
+Virginia National Bankshares Corp,VABK,Russell 200
+NEXPOINT DIVERSIFIED REAL ESTATE TRUST,NXDT,Russell 200
+Orion Office REIT Inc.,ONL,Russell 200
+"Biomea Fusion, Inc.",BMEA,Russell 200
+BCB BANCORP INC,BCBP,Russell 200
+"HomeStreet, Inc.",HMST,Russell 200
+"Amprius Technologies, Inc.",AMPX,Russell 200
+EMPIRE PETROLEUM CORP,EP,Russell 200
+"Angel Oak Mortgage REIT, Inc.",AOMR,Russell 200
+MERRIMACK PHARMACEUTICALS INC,MACK,Russell 200
+"Inhibrx, Inc.",INBX,Russell 200
+MEDIFAST INC,MED,Russell 200
+"AVIAT NETWORKS, INC.",AVNW,Russell 200
+UTAH MEDICAL PRODUCTS INC,UTMD,Russell 200
+ESCALADE INC,ESCA,Russell 200
+"Alector, Inc.",ALEC,Russell 200
+ENTRAVISION COMMUNICATIONS CORP,EVC,Russell 200
+MACROGENICS INC,MGNX,Russell 200
+"ALICO, INC.",ALCO,Russell 200
+"Compass Therapeutics, Inc.",CMPX,Russell 200
+RGC RESOURCES INC,RGCO,Russell 200
+First Western Financial Inc,MYFW,Russell 200
+"ESSA Bancorp, Inc.",ESSA,Russell 200
+"AFC Gamma, Inc.",AFCG,Russell 200
+Finance of America Companies Inc.,FOA,Russell 200
+ContextLogic Inc.,WISH,Russell 200
+Douglas Elliman Inc.,DOUG,Russell 200
+Zevia PBC,ZVIA,Russell 200
+"HireQuest, Inc.",HQI,Russell 200
+"RICHARDSON ELECTRONICS, LTD.",RELL,Russell 200
+TUCOWS INC /PA/,TCX,Russell 200
+STRATUS PROPERTIES INC,STRS,Russell 200
+"Trevi Therapeutics, Inc.",TRVI,Russell 200
+FUELCELL ENERGY INC,FCEL,Russell 200
+FIRST COMMUNITY CORP /SC/,FCCO,Russell 200
+ThredUp Inc.,TDUP,Russell 200
+"LanzaTech Global, Inc.",LNZA,Russell 200
+HF Foods Group Inc.,HFFG,Russell 200
+BRIGHTCOVE INC,BCOV,Russell 200
+"Cardlytics, Inc.",CDLX,Russell 200
+SWK Holdings Corp,SWKH,Russell 200
+NATIONAL BANKSHARES INC,NKSH,Russell 200
+Caledonia Mining Corp Plc,CMCL,Russell 200
+ACCURAY INC,ARAY,Russell 200
+"Solid Power, Inc.",SLDP,Russell 200
+EVOLUTION PETROLEUM CORP,EPM,Russell 200
+Atomera Inc,ATOM,Russell 200
+"OnKure Therapeutics, Inc.",RPHM,Russell 200
+Envela Corp,ELA,Russell 200
+"Orchestra BioMed Holdings, Inc.",OBIO,Russell 200
+"Sight Sciences, Inc.",SGHT,Russell 200
+"InfuSystem Holdings, Inc",INFU,Russell 200
+"GoPro, Inc.",GPRO,Russell 200
+"Nkarta, Inc.",NKTX,Russell 200
+"MICROVISION, INC.",MVIS,Russell 200
+"Babcock & Wilcox Enterprises, Inc.",BW,Russell 200
+"Rimini Street, Inc.",RMNI,Russell 200
+E.W. SCRIPPS Co,SSP,Russell 200
+PepGen Inc.,PEPG,Russell 200
+"FORUM ENERGY TECHNOLOGIES, INC.",FET,Russell 200
+CoreCard Corp,CCRD,Russell 200
+"Virgin Galactic Holdings, Inc",SPCE,Russell 200
+Beauty Health Co,SKIN,Russell 200
+Vuzix Corp,VUZI,Russell 200
+CPI Card Group Inc.,PMTS,Russell 200
+"Paysign, Inc.",PAYS,Russell 200
+Information Services Group Inc.,III,Russell 200
+SEACOR Marine Holdings Inc.,SMHI,Russell 200
+"Forge Global Holdings, Inc.",FRGE,Russell 200
+"Caribou Biosciences, Inc.",CRBU,Russell 200
+STONERIDGE INC,SRI,Russell 200
+Clarus Corp,CLAR,Russell 200
+"Ventyx Biosciences, Inc.",VTYX,Russell 200
+"Origin Materials, Inc.",ORGN,Russell 200
+HOOKER FURNISHINGS Corp,HOFT,Russell 200
+"2seventy bio, Inc.",TSVT,Russell 200
+"James River Group Holdings, Ltd.",JRVR,Russell 200
+JOINT Corp,JYNT,Russell 200
+"Coherus BioSciences, Inc.",CHRS,Russell 200
+Quantum-Si Inc,QSI,Russell 200
+AMERICAN VANGUARD CORP,AVD,Russell 200
+ENANTA PHARMACEUTICALS INC,ENTA,Russell 200
+"KORU Medical Systems, Inc.",KRMD,Russell 200
+scPharmaceuticals Inc.,SCPH,Russell 200
+VOXX International Corp,VOXX,Russell 200
+Dakota Gold Corp.,DC,Russell 200
+"MARKETWISE, INC.",MKTW,Russell 200
+"ROCKY BRANDS, INC.",RCKY,Russell 200
+"eHealth, Inc.",EHTH,Russell 200
+Granite Point Mortgage Trust Inc.,GPMT,Russell 200
+"B. Riley Financial, Inc.",RILY,Russell 200
+DMC Global Inc.,BOOM,Russell 200
+Blink Charging Co.,BLNK,Russell 200
+FULL HOUSE RESORTS INC,FLL,Russell 200
+"Inozyme Pharma, Inc.",INZY,Russell 200
+"Cabaletta Bio, Inc.",CABA,Russell 200
+"Townsquare Media, Inc.",TSQ,Russell 200
+"Editas Medicine, Inc.",EDIT,Russell 200
+FENNEC PHARMACEUTICALS INC.,FENC,Russell 200
+"SOUNDTHINKING, INC.",SSTI,Russell 200
+AMES NATIONAL CORP,ATLO,Russell 200
+"MAMMOTH ENERGY SERVICES, INC.",TUSK,Russell 200
+Trinseo PLC,TSE,Russell 200
+Children's Place Inc-The,PLCE,Russell 200
+NEVRO CORP,NVRO,Russell 200
+"Vera Bradley, Inc.",VRA,Russell 200
+EGAIN Corp,EGAN,Russell 200
+"Maiden Holdings, Ltd.",MHLD,Russell 200
+"Contango ORE, Inc.",CTGO,Russell 200
+CORE MOLDING TECHNOLOGIES INC,CMT,Russell 200
+"Digital Turbine, Inc.",APPS,Russell 200
+CASSAVA SCIENCES INC,SAVA,Russell 200
+Star Holdings,STHO,Russell 200
+"Seer, Inc.",SEER,Russell 200
+i-80 Gold Corp.,IAUX,Russell 200
+SES AI Corp,SES,Russell 200
+"MainStreet Bancshares, Inc.",MNSB,Russell 200
+American Well Corp,AMWL,Russell 200
+Sagimet Biosciences Inc.,SGMT,Russell 200
+"Seres Therapeutics, Inc.",MCRB,Russell 200
+"DESTINATION XL GROUP, INC.",DXLG,Russell 200
+"AMMO, INC.",POWW,Russell 200
+"Acrivon Therapeutics, Inc.",ACRV,Russell 200
+"TILLY'S, INC.",TLYS,Russell 200
+"Desktop Metal, Inc.",DM,Russell 200
+374Water Inc.,SCWO,Russell 200
+NGM BIOPHARMACEUTICALS INC,NGM,Russell 200
+CENTURY CASINOS INC /CO/,CNTY,Russell 200
+Skillsoft Corp.,SKIL,Russell 200
+"Century Therapeutics, Inc.",IPSC,Russell 200
+"FiscalNote Holdings, Inc.",NOTE,Russell 200
+"Protalix BioTherapeutics, Inc.",PLX,Russell 200
+DULUTH HOLDINGS INC.,DLTH,Russell 200
+Scilex Holding Co,SCLX,Russell 200
+"Spirit Airlines, Inc.",SAVE,Russell 200
+SKYX Platforms Corp.,SKYX,Russell 200
+KVH INDUSTRIES INC \DE\,KVHI,Russell 200
+GrowGeneration Corp.,GRWG,Russell 200
+MultiPlan Corp,MPLN,Russell 200
+PETMED EXPRESS INC,PETS,Russell 200
+"TELA Bio, Inc.",TELA,Russell 200
+"Lineage Cell Therapeutics, Inc.",LCTX,Russell 200
+"Purple Innovation, Inc.",PRPL,Russell 200
+"Solo Brands, Inc.",DTC,Russell 200
+COMTECH TELECOMMUNICATIONS CORP /DE/,CMTL,Russell 200
+"Fossil Group, Inc.",FOSL,Russell 200
+"ONE Group Hospitality, Inc.",STKS,Russell 200
+"Akoya Biosciences, Inc.",AKYA,Russell 200
+Nikola Corp,NKLA,Russell 200
+Karyopharm Therapeutics Inc.,KPTI,Russell 200
+Quipt Home Medical Corp.,QIPT,Russell 200
+"Veritone, Inc.",VERI,Russell 200
+Allakos Inc.,ALLK,Russell 200
+INTEST CORP,INTT,Russell 200
+ALX ONCOLOGY HOLDINGS INC,ALXO,Russell 200
+"Vigil Neuroscience, Inc.",VIGL,Russell 200
+OptimizeRx Corp,OPRX,Russell 200
+23andMe Holding Co.,ME,Russell 200
+HARVARD BIOSCIENCE INC,HBIO,Russell 200
+"HilleVax, Inc.",HLVX,Russell 200
+"Nuvectis Pharma, Inc.",NVCT,Russell 200
+"WW INTERNATIONAL, INC.",WW,Russell 200
+RED ROBIN GOURMET BURGERS INC,RRGB,Russell 200
+GENELUX Corp,GNLX,Russell 200
+"Assertio Holdings, Inc.",ASRT,Russell 200
+"System1, Inc.",SST,Russell 200
+Vicarious Surgical Inc.,RBOT,Russell 200
+"bluebird bio, Inc.",BLUE,Russell 200
+Generation Bio Co.,GBIO,Russell 200
+"DHI GROUP, INC.",DHX,Russell 200
+"KLX Energy Services Holdings, Inc.",KLXE,Russell 200
+"PMV Pharmaceuticals, Inc.",PMVP,Russell 200
+OFFICE PROPERTIES INCOME TRUST,OPI,Russell 200
+LIVEPERSON INC,LPSN,Russell 200
+908 Devices Inc.,MASS,Russell 200
+"Adicet Bio, Inc.",ACET,Russell 200
+"Ikena Oncology, Inc.",IKNA,Russell 200
+"Commercial Vehicle Group, Inc.",CVGI,Russell 200
+P3 Health Partners Inc.,PIII,Russell 200
+"TPI COMPOSITES, INC",TPIC,Russell 200
+INNOVATE Corp.,VATE,Russell 200
+"SPORTSMAN'S WAREHOUSE HOLDINGS, INC.",SPWH,Russell 200
+Clipper Realty Inc.,CLPR,Russell 200
+"BioAtla, Inc.",BCAB,Russell 200
+"OptiNose, Inc.",OPTN,Russell 200
+PDS Biotechnology Corp,PDSB,Russell 200
+"URBAN ONE, INC.",UONEK,Russell 200
+"URBAN ONE, INC.",UONE,Russell 200
+"Aerovate Therapeutics, Inc.",AVTE,Russell 200
+AGENUS INC,AGEN,Russell 200
+INTEVAC INC,IVAC,Russell 200
+Ovid Therapeutics Inc.,OVID,Russell 200
+"Atara Biotherapeutics, Inc.",ATRA,Russell 200
+Mural Oncology plc,MURA,Russell 200
+"ESS Tech, Inc.",GWH,Russell 200
+"Cue Biopharma, Inc.",CUE,Russell 200
+PH Glatfelter Co,GLT,Russell 200
+Immuneering Corp,IMRX,Russell 200
+"X4 Pharmaceuticals, Inc",XFOR,Russell 200
+CATO CORP,CATO,Russell 200
+"Outset Medical, Inc.",OM,Russell 200
+"Allbirds, Inc.",BIRD,Russell 200
+"STEM, INC.",STEM,Russell 200
+Luna Innovations Inc,LUNA,Russell 200
+"Aadi Bioscience, Inc.",AADI,Russell 200
+Vor Biopharma Inc.,VOR,Russell 200
+"Allovir, Inc.",ALVR,Russell 200
+"CarParts.com, Inc.",PRTS,Russell 200
+Prelude Therapeutics Inc,PRLD,Russell 200
+Terran Orbital Corp,LLAP,Russell 200
+"Kezar Life Sciences, Inc.",KZR,Russell 200
+"Omega Therapeutics, Inc.",OMGA,Russell 200
+Verrica Pharmaceuticals Inc.,VRCA,Russell 200
+Rallybio Corp,RLYB,Russell 200
+"Rent the Runway, Inc.",RENT,Russell 200
+Li-Cycle Holdings Corp.,LICY,Russell 200
+Workhorse Group Inc.,WKHS,Russell 200
+FIBROGEN INC,FGEN,Russell 200
+"FTC Solar, Inc.",FTCI,Russell 200
+"Actinium Pharmaceuticals, Inc.",ATNM,Russell 200
+BIG 5 SPORTING GOODS Corp,BGFV,Russell 200
+"RAPT Therapeutics, Inc.",RAPT,Russell 200
+"Beyond Air, Inc.",XAIR,Russell 200
+"Outlook Therapeutics, Inc.",OTLK,Russell 200
+Zura Bio Ltd,ZURA,Russell 200
+Carisma Therapeutics Inc.,CARM,Russell 200
+Enviva Inc.,EVA,Russell 200
+DZS INC.,DZSI,Russell 200
+NOODLES & Co,NDLS,Russell 200
+Cambium Networks Corp,CMBM,Russell 200
+"5E Advanced Materials, Inc.",FEAM,Russell 200
+"Citius Pharmaceuticals, Inc.",CTXR,Russell 200
+"Verde Clean Fuels, Inc.",VGAS,Russell 200
+Dragonfly Energy Holdings Corp.,DFLI,Russell 200
+SWEDISH EXPORT CREDIT CORP /SWED/,SGH,Russell 200
+"Benson Hill, Inc.",BHIL,Russell 200
+"BioXcel Therapeutics, Inc.",BTAI,Russell 200
+"AVITA Medical, Inc.",RCEL,Russell 200
+Bright Green Corp,BGXX,Russell 200
+"MARINUS PHARMACEUTICALS, INC.",MRNS,Russell 200
+"Akoustis Technologies, Inc.",AKTS,Russell 200
+"Cara Therapeutics, Inc.",CARA,Russell 200
+"Mondee Holdings, Inc.",MOND,Russell 200
+"Lazydays Holdings, Inc.",GORV,Russell 200
+Turnstone Biologics Corp.,TSBX,Russell 200
+Eagle Pharmaceuticals Inc-DE,EGRX,Russell 200
+"EYENOVIA, INC.",EYEN,Russell 200
+CUTERA INC,CUTR,Russell 200
+"Cinemark Holdings, Inc.",CNK,Russell 200
+Vertex Energy Inc.,VTNR,Russell 200
+"Maxeon Solar Technologies, Ltd.",MAXN,Russell 200
+"Gritstone bio, Inc.",GRTS,Russell 200
+"Loop Media, Inc.",LPTV,Russell 200
+"CareMax, Inc.",CMAX,Russell 200
+"Tingo Group, Inc.",TIO,Russell 200
+Presto Automation Inc.,PRST,Russell 200
+"Graphite Bio, Inc.",GRPH,Russell 200
+"Vaxxinity, Inc.",VAXX,Russell 200
+Blue Ridge Bankshares Inc,BRBS,Russell 200
+Preferred Bank-Los Angeles CA,PFBC,Russell 200
