@@ -134,7 +134,7 @@ def main():
                     low=data['Low'],
                     close=data['Close'],
                     increasing_line_color='#2e7d32',  #Vert foncé
-                    decreasing_line_color='#c62828'  #Rouge foncé
+                    decreasing_line_color='#c62828'   #Rouge foncé
                 )])
     
                 fig.update_layout(
