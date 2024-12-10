@@ -87,7 +87,7 @@ def calculate_portfolio_metrics(weights, returns, cov_matrix, risk_free_rate):
 
     return portfolio_return, portfolio_volatility, sharpe_ratio
 
-def simulate_portfolios(returns, cov_matrix, risk_free_rate, num_portfolios):
+def simulate_portfolios(returns, cov_matrix, risk_free_rate, num_portfolios=10000):
     """
     Génère des portefeuilles aléatoires pour simuler la frontière efficiente.
 
@@ -163,7 +163,7 @@ def plot_efficient_frontier(results, portfolio_weights, returns, cov_matrix):
         x=[portfolio_volatility * 100],  # Volatilité actuelle
         y=[portfolio_return * 100],      # Rendement actuel
         mode='markers',
-        marker=dict(color='red', size=10),
+        marker=dict(color='red', size=1000),
         name='Current Portfolio'
     ))
 

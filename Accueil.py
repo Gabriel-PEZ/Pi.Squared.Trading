@@ -250,10 +250,10 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="section" data-aos="fade-up">', unsafe_allow_html=True)
 st.markdown("<h2>Services</h2>", unsafe_allow_html=True)
 services = [
-        {"name": "Stock Picking", "description": "", "icon": "📈"},
-        {"name": "Portfolio Visualizer", "description": "", "icon": "📊"},
-        {"name": "Portfolio Optimizer", "description": "", "icon": "⚙️"},
-        {"name": "Beta π²", "description": "", "icon": "💰"}
+        {"name": "Stock Picking", "description": "La solution pour construire un portefeuille sur-mesure, avec des données fiables pour des décisions éclairées.", "icon": "📈"},
+        {"name": "Portfolio Visualizer", "description": "Analysez votre portefeuille avec des outils visuels clairs et des insights puissants pour maximiser vos performances.", "icon": "📊"},
+        {"name": "Portfolio Optimizer", "description": "Optimisez votre portefeuille grâce à la frontière d’efficience, pour maximiser vos rendements et réduire vos risques.", "icon": "⚙️"},
+        {"name": "Beta π²", "description": "Notre espace innovation, avec le générateur de portefeuilles aléatoires pour dévoiler des opportunités gagnantes.", "icon": "💰"}
     ]
 
 num_services = len(services)

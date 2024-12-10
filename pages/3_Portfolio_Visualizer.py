@@ -72,6 +72,21 @@ st.markdown("""
 df_companies = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Indices boursiers/CACSNPDAXRUSSEL.csv")
 
 def main():
+    
+    #CSS pour ajuster la largeur de la zone de contenu
+    st.markdown(
+        """
+        <style>
+        div.block-container {
+            max-width: 90%;
+            margin: auto;
+            padding: 1rem;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     st.title("Portfolio visualizer")
 
     description = "Portfolio Visualizer permet aux utilisateurs de créer et personnaliser leur propre portefeuille d’investissement. Le choix des entreprises peut se faire en triant par indices de référence, en recherchant directement le nom dans la barre de recherche, ou encore en sélectionnant parmi celles déjà ajoutées à leur watch-list. L’utilisateur doit attribuer à chaque entreprise un poids spécifique, correspondant au pourcentage de cette dernière dans le portefeuille. π² Trading génère ensuite un tableau récapitulatif avec les principales statistiques du portefeuille, la performance historique YTD, ainsi qu’un graphique illustrant la répartition des poids entre les différentes entreprises. Le portefeuille est automatiquement sauvegardé pour une utilisation ultérieure dans l’onglet Portfolio Optimizer."

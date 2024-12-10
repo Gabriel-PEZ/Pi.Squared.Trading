@@ -12,6 +12,21 @@ from utils.graph_utils import plot_performance, plot_pie
 from utils.optimizer_utils import calculate_portfolio_performance, get_risk_free_rate, calculate_portfolio_metrics, simulate_portfolios, plot_efficient_frontier
 
 def main():
+
+    #CSS pour ajuster la largeur de la zone de contenu
+    st.markdown(
+        """
+        <style>
+        div.block-container {
+            max-width: 90%;
+            margin: auto;
+            padding: 1rem;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     st.title("Portfolio optimizer")
 
     description = "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille créé dans la section Portfolio Visualizer pour une analyse approfondie. Le portefeuille est résumé à travers un tableau récapitulatif des principales statistiques et un graphique illustrant la répartition des poids entre les entreprises. Ensuite, π² Trading calcule la frontière d’efficience à l’aide de la Modern Portfolio Theory pour optimiser les rendements. L’utilisateur peut définir le nombre de simulations (de 1 000 à 20 000) pour plus de précision et ajuster le taux sans risque, récupéré automatiquement par API ou saisi manuellement. La plateforme affiche ensuite la frontière d’efficience avec la position actuelle du portefeuille et propose un portefeuille optimal, soit pour minimiser la volatilité, soit pour maximiser le ratio Sharpe."
@@ -29,7 +44,11 @@ def main():
         data = st.session_state['portfolio']
         portfolio_df = data  
 
-        st.write("### Portefeuille actuel :")
+        risk_free_rate = get_risk_free_rate()
+        st.write("*Note à l'utilisateur* :")
+        st.write(f"Par défaut, le taux sans risque considéré est celui du rendement des obligations US à 10 ans, obtenu depuis l'API FRED (*r* = {risk_free_rate:.3%}).")
+
+        st.write("### Portefeuille actuel")
 
         fig_table = go.Figure(data=[go.Table(
             header=dict(
@@ -77,7 +96,6 @@ def main():
                 volatility = portfolio_returns.std() * np.sqrt(252)
 
                 #Ratio de Sharpe (avec un taux sans risque de 2%)
-                risk_free_rate = 0.02
                 sharpe_ratio = (expected_return - risk_free_rate) / volatility if volatility != 0 else np.nan
 
                 st.write("### Statistiques du Portefeuille")
@@ -123,23 +141,9 @@ def main():
             except Exception as e:
                 st.error(f"Une erreur est survenue lors de l'optimisation : {e}")
             
-        st.write("### Optimisation de votre portefeuille avec MPT")
+        st.write("### Optimisation du portefeuille avec MPT")
         st.write("Optimisez votre portefeuille d'investissement sur la base de la théorie moderne du portefeuille (MPT).")
         st.write("*Note à l'utilisateur* : Par défaut, l'historique utilisé est celui des 10 dernières années.")
-
-        # Ajout de la possibilité pour l'utilisateur de définir le nombre de simulations
-        num_simulations = st.slider("Nb de Simulations Souhaitées", min_value=1000, max_value=20000, step=100)
-
-        # Option pour le TsR
-        st.write("Options pour le Taux sans Risque (r) :")
-        use_api_rate = st.button("API FRED")
-        no_use_api_rate = st.button("Input Manuel")
-
-        if use_api_rate:
-            risk_free_rate = get_risk_free_rate()
-            st.write(f"Taux sans Risque actuel : *r* = {risk_free_rate:.3%}")
-        if no_use_api_rate:
-            risk_free_rate = st.number_input("Rentrer le Taux sans Risque (en %)", min_value=0.0, max_value=15.0, value=2.0, step=0.01) / 100.0
 
         data = st.session_state['portfolio']
         tickers = data['Actions'].tolist()
@@ -149,7 +153,7 @@ def main():
         cov_matrix = stock_data.pct_change().cov() * 252
 
         # Simuler les portefeuilles
-        results = simulate_portfolios(returns, cov_matrix, risk_free_rate, num_simulations)
+        results = simulate_portfolios(returns, cov_matrix, risk_free_rate)
         fig = plot_efficient_frontier(results, weights, returns, cov_matrix)
         st.plotly_chart(fig)
 
