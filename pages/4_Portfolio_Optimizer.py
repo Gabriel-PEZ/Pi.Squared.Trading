@@ -13,7 +13,17 @@ from utils.optimizer_utils import calculate_portfolio_performance, get_risk_free
 
 def main():
     st.title("Portfolio optimizer")
-    st.write("Optimisez votre portefeuille en ajustant les poids des actifs pour maximiser le rendement et minimiser le risque.")
+
+    description = "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille créé dans la section Portfolio Visualizer pour une analyse approfondie. Le portefeuille est résumé à travers un tableau récapitulatif des principales statistiques et un graphique illustrant la répartition des poids entre les entreprises. Ensuite, π² Trading calcule la frontière d’efficience à l’aide de la Modern Portfolio Theory pour optimiser les rendements. L’utilisateur peut définir le nombre de simulations (de 1 000 à 20 000) pour plus de précision et ajuster le taux sans risque, récupéré automatiquement par API ou saisi manuellement. La plateforme affiche ensuite la frontière d’efficience avec la position actuelle du portefeuille et propose un portefeuille optimal, soit pour minimiser la volatilité, soit pour maximiser le ratio Sharpe."
+
+    justified_description = f"""
+    <div style='text-align: justify; text-justify: inter-word;'>
+        {description}
+    </div>
+    """
+    st.markdown(justified_description, unsafe_allow_html=True)
+
+    st.write("")
 
     if 'portfolio' in st.session_state and not st.session_state['portfolio'].empty:
         data = st.session_state['portfolio']
