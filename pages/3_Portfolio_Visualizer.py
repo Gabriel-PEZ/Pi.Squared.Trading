@@ -2,12 +2,12 @@
 
 import pandas as pd
 import streamlit as st
-from streamlit_option_menu import option_menu  # Assurez-vous que streamlit_option_menu est installé
+from streamlit_option_menu import option_menu
 import yfinance as yf
 import plotly.graph_objs as go
 import plotly.express as px
-import numpy as np  # type: ignore
-from utils.graph_utils import plot_performance, plot_pie  # type: ignore
+import numpy as np 
+from utils.graph_utils import plot_performance, plot_pie 
 
 
 def get_company_name(ticker):
@@ -272,7 +272,9 @@ def main():
                 'Poids (%)': [df.loc[df['Ticker'] == ticker, 'Poids (%)'].values[0] for ticker in valid_tickers]
             }
             portfolio_df = pd.DataFrame(portfolio)
-            portfolio_df.index = range(1, 1 + len(valid_tickers))
+            for i in range(len(portfolio_df)):
+                portfolio_df.loc[i, 'Industry'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info['industry']
+            grouped_by_industry = portfolio_df.groupby('Industry')['Poids (%)'].apply(np.sum).reset_index()
 
             #Métriques du portefeuilles
             total_weight = portfolio_df['Poids (%)'].sum()
@@ -349,13 +351,17 @@ def main():
             graph_cols = st.columns(2)
 
             with graph_cols[0]:
-                    st.write("### Performance Historique du Portefeuille")
-                    plot_performance(portfolio_cumulative)  #Module des fonctions graphiques
+                st.write("### Répartition du portefeuille par industrie")
+                grouped_sorted = grouped_by_industry.sort_values(by='Poids (%)', ascending=False)
+                plot_pie(grouped_sorted, 'Industry')  #Module des fonctions graphiques
 
             with graph_cols[1]:
-                    st.write("### Répartition des Poids dans le Portefeuille")
+                    st.write("### Répartition des poids dans le portefeuille")
                     portfolio_df_sorted = portfolio_df.sort_values(by='Poids (%)', ascending=False)
-                    plot_pie(portfolio_df_sorted)  #Module des fonctions graphiques
+                    plot_pie(portfolio_df_sorted, 'Actions')  #Module des fonctions graphiques
+
+            st.write("### Performance historique du portefeuille")
+            plot_performance(portfolio_cumulative)
 
             #On stocke le portefeuille pour la partie opti
             st.session_state['portfolio'] = portfolio_df

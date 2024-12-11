@@ -42,7 +42,11 @@ def main():
 
     if 'portfolio' in st.session_state and not st.session_state['portfolio'].empty:
         data = st.session_state['portfolio']
-        portfolio_df = data  
+        portfolio_df = data 
+
+        for i in range(len(portfolio_df)):
+            portfolio_df.loc[i, 'Industry'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info['industry']
+        grouped_by_industry = portfolio_df.groupby('Industry')['Poids (%)'].apply(np.sum).reset_index() 
 
         risk_free_rate = get_risk_free_rate()
         st.write("*Note à l'utilisateur* :")
@@ -125,13 +129,17 @@ def main():
                 graph_cols = st.columns(2)
 
                 with graph_cols[0]:
-                    st.write("### Performance Historique du Portefeuille")
-                    plot_performance(portfolio_cumulative) #Module pour les deux graphiques
+                    st.write("### Répartition du portefeuille par industrie")
+                    grouped_sorted = grouped_by_industry.sort_values(by='Poids (%)', ascending=False)
+                    plot_pie(grouped_sorted, 'Industry')  #Module des fonctions graphiques
 
                 with graph_cols[1]:
-                    st.write("### Répartition des Poids dans le Portefeuille")
-                    portfolio_df_sorted = portfolio_df.sort_values(by='Poids (%)', ascending=False)
-                    plot_pie(portfolio_df_sorted)  
+                        st.write("### Répartition des poids dans le portefeuille")
+                        portfolio_df_sorted = portfolio_df.sort_values(by='Poids (%)', ascending=False)
+                        plot_pie(portfolio_df_sorted, 'Actions')  #Module des fonctions graphiques
+
+                st.write("### Performance historique du portefeuille")
+                plot_performance(portfolio_cumulative)  
 
                 st.session_state['portfolio'] = data
                 #st.success("✅ Le portefeuille a été enregistré pour une utilisation ultérieure.")
