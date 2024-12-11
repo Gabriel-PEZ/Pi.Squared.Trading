@@ -37,19 +37,16 @@ st.markdown('''
 st.markdown('<h2 class="subtitle">A new way of investing</h2>', unsafe_allow_html=True)
 
 st.markdown('<div class="section" data-aos="fade-up">', unsafe_allow_html=True)
-st.markdown("""
-    <h2>Introduction</h2>
-    <p>
-    Bienvenue sur π² Trading, la plateforme conçue pour transformer vos stratégies financières en véritables succès.
-    
-    Alliant technologie de pointe et accessibilité, π² Trading met entre vos mains des outils performants et intuitifs, parfaits pour les investisseurs débutants comme pour les experts souhaitant maximiser leur potentiel. Pensée pour offrir une expérience fluide, cette plateforme dynamique, développée sur Streamlit, se distingue par son interface moderne et conviviale, rendant chaque fonctionnalité simple d'accès et agréable à utiliser.
-    
-    À travers des modules innovants comme Stock Picking, Portfolio Visualizer, Portfolio Optimizer et Beta π², elle vous propose une boîte à outils complète pour analyser, créer, simuler et optimiser vos investissements avec précision. En s'appuyant sur des données fiables issues de sources reconnues telles que finance, π² Trading garantit une information à jour et pertinente, vous aidant à prendre des décisions éclairées. Grâce à l'intégration des théories financières modernes et des simulations avancées, vous pouvez explorer de nouvelles opportunités et perfectionner vos portefeuilles dans un environnement entièrement pensé pour répondre à vos besoins. 
-    Rejoignez π² Trading dès maintenant et donnez une nouvelle dimension à vos investissements.
-    
-    π² Trading : a new way of investing.
-    </p>
-    """, unsafe_allow_html=True)
+
+intro = "Bienvenue sur π² Trading, la plateforme conçue pour transformer vos stratégies financières en véritables succès.\n\nAlliant technologie de pointe et accessibilité, π² Trading met entre vos mains des outils performants et intuitifs, parfaits pour les investisseurs débutants comme pour les experts souhaitant maximiser leur potentiel. Pensée pour offrir une expérience fluide, cette plateforme dynamique, développée sur Streamlit, se distingue par son interface moderne et conviviale, rendant chaque fonctionnalité simple d'accès et agréable à utiliser.\n\nÀ travers des modules innovants comme Stock Picking, Portfolio Visualizer, Portfolio Optimizer et Beta π², elle vous propose une boîte à outils complète pour analyser, créer, simuler et optimiser vos investissements avec précision. En s'appuyant sur des données fiables issues de sources reconnues telles que finance, π² Trading garantit une information à jour et pertinente, vous aidant à prendre des décisions éclairées. Grâce à l'intégration des théories financières modernes et des simulations avancées, vous pouvez explorer de nouvelles opportunités et perfectionner vos portefeuilles dans un environnement entièrement pensé pour répondre à vos besoins.\n\nRejoignez π² Trading dès maintenant et donnez une nouvelle dimension à vos investissements.\n\nπ² Trading : a new way of investing."
+
+justified_intro = f"""
+    <div style='text-align: justify; text-justify: inter-word;'>
+        {intro}
+    </div>
+    """
+st.markdown(justified_intro, unsafe_allow_html=True)
+
 st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown('<div class="section" data-aos="fade-up">', unsafe_allow_html=True)

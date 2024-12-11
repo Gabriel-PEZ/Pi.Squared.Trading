@@ -47,17 +47,7 @@ def add_asset():
 def remove_asset(index):
     del st.session_state.tickers[index]
     del st.session_state.weights[index]
-
-def local_css(css_text):
-    st.markdown(f'<style>{css_text}</style>', unsafe_allow_html=True)
-
-# Styles CSS améliorés avec animations et effets de parallaxe
-css = """
-/* Votre CSS ici... */
-"""
-local_css(css)
-
-# Inclure la bibliothèque AOS pour les animations
+ 
 st.markdown("""
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
