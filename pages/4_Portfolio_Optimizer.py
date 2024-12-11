@@ -9,7 +9,7 @@ import plotly.express as px
 import requests
 import numpy as np
 from utils.graph_utils import plot_performance, plot_pie
-from utils.optimizer_utils import calculate_portfolio_performance, get_risk_free_rate, calculate_portfolio_metrics, simulate_portfolios, plot_efficient_frontier
+from utils.optimizer_utils import calculate_portfolio_performance, get_risk_free_rate, calculate_portfolio_metrics, simulate_portfolios, calculate_FE, plot_FE, plot_portfolio_performance
 
 def main():
 
@@ -159,11 +159,50 @@ def main():
         stock_data = yf.download(tickers, period='10y')['Adj Close']
         returns = stock_data.pct_change().mean() * 252
         cov_matrix = stock_data.pct_change().cov() * 252
+        individual_volatility = np.sqrt(np.diag(cov_matrix))
 
         # Simuler les portefeuilles
-        results = simulate_portfolios(returns, cov_matrix, risk_free_rate)
-        fig = plot_efficient_frontier(results, weights, returns, cov_matrix)
+
+        portfolios, min_volatility_portfolio, max_sharpe_portfolio, current_portfolio_metrics = calculate_FE(
+            returns=returns,
+            cov_matrix=cov_matrix,
+            risk_free_rate=risk_free_rate,
+            portfolio_weights=weights
+        )
+
+        # Appeler la fonction plot_FE pour créer le graphique
+        fig = plot_FE(
+            portfolios=portfolios,
+            min_volatility_portfolio=min_volatility_portfolio,
+            max_sharpe_portfolio=max_sharpe_portfolio,
+            current_portfolio_metrics=current_portfolio_metrics,
+            individual_volatility=individual_volatility,
+            individual_returns=returns,
+            asset_names=tickers
+        )
+
+        # Afficher le graphique
         st.plotly_chart(fig)
+
+        # Ajouter les détails des portefeuilles optimaux
+        st.markdown("### Détails des portefeuilles optimaux")
+        st.write("#### Portefeuille à Volatilité Minimale :")
+        st.write(min_volatility_portfolio[:len(weights)])
+
+        st.write("#### Portefeuille avec Sharpe Maximal :")
+        st.write(max_sharpe_portfolio[:len(weights)])
+
+        # Calculer les performances cumulées des portefeuilles
+        # Appeler la fonction pour tracer la performance historique des portefeuilles
+        st.write("### Performance Historique des Portefeuilles")
+        fig = plot_portfolio_performance(
+            tickers=tickers,
+            weights=weights,
+            min_vol_weights=min_volatility_portfolio[:len(weights)].values,
+            max_sharpe_weights=max_sharpe_portfolio[:len(weights)].values,
+            period='10y'
+        )
+        st.plotly_chart(fig, use_container_width=True)
 
     else:
         st.info("Veuillez créer un portefeuille dans la section **Création de Portefeuille** avant de procéder à l'optimisation.")

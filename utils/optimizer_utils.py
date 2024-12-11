@@ -115,66 +115,232 @@ def simulate_portfolios(returns, cov_matrix, risk_free_rate, num_portfolios=1000
 
     return results
 
-def plot_efficient_frontier(results, portfolio_weights, returns, cov_matrix):
+def calculate_FE(returns, cov_matrix, risk_free_rate, portfolio_weights):
     """
-    Trace la frontière efficiente avec les portefeuilles simulés et le portefeuille actuel.
+    Effectue les calculs pour la frontière efficiente.
 
-    :param results: Tableau des résultats des portefeuilles simulés (pondérations, rendements, volatilités, ratios de Sharpe).
-    :param portfolio_weights: Pondérations du portefeuille actuel.
-    :param returns: Rendements moyens des actifs (liste ou tableau).
+    :param returns: Rendements moyens des actifs.
     :param cov_matrix: Matrice de covariance des actifs.
-    :return: Objet Plotly `Figure` contenant la visualisation.
+    :param risk_free_rate: Taux sans risque.
+    :param portfolio_weights: Pondérations du portefeuille actuel.
+    :return: Un tuple contenant le DataFrame des portefeuilles simulés,
+             le portefeuille à volatilité minimale et le portefeuille au Sharpe maximal.
     """
-    # Création d'un DataFrame des portefeuilles simulés
-    num_assets = len(portfolio_weights)
-    columns = [f'Weight {i+1}' for i in range(num_assets)] + ['Return', 'Volatility', 'Sharpe Ratio']
+    # Simuler les portefeuilles
+    num_assets = len(returns)
+    num_portfolios = 10000
+    results = np.zeros((num_portfolios, num_assets + 3))  # Colonnes : pondérations + métriques
+
+    for i in range(num_portfolios):
+        weights = np.random.random(num_assets)
+        weights /= weights.sum()  # Normalisation à 1
+        portfolio_return, portfolio_volatility, sharpe_ratio = calculate_portfolio_metrics(
+            weights, returns, cov_matrix, risk_free_rate
+        )
+        results[i, :num_assets] = weights
+        results[i, num_assets:] = portfolio_return, portfolio_volatility, sharpe_ratio
+
+    # Convertir en DataFrame
+    columns = [f'Weight {i+1}' for i in range(num_assets)] + ['Rendement', 'Volatilité', 'Ratio de Sharpe']
     portfolios = pd.DataFrame(results, columns=columns)
 
-    # Conversion des rendements et volatilités en pourcentages
-    portfolios['Return'] *= 100
-    portfolios['Volatility'] *= 100
+    # Trouver les portefeuilles optimaux
+    min_volatility_idx = portfolios['Volatilité'].idxmin()
+    max_sharpe_idx = portfolios['Ratio de Sharpe'].idxmax()
 
-    # Création du graphique pour les portefeuilles simulés
+    min_volatility_portfolio = portfolios.iloc[min_volatility_idx]
+    max_sharpe_portfolio = portfolios.iloc[max_sharpe_idx]
+
+    # Calculer les métriques du portefeuille actuel
+    portfolio_return, portfolio_volatility, sharpe_ratio = calculate_portfolio_metrics(
+        portfolio_weights, returns, cov_matrix, risk_free_rate
+    )
+    current_portfolio_metrics = {
+        "Rendement": portfolio_return * 100,
+        "Volatilité": portfolio_volatility * 100,
+        "Ratio de Sharpe": sharpe_ratio
+    }
+
+    return portfolios, min_volatility_portfolio, max_sharpe_portfolio, current_portfolio_metrics
+
+def plot_FE(portfolios, min_volatility_portfolio, max_sharpe_portfolio, current_portfolio_metrics, 
+            individual_volatility, individual_returns, asset_names):
+    """
+    Trace la frontière efficiente avec les portefeuilles simulés.
+
+    :param portfolios: DataFrame des portefeuilles simulés.
+    :param min_volatility_portfolio: Portefeuille à volatilité minimale.
+    :param max_sharpe_portfolio: Portefeuille avec le Sharpe maximal.
+    :param current_portfolio_metrics: Dictionnaire contenant les métriques du portefeuille actuel.
+    :param individual_volatility: Volatilité individuelle des actifs.
+    :param individual_returns: Rendements individuels des actifs.
+    :param asset_names: Liste des noms des actifs.
+    :return: Objet Plotly `Figure`.
+    """
     fig = go.Figure()
+
+    # Tracer les portefeuilles simulés
     fig.add_trace(go.Scatter(
-        x=portfolios['Volatility'],  # Volatilité sur l'axe des X
-        y=portfolios['Return'],      # Rendement sur l'axe des Y
+        x=portfolios['Volatilité'] * 100,
+        y=portfolios['Rendement'] * 100,
         mode='markers',
         marker=dict(
             size=5,
-            color=portfolios['Sharpe Ratio'],  # Couleur selon le ratio de Sharpe
+            color=portfolios['Ratio de Sharpe'],
             colorscale='Viridis',
-            showscale=True
+            showscale=True,
+            colorbar=dict(title='Ratio de Sharpe')
         ),
-        text=portfolios['Sharpe Ratio'],  # Ratio de Sharpe en info-bulle
-        name='Simulated Portfolios'
+        text=portfolios['Ratio de Sharpe'],
+        name='Portefeuilles simulés'
     ))
 
-    # Calcul des métriques du portefeuille actuel
-    portfolio_return, portfolio_volatility, _ = calculate_portfolio_metrics(
-        portfolio_weights, 
-        returns.mean(), 
-        cov_matrix, 
-        get_risk_free_rate()
-    )
-
-    # Ajout du portefeuille actuel au graphique
+    # Ajouter le portefeuille actuel
     fig.add_trace(go.Scatter(
-        x=[portfolio_volatility * 100],  # Volatilité actuelle
-        y=[portfolio_return * 100],      # Rendement actuel
-        mode='markers',
-        marker=dict(color='red', size=1000),
-        name='Current Portfolio'
+        x=[current_portfolio_metrics["Volatilité"]],
+        y=[current_portfolio_metrics["Rendement"]],
+        mode='markers+text',
+        marker=dict(color='red', size=12, symbol='star'),
+        text=['Portefeuille Actuel'],
+        textposition="top center",
+        name='Portefeuille Actuel'
     ))
 
-    # Mise en forme du graphique
+    # Ajouter les actifs individuels
+    fig.add_trace(go.Scatter(
+        x=individual_volatility * 100,
+        y=individual_returns * 100,
+        mode='markers+text',
+        marker=dict(color='blue', size=8),
+        text=asset_names,
+        textposition="top center",
+        name='Actifs'
+    ))
+
+    # Ajouter le portefeuille à volatilité minimale
+    fig.add_trace(go.Scatter(
+        x=[min_volatility_portfolio['Volatilité'] * 100],
+        y=[min_volatility_portfolio['Rendement'] * 100],
+        mode='markers+text',
+        marker=dict(color='green', size=12, symbol='star'),
+        text=['Volatilité Minimale'],
+        textposition="top center",
+        name='Portefeuille à Volatilité Minimale'
+    ))
+
+    # Ajouter le portefeuille avec Sharpe maximal
+    fig.add_trace(go.Scatter(
+        x=[max_sharpe_portfolio['Volatilité'] * 100],
+        y=[max_sharpe_portfolio['Rendement'] * 100],
+        mode='markers+text',
+        marker=dict(color='gold', size=12, symbol='star'),
+        text=['Sharpe Maximal'],
+        textposition="top center",
+        name='Portefeuille avec Sharpe Maximal'
+    ))
+
+    # Mettre à jour la mise en page
     fig.update_layout(
-        title='Efficient Frontier with Current Portfolio',
-        xaxis_title='Volatility (%)',
-        yaxis_title='Expected Return (%)',
-        legend_title='Portfolio Details',
+        title='Frontière efficiente avec portefeuilles et actifs',
+        xaxis_title='Volatilité (%)',
+        yaxis_title='Rendement attendu (%)',
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.3,
+            xanchor="center",
+            x=0.5
+        ),
         width=800,
         height=600
+    )
+
+    return fig
+
+def plot_portfolio_performance(tickers, weights, min_vol_weights, max_sharpe_weights, period='10y'):
+    """
+    Trace la performance cumulée des portefeuilles sur une période donnée.
+
+    :param tickers: Liste des tickers des actifs du portefeuille.
+    :param weights: Pondérations du portefeuille original.
+    :param min_vol_weights: Pondérations du portefeuille à volatilité minimale.
+    :param max_sharpe_weights: Pondérations du portefeuille avec Sharpe maximal.
+    :param period: Période pour les calculs (par défaut '10y').
+    :return: Objet Plotly `Figure`.
+    """
+    # Calculer les performances cumulées
+    # Portefeuille original
+    original_cumulative, _ = calculate_portfolio_performance(tickers, weights, period=period)
+
+    # Portefeuille à volatilité minimale
+    min_vol_cumulative, _ = calculate_portfolio_performance(tickers, min_vol_weights, period=period)
+
+    # Portefeuille avec Sharpe maximal
+    max_sharpe_cumulative, _ = calculate_portfolio_performance(tickers, max_sharpe_weights, period=period)
+
+    # Tracer les performances cumulées
+    fig = go.Figure()
+
+    # Performance du portefeuille original
+    fig.add_trace(go.Scatter(
+        x=original_cumulative.index,
+        y=original_cumulative.values,
+        mode='lines',  # Lignes sans marqueurs
+        name='Portefeuille Original',
+        line=dict(color='#0611ab', width=3)
+    ))
+
+    # Performance du portefeuille à volatilité minimale
+    fig.add_trace(go.Scatter(
+        x=min_vol_cumulative.index,
+        y=min_vol_cumulative.values,
+        mode='lines',  # Lignes sans marqueurs
+        name='Portefeuille Volatilité Minimale',
+        line=dict(color='green', width=3)
+    ))
+
+    # Performance du portefeuille avec Sharpe maximal
+    fig.add_trace(go.Scatter(
+        x=max_sharpe_cumulative.index,
+        y=max_sharpe_cumulative.values,
+        mode='lines',  # Lignes sans marqueurs
+        name='Portefeuille Sharpe Maximal',
+        line=dict(color='gold', width=3)
+    ))
+
+    # Mettre à jour la mise en page du graphique
+    fig.update_layout(
+        title='Performance Historique des Portefeuilles',
+        xaxis_title='Date',
+        yaxis_title='Valeur Cumulative',
+        template='plotly_white',
+        height=550,
+        margin=dict(l=50, r=50, t=30, b=50),
+        hovermode='x unified',
+        showlegend=True,
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=-0.3,
+            xanchor="center",
+            x=0.5
+        ),
+        xaxis=dict(
+            showgrid=True,
+            gridcolor='lightgray',
+            zeroline=True,
+            zerolinecolor='black',
+            zerolinewidth=1
+        ),
+        yaxis=dict(
+            showgrid=True,
+            gridcolor='lightgray',
+            zeroline=True,
+            zerolinecolor='black',
+            zerolinewidth=1
+        ),
+        plot_bgcolor='rgba(255, 255, 255, 0.9)',
+        paper_bgcolor='rgba(255, 255, 255, 1)',
     )
 
     return fig
