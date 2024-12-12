@@ -200,7 +200,7 @@ def plot_FE(portfolios, min_volatility_portfolio, max_sharpe_portfolio, current_
         x=[current_portfolio_metrics["Volatilité"]],
         y=[current_portfolio_metrics["Rendement"]],
         mode='markers+text',
-        marker=dict(color='red', size=12, symbol='star'),
+        marker=dict(color='black', size=12, symbol='hexagram'),
         text=['Portefeuille Actuel'],
         textposition="top center",
         name='Portefeuille Actuel'
@@ -222,8 +222,8 @@ def plot_FE(portfolios, min_volatility_portfolio, max_sharpe_portfolio, current_
         x=[min_volatility_portfolio['Volatilité'] * 100],
         y=[min_volatility_portfolio['Rendement'] * 100],
         mode='markers+text',
-        marker=dict(color='green', size=12, symbol='star'),
-        text=['Volatilité Minimale'],
+        marker=dict(color='magenta', size=12, symbol='star-diamond'),
+        text=['Min Vol'],
         textposition="top center",
         name='Portefeuille à Volatilité Minimale'
     ))
@@ -233,8 +233,8 @@ def plot_FE(portfolios, min_volatility_portfolio, max_sharpe_portfolio, current_
         x=[max_sharpe_portfolio['Volatilité'] * 100],
         y=[max_sharpe_portfolio['Rendement'] * 100],
         mode='markers+text',
-        marker=dict(color='gold', size=12, symbol='star'),
-        text=['Sharpe Maximal'],
+        marker=dict(color='red', size=12, symbol='star-diamond'),
+        text=['Max Sharpe'],
         textposition="top center",
         name='Portefeuille avec Sharpe Maximal'
     ))

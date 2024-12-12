@@ -185,16 +185,17 @@ def main():
         st.plotly_chart(fig)
 
         # Ajouter les détails des portefeuilles optimaux
-        st.markdown("### Détails des portefeuilles optimaux")
-        st.write("#### Portefeuille à Volatilité Minimale :")
-        st.write(min_volatility_portfolio[:len(weights)])
+        
+        sep = st.columns(2)
+        
+        with sep[0]:
+            st.write("### Portefeuille à Volatilité Minimale :")
+            st.write(min_volatility_portfolio[:len(weights)])
 
-        st.write("#### Portefeuille avec Sharpe Maximal :")
-        st.write(max_sharpe_portfolio[:len(weights)])
+        with sep[1]:
+            st.write("### Portefeuille avec Sharpe Maximal :")
+            st.write(max_sharpe_portfolio[:len(weights)])
 
-        # Calculer les performances cumulées des portefeuilles
-        # Appeler la fonction pour tracer la performance historique des portefeuilles
-        st.write("### Performance Historique des Portefeuilles")
         fig = plot_portfolio_performance(
             tickers=tickers,
             weights=weights,
