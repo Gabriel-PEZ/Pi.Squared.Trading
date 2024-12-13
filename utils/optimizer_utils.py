@@ -310,7 +310,6 @@ def plot_portfolio_performance(tickers, weights, min_vol_weights, max_sharpe_wei
 
     # Mettre à jour la mise en page du graphique
     fig.update_layout(
-        title='Performance Historique des Portefeuilles',
         xaxis_title='Date',
         yaxis_title='Valeur Cumulative',
         template='plotly_white',

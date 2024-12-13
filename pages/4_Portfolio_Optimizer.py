@@ -1,4 +1,4 @@
-# Portfolio_optimizer.py
+# Libraires pour la page 'Portfolio Optimizer'
 
 import pandas as pd
 import streamlit as st
@@ -9,11 +9,11 @@ import plotly.express as px
 import requests
 import numpy as np
 from utils.graph_utils import plot_performance, plot_pie
-from utils.optimizer_utils import calculate_portfolio_performance, get_risk_free_rate, calculate_portfolio_metrics, simulate_portfolios, calculate_FE, plot_FE, plot_portfolio_performance
+from utils.optimizer_utils import calculate_portfolio_performance, get_risk_free_rate, calculate_FE, plot_FE, plot_portfolio_performance
 
 def main():
 
-    #CSS pour ajuster la largeur de la zone de contenu
+    # CSS pour ajuster la largeur de la zone de contenu
     st.markdown(
         """
         <style>
@@ -27,19 +27,18 @@ def main():
         unsafe_allow_html=True,
     )
 
+    # Header de la page
     st.title("Portfolio optimizer")
-
     description = "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille créé dans la section Portfolio Visualizer pour une analyse approfondie. Le portefeuille est résumé à travers un tableau récapitulatif des principales statistiques et un graphique illustrant la répartition des poids entre les entreprises. Ensuite, π² Trading calcule la frontière d’efficience à l’aide de la Modern Portfolio Theory pour optimiser les rendements. L’utilisateur peut définir le nombre de simulations (de 1 000 à 20 000) pour plus de précision et ajuster le taux sans risque, récupéré automatiquement par API ou saisi manuellement. La plateforme affiche ensuite la frontière d’efficience avec la position actuelle du portefeuille et propose un portefeuille optimal, soit pour minimiser la volatilité, soit pour maximiser le ratio Sharpe."
-
     justified_description = f"""
     <div style='text-align: justify; text-justify: inter-word;'>
         {description}
     </div>
     """
     st.markdown(justified_description, unsafe_allow_html=True)
-
     st.write("")
 
+    # Condition pour que la page fonctionne : l'utilisateur a bien rentré un portefeuille dans la page 'Portfolio Visualizer'
     if 'portfolio' in st.session_state and not st.session_state['portfolio'].empty:
         data = st.session_state['portfolio']
         portfolio_df = data 
@@ -138,7 +137,7 @@ def main():
                         portfolio_df_sorted = portfolio_df.sort_values(by='Poids (%)', ascending=False)
                         plot_pie(portfolio_df_sorted, 'Actions')  #Module des fonctions graphiques
 
-                st.write("### Performance historique du portefeuille")
+                st.write("### Performance du portefeuille en YTD")
                 plot_performance(portfolio_cumulative)  
 
                 st.session_state['portfolio'] = data
@@ -150,7 +149,6 @@ def main():
                 st.error(f"Une erreur est survenue lors de l'optimisation : {e}")
             
         st.write("### Optimisation du portefeuille avec MPT")
-        st.write("Optimisez votre portefeuille d'investissement sur la base de la théorie moderne du portefeuille (MPT).")
         st.write("*Note à l'utilisateur* : Par défaut, l'historique utilisé est celui des 10 dernières années.")
 
         data = st.session_state['portfolio']
@@ -185,17 +183,31 @@ def main():
         st.plotly_chart(fig)
 
         # Ajouter les détails des portefeuilles optimaux
-        
         sep = st.columns(2)
-        
+
+        # Ignorer ligne 0, garder pondérations
+        weights_min_volatility = min_volatility_portfolio.iloc[0:-3].values 
+        weights_max_sharpe = max_sharpe_portfolio.iloc[0:-3].values
+
+        # Préparer les données pour le camembert
+        min_volatility_portfolio_df = pd.DataFrame({
+            'Actions': tickers[:len(weights_min_volatility)],  # Associe noms (tickers) aux pondérations
+            'Poids (%)': weights_min_volatility * 100  # Convertir les poids en pourcentages
+        }).sort_values(by='Poids (%)', ascending=False)
+        max_sharpe_portfolio_df = pd.DataFrame({
+                    'Actions': tickers[:len(weights_max_sharpe)],  # Associe noms (tickers) aux pondérations
+                    'Poids (%)': weights_max_sharpe * 100  # Convertir les poids en pourcentages
+                }).sort_values(by='Poids (%)', ascending=False)
+
         with sep[0]:
-            st.write("### Portefeuille à Volatilité Minimale :")
-            st.write(min_volatility_portfolio[:len(weights)])
-
+            st.write("### Portefeuille à Volatilité Minimale")
+            plot_pie(min_volatility_portfolio_df, 'Actions')
+        
         with sep[1]:
-            st.write("### Portefeuille avec Sharpe Maximal :")
-            st.write(max_sharpe_portfolio[:len(weights)])
-
+            st.write("### Portefeuille avec Sharpe Maximal")
+            plot_pie(max_sharpe_portfolio_df, 'Actions')
+        
+        st.write("### Performance des ≠ portefeuilles en 10 Y")
         fig = plot_portfolio_performance(
             tickers=tickers,
             weights=weights,
