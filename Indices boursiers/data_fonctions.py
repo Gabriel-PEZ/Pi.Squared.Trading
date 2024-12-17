@@ -25,29 +25,51 @@ def load_google_sheet_csv_Russel(url):
         raise AssertionError('Erreur HTTP avec le code de statut: {}'.format(response.status_code))
 
 
-def update_dataframe_Russel(df):
+def get_sp500_list(url):
     """
-    Met à jour la colonne 'Market Cap' du DataFrame :
-    - Si 'Market Cap' est NaN, remplace par les données de yfinance.
-    - Sinon, supprime le symbole '$' de 'Market Cap',
-             le convertit en float * million, puis en entier.
+    Récupère la liste des entreprises du S&P 500 depuis Wikipedia.
 
     Paramètres:
-    - df (DataFrame): DataFrame contenant les données du Russel 2000 à mettre à jour.
+    - url (str): URL de la page Wikipedia contenant la liste des entreprises du S&P 500.
 
     Retour:
-    - DataFrame avec la colonne 'Market Cap' mise à jour.
+    - DataFrame contenant la liste des entreprises du S&P 500.
     """
-    for index, row in df.iterrows():
-        if pd.isna(row['Market Cap']):
-            ticker = row['Ticker']
-            yf_ticker = yf.Ticker(ticker)
-            market_cap = yf_ticker.info.get('marketCap')
-            if market_cap:
-                df.at[index, 'Market Cap'] = int(market_cap)
-            else:
-                print(f"Erreur lors de la récupération du Market Cap pour {ticker}.")
-        else:
-            market_cap_value = float(str(row['Market Cap']).replace('$', '').replace(',', '')) * 1e6
-            df.at[index, 'Market Cap'] = int(market_cap_value)
+    return pd.read_html(url)[0]
+
+
+def get_market_cap(symbol):
+    """
+    Récupère la capitalisation boursière d'une entreprise à partir de son symbole boursier.
+
+    Paramètres:
+    - symbol (str): Symbole boursier de l'entreprise.
+
+    Retour:
+    - marketCap (float): Capitalisation boursière de l'entreprise ou None si non trouvable.
+    """
+    try:
+        stock = yf.Ticker(symbol)
+        return stock.info['marketCap']
+    except KeyError:
+        return None
+
+
+def update_symbols(df):
+    """
+    Met à jour les symboles spéciaux dans le DataFrame du S&P 500.
+
+    Paramètres:
+    - df (DataFrame): DataFrame du S&P 500 contenant les symboles à mettre à jour.
+
+    Retour:
+    - DataFrame avec les symboles mis à jour.
+    """
+    corrections = {
+        60: 'BRK-B',
+        75: 'BF-B'
+    }
+    for index, symbol in corrections.items():
+        df.loc[index, 'Symbol'] = symbol
+        df.loc[index, 'MarketCap'] = yf.Ticker(symbol).info['marketCap']
     return df
