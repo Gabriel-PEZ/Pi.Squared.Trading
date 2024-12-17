@@ -1,10 +1,9 @@
 import requests
 import pandas as pd
 from io import StringIO
-import yfinance as yf
 
 
-def load_google_sheet_csv_Russel(url):
+def gsheet_Russel2000(url):
     """
     Charge un Google Sheet exporté en CSV depuis une URL et le retourne sous forme de DataFrame.
 
@@ -25,51 +24,37 @@ def load_google_sheet_csv_Russel(url):
         raise AssertionError('Erreur HTTP avec le code de statut: {}'.format(response.status_code))
 
 
-def get_sp500_list(url):
+def obtenir_liste_entreprises(url, nom_indice):
     """
-    Récupère la liste des entreprises du S&P 500 depuis Wikipedia.
+    Récupère la liste des entreprises d'un indice boursier spécifié depuis Wikipedia ou un Google Sheet.
 
-    Paramètres:
-    - url (str): URL de la page Wikipedia contenant la liste des entreprises du S&P 500.
+    Paramètres :
+    - url (str) : URL de la page Wikipedia ou du Google Sheet contenant la liste des entreprises de l'indice boursier.
+    - nom_indice (str) : Nom de l'indice boursier ('Russell 2000', 'CAC 40', 'S&P 500', 'DAX').
 
-    Retour:
-    - DataFrame contenant la liste des entreprises du S&P 500.
+    Retour :
+    - DataFrame contenant la liste des entreprises pour l'indice boursier spécifié.
     """
-    return pd.read_html(url)[0]
-
-
-def get_market_cap(symbol):
-    """
-    Récupère la capitalisation boursière d'une entreprise à partir de son symbole boursier.
-
-    Paramètres:
-    - symbol (str): Symbole boursier de l'entreprise.
-
-    Retour:
-    - marketCap (float): Capitalisation boursière de l'entreprise ou None si non trouvable.
-    """
-    try:
-        stock = yf.Ticker(symbol)
-        return stock.info['marketCap']
-    except KeyError:
-        return None
-
-
-def update_symbols(df):
-    """
-    Met à jour les symboles spéciaux dans le DataFrame du S&P 500.
-
-    Paramètres:
-    - df (DataFrame): DataFrame du S&P 500 contenant les symboles à mettre à jour.
-
-    Retour:
-    - DataFrame avec les symboles mis à jour.
-    """
-    corrections = {
-        60: 'BRK-B',
-        75: 'BF-B'
+    # Dictionnaire pour mapper les noms des indices aux indices de leurs tables sur Wikipedia
+    index_table_map = {
+        'CAC 40': 4,      # 5è tableau pour le CAC 40
+        'S&P 500': 0,     # 1er tableau pour le S&P 500
+        'DAX': 4,         # 5è tableau pour le DAX
+        'FTSE MIB': 1,    # 2è tableay pour le FTSE MIB
+        'FTSE 100': 4,
+        'IBEX 35': 2
     }
-    for index, symbol in corrections.items():
-        df.loc[index, 'Symbol'] = symbol
-        df.loc[index, 'MarketCap'] = yf.Ticker(symbol).info['marketCap']
-    return df
+
+    # Gestion spéciale pour le Russell 2000 via une fonction définie précédemment
+    if nom_indice == 'Russell 2000':
+        return gsheet_Russel2000(url)
+
+    # Gestion des indices de Wikipedia
+    if nom_indice in index_table_map:
+        try:
+            df = pd.read_html(url)[index_table_map[nom_indice]]
+            return df
+        except Exception as e:
+            raise Exception(f"Une erreur s'est produite lors de la récupération des données depuis {url} : {e}")
+    else:
+        raise ValueError(f"Le nom de l'indice '{nom_indice}' n'est pas reconnu. Veuillez utiliser l'un des suivants : {list(index_table_map.keys()) + ['Russell 2000']}")
