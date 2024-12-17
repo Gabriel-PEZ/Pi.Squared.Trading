@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import option_menu  
 
 st.set_page_config(
     page_title="π²Trading",
@@ -98,14 +97,14 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
- 
+
 st.markdown("""
     <div style='text-align: center; margin-top: 20px; font-size: 18px;'>
         Nous sommes des étudiants à l'ENSAE Paris, passionnés par l'analyse quantitative, la finance et les technologies innovantes. Notre objectif est de transformer les stratégies d'investissement grâce à des outils financiers avancés.
     </div>
     """, unsafe_allow_html=True)
 
-st.markdown('</div>', unsafe_allow_html=True)  
+st.markdown('</div>', unsafe_allow_html=True)
 
 
 st.markdown('<div class="section" data-aos="fade-up">', unsafe_allow_html=True)
