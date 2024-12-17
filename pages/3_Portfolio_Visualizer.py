@@ -263,7 +263,7 @@ def main():
             }
             portfolio_df = pd.DataFrame(portfolio)
             for i in range(len(portfolio_df)):
-                portfolio_df.loc[i, 'Industry'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info['industry']
+                portfolio_df.loc[i, 'Industry'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info.get('industry', 'N/A')
             grouped_by_industry = portfolio_df.groupby('Industry')['Poids (%)'].apply(np.sum).reset_index()
 
             #Métriques du portefeuilles

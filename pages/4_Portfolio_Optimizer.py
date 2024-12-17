@@ -63,9 +63,8 @@ def main():
         portfolio_df = data
 
         for i in range(len(portfolio_df)):
-            indust1 = yf.Ticker(portfolio_df.loc[i, 'Actions']).info['industry']
-            portfolio_df.loc[i, 'Industry'] = indust1
-        indust2 = portfolio_df.groupby('Industry')['Poids (%)'].apply(np.sum).reset_index()
+            portfolio_df.loc[i, 'Industry'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info.get('industry', 'N/A')
+        grouped_by_industry = portfolio_df.groupby('Industry')['Poids (%)'].apply(np.sum).reset_index()
 
         st.write("### Portefeuille actuel")
 
@@ -144,18 +143,19 @@ def main():
                         if des:
                             st.caption(des)
 
-                col1 = st.columns(2)
-                with col1[0]:
+                graph_cols = st.columns(2)
+
+                with graph_cols[0]:
                     st.write("### Répartition du portefeuille par industrie")
-                    par_industrie = indust2.sort_values(by='Poids (%)', ascending=False)
-                    # Graphe en camembert
-                    plot_pie(par_industrie, 'Industry')
-                with col1[1]:
+                    grouped_sorted = grouped_by_industry.sort_values(by='Poids (%)', ascending=False)
+                    plot_pie(grouped_sorted, 'Industry')  #Module des fonctions graphiques
+
+                with graph_cols[1]:
                     st.write("### Répartition des poids dans le portefeuille")
                     portfolio_df_sorted = portfolio_df.sort_values(by='Poids (%)', ascending=False)
-                    plot_pie(portfolio_df_sorted, 'Actions')
+                    plot_pie(portfolio_df_sorted, 'Actions')  #Module des fonctions graphiques
 
-                st.write("### Performance du portefeuille en YTD")
+                st.write("### Performance historique du portefeuille")
                 plot_performance(portfolio_cumulative)
 
                 st.session_state['portfolio'] = data
