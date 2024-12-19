@@ -23,7 +23,7 @@ def main():
         unsafe_allow_html=True,
     )
 
-    df = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Indices boursiers/CACSNPDAXRUSSEL.csv")
+    df = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Indices boursiers/data_pisquared.csv")
     
     st.title("Stock picking")
     description = "Stock Picking offre aux utilisateurs la possibilité de sélectionner les composantes de leur portefeuille avec une vision globale des entreprises qu’ils souhaitent inclure. En s’appuyant sur des données actualisées et fiables provenant de la bibliothèque yfinance, π² Trading garantit une information de qualité. L’utilisateur peut saisir directement le nom de l’entreprise ou la rechercher dans son indice de référence, puis choisir la période souhaitée pour afficher le cours de l’action. La plateforme génère ensuite une fiche détaillée comprenant une description de l’entreprise, ses principales données clés, ainsi que des ratios financiers essentiels pour évaluer sa santé économique. L’utilisateur a également la possibilité d’inclure l’entreprise dans sa watch-list pour un suivi facilité."
@@ -39,21 +39,28 @@ def main():
 
 
     #Sélection de l'indice
-    indices = ["Tous les indices"] + df["Ind"].unique().tolist()
-    selected_index = st.selectbox("Choisissez un indice :", indices)
+    st.header("Filtrer par Indice")
+    indices = df['Ind'].unique().tolist()
+    selected_indices = st.multiselect(
+        "Choisissez un ou plusieurs indices",
+        options=indices,
+        default=indices 
+    )
 
-    #Filtrer le dataframe en fonction de l'indice sélectionné
-    if selected_index == "Tous les indices":
-        filtered_df = df
+    if selected_indices:
+        filtered_companies = df[df['Ind'].isin(selected_indices)]
     else:
-        filtered_df = df[df["Ind"] == selected_index]
+        filtered_companies = df.copy()
+
+    if filtered_companies.empty:
+        st.warning("Aucune entreprise trouvée pour les indices sélectionnés.")
 
     #Sélection entreprise
-    companies = filtered_df["Company"].tolist()
+    companies = filtered_companies["Company"].tolist()
     selected_company = st.selectbox("Choisissez une entreprise :", companies)
 
     #Afficher le ticker associé
-    ticker = filtered_df[filtered_df["Company"] == selected_company]["Ticker"].values[0]
+    ticker = filtered_companies[filtered_companies["Company"] == selected_company]["Ticker"].values[0]
     
     period_options = ['1 mois', '3 mois', '6 mois', '1 an', '2 ans', '5 ans', 'Max']
     period_mapping = {
