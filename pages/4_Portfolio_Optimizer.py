@@ -63,21 +63,21 @@ def main():
         portfolio_df = data
 
         for i in range(len(portfolio_df)):
-            portfolio_df.loc[i, 'Industry'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info.get('industry', 'N/A')
-        grouped_by_industry = portfolio_df.groupby('Industry')['Poids (%)'].apply(np.sum).reset_index()
+            portfolio_df.loc[i, 'Industrie'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info.get('industry', 'N/A')
+        grouped_by_industry = portfolio_df.groupby('Industrie')['Poids (%)'].apply(np.sum).reset_index()
 
         st.write("### Portefeuille actuel")
 
         fig_table = go.Figure(data=[go.Table(
             header=dict(
-                values=list(data.columns),
+                values=list(portfolio_df.columns),
                 fill_color='#0611ab',
                 font=dict(color='white', size=14),
                 align='center',
                 height=40
             ),
             cells=dict(
-                values=[data.Actions, data["Nom de l'Entreprise"], data['Poids (%)']],
+                values=[portfolio_df.Actions, portfolio_df["Nom de l'Entreprise"], portfolio_df['Poids (%)'], portfolio_df['Industrie']],
                 fill_color=['#f8f9fa']*len(data),
                 font=dict(color='black', size=12),
                 align='center',
@@ -148,7 +148,7 @@ def main():
                 with graph_cols[0]:
                     st.write("### Répartition du portefeuille par industrie")
                     grouped_sorted = grouped_by_industry.sort_values(by='Poids (%)', ascending=False)
-                    plot_pie(grouped_sorted, 'Industry')  #Module des fonctions graphiques
+                    plot_pie(grouped_sorted, 'Industrie')  #Module des fonctions graphiques
 
                 with graph_cols[1]:
                     st.write("### Répartition des poids dans le portefeuille")

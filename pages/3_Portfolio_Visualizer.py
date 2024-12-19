@@ -59,7 +59,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-df_companies = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Data/data_pisquared.csv")
+df_companies = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Indices boursiers/data_pisquared.csv")
 
 def main():
     
@@ -263,8 +263,8 @@ def main():
             }
             portfolio_df = pd.DataFrame(portfolio)
             for i in range(len(portfolio_df)):
-                portfolio_df.loc[i, 'Industry'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info.get('industry', 'N/A')
-            grouped_by_industry = portfolio_df.groupby('Industry')['Poids (%)'].apply(np.sum).reset_index()
+                portfolio_df.loc[i, 'Industrie'] = yf.Ticker(portfolio_df.loc[i, 'Actions']).info.get('industry', 'N/A')
+            grouped_by_industry = portfolio_df.groupby('Industrie')['Poids (%)'].apply(np.sum).reset_index()
 
             #Métriques du portefeuilles
             total_weight = portfolio_df['Poids (%)'].sum()
@@ -343,7 +343,7 @@ def main():
             with graph_cols[0]:
                 st.write("### Répartition du portefeuille par industrie")
                 grouped_sorted = grouped_by_industry.sort_values(by='Poids (%)', ascending=False)
-                plot_pie(grouped_sorted, 'Industry')  #Module des fonctions graphiques
+                plot_pie(grouped_sorted, 'Industrie')  #Module des fonctions graphiques
 
             with graph_cols[1]:
                     st.write("### Répartition des poids dans le portefeuille")

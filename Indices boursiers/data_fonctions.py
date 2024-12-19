@@ -1,36 +1,13 @@
 import requests
 import pandas as pd
-from io import StringIO
-
-
-def gsheet_Russel2000(url):
-    """
-    Charge un Google Sheet exporté en CSV depuis une URL et le retourne sous forme de DataFrame.
-
-    Paramètres:
-    - url (str): URL complète du fichier Google Sheet exporté en CSV.
-
-    Retour:
-    - DataFrame contenant les données du fichier CSV.
-
-    Exceptions:
-    - AssertionError pour les réponses HTTP non réussies.
-    """
-    response = requests.get(url)
-    if response.status_code == 200:
-        # Chat-GPT pour StringIO
-        return pd.read_csv(StringIO(response.text))
-    else:
-        raise AssertionError('Erreur HTTP avec le code de statut: {}'.format(response.status_code))
-
 
 def obtenir_liste_entreprises(url, nom_indice):
     """
-    Récupère la liste des entreprises d'un indice boursier spécifié depuis Wikipedia ou un Google Sheet.
+    Récupère la liste des entreprises d'un indice boursier spécifié depuis Wikipedia.
 
     Paramètres :
-    - url (str) : URL de la page Wikipedia ou du Google Sheet contenant la liste des entreprises de l'indice boursier.
-    - nom_indice (str) : Nom de l'indice boursier ('Russell 2000', 'CAC 40', 'S&P 500', 'DAX').
+    - url (str) : URL de la page Wikipedia contenant la liste des entreprises de l'indice boursier.
+    - nom_indice (str) : Nom de l'indice boursier.
 
     Retour :
     - DataFrame contenant la liste des entreprises pour l'indice boursier spécifié.
@@ -45,11 +22,6 @@ def obtenir_liste_entreprises(url, nom_indice):
         'IBEX 35': 2      # 2è tableau pour le IBEX 35
     }
 
-    # Gestion spéciale pour le Russell 2000 via une fonction définie précédemment
-    if nom_indice == 'Russell 2000':
-        return gsheet_Russel2000(url)
-
-    # Gestion des indices de Wikipedia
     if nom_indice in index_table_map:
         try:
             df = pd.read_html(url)[index_table_map[nom_indice]]
@@ -58,27 +30,6 @@ def obtenir_liste_entreprises(url, nom_indice):
             raise Exception(f"Une erreur s'est produite lors de la récupération des données depuis {url} : {e}")
     else:
         raise ValueError(f"Le nom de l'indice '{nom_indice}' n'est pas reconnu. Veuillez utiliser l'un des suivants : {list(index_table_map.keys()) + ['Russell 2000']}")
-
-
-def nettoyage_Russel2000(df_russel2000):
-    """
-    Récupère les données d'un indice boursier et les nettoie.
-
-    Paramètres :
-    - df_russel2000 (DataFrame) : DataFrame contenant les données de l'indice boursier.
-
-    Retour :
-    - DataFrame contenant les données de l'indice boursier nettoyées.
-    """
-    df_russel2000 = df_russel2000.drop(columns=[
-        'Sector', 'Price', 'Dividend Yield', '5-Year Average Dividend Yield', 'Dividends Per Share (TTM)',
-        'Market Cap ($M)', 'Trailing P/E Ratio', 'Payout Ratio', 'Beta', '52-Week High', '52-Week Low'
-        ])
-    df_russel2000.rename(columns={'Name': 'Company'}, inplace=True)
-    df_russel2000 = df_russel2000.dropna(subset=['Company'])
-    df_russel2000['Ind'] = 'RUSSEL 2000'
-
-    return df_russel2000
     
 
 def nettoyage_snp500(df_snp500):
