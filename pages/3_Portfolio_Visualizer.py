@@ -19,7 +19,7 @@ def get_company_name(ticker):
 
 # Fonction pour calculer la performance historique du portefeuille
 def calculate_portfolio_performance(tickers, weights, period='1y'):
-    data = yf.download(tickers, period=period)['Adj Close']
+    data = yf.download(tickers, period=period)['Close']
     if isinstance(data, pd.Series):  
         data = data.to_frame()  # CAS OU IL Y A UN SEUL TICKER 
     returns = data.pct_change().dropna()

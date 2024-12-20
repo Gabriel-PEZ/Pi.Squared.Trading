@@ -175,7 +175,7 @@ def main():
         data = st.session_state['portfolio']
         tickers = data['Actions'].tolist()
         weights = np.array(data['Poids (%)'].tolist()) / 100
-        stock_data = yf.download(tickers, period='10y')['Adj Close']
+        stock_data = yf.download(tickers, period='10y')['Close']
         returns = stock_data.pct_change().mean() * 252
         cov_matrix = stock_data.pct_change().cov() * 252
         individual_volatility = np.sqrt(np.diag(cov_matrix))

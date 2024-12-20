@@ -17,7 +17,7 @@ def calculate_PP(tickers, weights, period='1y'):
     :return: Tuple (cumul des rendements du portefeuille, rendements journaliers du portefeuille).
     """
     # Téléchargement des prix ajustés des tickers
-    data = yf.download(tickers, period=period)['Adj Close']
+    data = yf.download(tickers, period=period)['Close']
 
     # Gérer le cas où un seul ticker est fourni (data devient une série au lieu d'un DataFrame)
     if isinstance(data, pd.Series):
