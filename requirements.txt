@@ -4,3 +4,4 @@ streamlit
 numpy
 plotly
 streamlit_option_menu
+prophet
