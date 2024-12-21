@@ -1,5 +1,5 @@
-import requests
 import pandas as pd
+
 
 def obtenir_liste_entreprises(url, nom_indice):
     """
@@ -30,7 +30,7 @@ def obtenir_liste_entreprises(url, nom_indice):
             raise Exception(f"Une erreur s'est produite lors de la récupération des données depuis {url} : {e}")
     else:
         raise ValueError(f"Le nom de l'indice '{nom_indice}' n'est pas reconnu. Veuillez utiliser l'un des suivants : {list(index_table_map.keys()) + ['Russell 2000']}")
-    
+
 
 def nettoyage_snp500(df_snp500):
     """
@@ -65,7 +65,7 @@ def nettoyage_cac40(df_cac40):
     - DataFrame contenant les données de l'indice boursier nettoyées.
     """
     df_cac40 = df_cac40.drop(columns=[
-        'Sector', 'GICS Sub-Industry', 
+        'Sector', 'GICS Sub-Industry',
         ])
     cols = df_cac40.columns.tolist()        # Récupère la liste des noms de colonnes
     cols = [cols[1]] + cols[:1] + cols[2:]  # Réarrange les colonnes
@@ -86,7 +86,7 @@ def nettoyage_dax(df_dax):
     - DataFrame contenant les données de l'indice boursier nettoyées.
     """
     df_dax = df_dax.drop(columns=[
-        'Logo', 'Prime Standard Sector', 'Index weighting (%)1', 'Employees', 'Founded' 
+        'Logo', 'Prime Standard Sector', 'Index weighting (%)1', 'Employees', 'Founded'
         ])
     cols = df_dax.columns.tolist()
     cols = [cols[1]] + cols[:1]
@@ -107,7 +107,7 @@ def nettoyage_ftsemib(df_ftsemib):
     - DataFrame contenant les données de l'indice boursier nettoyées.
     """
     df_ftsemib = df_ftsemib.drop(columns=[
-        'ISIN', 'ICB Sector' 
+        'ISIN', 'ICB Sector'
         ])
     cols = df_ftsemib.columns.tolist()
     cols = [cols[1]] + cols[:1]
@@ -128,7 +128,7 @@ def nettoyage_ftse100(df_ftse100):
     - DataFrame contenant les données de l'indice boursier nettoyées.
     """
     df_ftse100 = df_ftse100.drop(columns=[
-        'FTSE industry classification benchmark sector[25]' 
+        'FTSE industry classification benchmark sector[25]'
         ])
     df_ftse100['Ticker'] = df_ftse100['Ticker'] + '.L'
     cols = df_ftse100.columns.tolist()
@@ -150,7 +150,7 @@ def nettoyage_ibex35(df_ibex35):
     - DataFrame contenant les données de l'indice boursier nettoyées.
     """
     df_ibex35 = df_ibex35.drop(columns=[
-        'Sector' 
+        'Sector'
         ])
     df_ibex35['Ind'] = 'IBEX 35'
 
