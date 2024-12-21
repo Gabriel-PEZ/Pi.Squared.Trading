@@ -23,7 +23,7 @@ def main():
         unsafe_allow_html=True,
     )
 
-    df = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Indices boursiers/data_pisquared.csv")
+    df = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Data/data_pisquared.csv")
     
     st.title("Stock picking")
     description = "Stock Picking offre aux utilisateurs la possibilité de sélectionner les composantes de leur portefeuille avec une vision globale des entreprises qu’ils souhaitent inclure. En s’appuyant sur des données actualisées et fiables provenant de la bibliothèque yfinance, π² Trading garantit une information de qualité. L’utilisateur peut saisir directement le nom de l’entreprise ou la rechercher dans son indice de référence, puis choisir la période souhaitée pour afficher le cours de l’action. La plateforme génère ensuite une fiche détaillée comprenant une description de l’entreprise, ses principales données clés, ainsi que des ratios financiers essentiels pour évaluer sa santé économique. L’utilisateur a également la possibilité d’inclure l’entreprise dans sa watch-list pour un suivi facilité."
