@@ -2,10 +2,8 @@
 
 import pandas as pd
 import streamlit as st
-from streamlit_option_menu import option_menu
 import yfinance as yf
 import plotly.graph_objs as go
-import plotly.express as px
 import numpy as np 
 from utils.graph_utils import plot_performance, plot_pie 
 

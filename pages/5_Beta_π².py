@@ -38,7 +38,7 @@ def main():
 
     st.write("")
 
-    df = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Indices boursiers/data_pisquared.csv")
+    df = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Data/data_pisquared.csv")
 
     entreprise = st.selectbox("Choisissez une entreprise :", df['Company'])
 
