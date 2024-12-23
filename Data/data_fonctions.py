@@ -128,7 +128,7 @@ def nettoyage_ftse100(df_ftse100):
     - DataFrame contenant les données de l'indice boursier nettoyées.
     """
     df_ftse100 = df_ftse100.drop(columns=[
-        'FTSE industry classification benchmark sector[25]'
+        'FTSE industry classification benchmark sector[24]'
         ])
     df_ftse100['Ticker'] = df_ftse100['Ticker'] + '.L'
     cols = df_ftse100.columns.tolist()
