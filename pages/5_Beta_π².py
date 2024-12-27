@@ -28,7 +28,7 @@ def main():
     st.title("Beta π² Trading")
 
     description = (
-    "Beta Forecast est une fonctionnalité avancée de π² Trading qui permet aux utilisateurs "
+    "Beta Forecast est une fonctionnalité avancée de π² Trading (actuellement en version beta) qui permet aux utilisateurs "
     "de réaliser des prévisions précises des prix d'actions à l'aide de la biliothèque Prophet. "
     "Après avoir sélectionné une entreprise parmi une liste préexistante, l'utilisateur "
     "peut définir un horizon de prévision (de 30 à 365 jours). L'application récupère les "

@@ -31,8 +31,8 @@ if 'tickers' not in st.session_state:
     st.session_state.tickers = ['']
 if 'weights' not in st.session_state:
     st.session_state.weights = [0.0]
-if 'wishlist' not in st.session_state:
-    st.session_state.wishlist = []
+if 'watchlist' not in st.session_state:
+    st.session_state.watchlist = []
 if 'current_index' not in st.session_state:
     st.session_state.current_index = 0  # Initialiser current_index pour la page d'accueil
 
@@ -126,7 +126,7 @@ def main():
         ticker = st.session_state.tickers[i]
         matching_rows = filtered_companies[filtered_companies["Ticker"] == ticker]
         
-        #Débugage de l'option wishlist
+        #Débugage de l'option watchlist
         #On calcule l'index par défaut du selectbox.
         #S'il y a un match, on se place sur l'entreprise qui correspond
         #Sinon, on se placera sur la première option (""), mais on ne vide pas le ticker.
@@ -166,12 +166,12 @@ def main():
         with cols[2]:
             st.button("🗑️ Supprimer", key=f"remove_{i}", on_click=remove_asset_callback, args=(i,))
 
-    st.write("### Ajouter des actions depuis votre Wishlist")
-    if st.session_state.wishlist:
-        wishlist_selection = st.selectbox("Sélectionnez une action de votre wishlist :", st.session_state.wishlist, key="wishlist_select")
+    st.write("### Ajouter des actions depuis votre Watchlist")
+    if st.session_state.watchlist:
+        watchlist_selection = st.selectbox("Sélectionnez une action de votre watchlist :", st.session_state.watchlist, key="watchlist_select")
 
-        def add_from_wishlist():
-            selected_ticker = wishlist_selection.upper()
+        def add_from_watchlist():
+            selected_ticker = watchlist_selection.upper()
             if selected_ticker in st.session_state.tickers:
                 st.warning(f"L'action **{selected_ticker}** est déjà dans votre portefeuille.")
             else:
@@ -179,9 +179,9 @@ def main():
                 st.session_state.weights.append(0.0)
                 st.success(f"L'action **{selected_ticker}** a été ajoutée à votre portefeuille. Veuillez définir son poids.")
 
-        st.button("➕ Ajouter depuis la Wishlist", on_click=add_from_wishlist)
+        st.button("➕ Ajouter depuis la Watchlist", on_click=add_from_watchlist)
     else:
-        st.info("Votre wishlist est vide. Allez dans la section **Stock picking** pour ajouter des actions à votre wishlist.")
+        st.info("Votre watchlist est vide. Allez dans la section **Stock picking** pour ajouter des actions à votre watchlist.")
 
     #Affichage en temps réel de la somme des poids
     total_weight = sum(st.session_state.weights)
