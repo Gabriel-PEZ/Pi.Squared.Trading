@@ -123,21 +123,34 @@ def main():
     st.button("➕ Ajouter un actif", on_click=add_asset_callback)
 
     for i in range(len(st.session_state.tickers)):
+        ticker = st.session_state.tickers[i]
+        matching_rows = filtered_companies[filtered_companies["Ticker"] == ticker]
+        
+        #Débugage de l'option wishlist
+        #On calcule l'index par défaut du selectbox.
+        #S'il y a un match, on se place sur l'entreprise qui correspond
+        #Sinon, on se placera sur la première option (""), mais on ne vide pas le ticker.
+        default_index = 0
+        companies_list = [""] + filtered_companies["Company"].tolist()
+        if not matching_rows.empty:
+            company = matching_rows["Company"].iloc[0]
+            if company in companies_list:
+                default_index = companies_list.index(company)
+
         cols = st.columns([2, 2, 1])
+
         with cols[0]:
-            #Menu déroulant pour sélectionner une entreprise
             selected_company = st.selectbox(
                 f"Entreprise {i+1}",
-                options=[""] + filtered_companies["Company"].tolist(),
-                key=f"company_{i}",
-                index=0 
+                options=companies_list,
+                index=default_index,
+                key=f"company_{i}"
             )
-
             if selected_company:
-                ticker = filtered_companies.loc[filtered_companies["Company"] == selected_company, "Ticker"].values[0]
-                st.session_state.tickers[i] = ticker
-            else:
-                st.session_state.tickers[i] = ""  
+                new_ticker = filtered_companies.loc[
+                    filtered_companies["Company"] == selected_company, "Ticker"
+                ].values[0]
+                st.session_state.tickers[i] = new_ticker
 
         with cols[1]:
             weight = st.number_input(
