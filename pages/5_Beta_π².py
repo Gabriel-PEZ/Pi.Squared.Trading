@@ -27,7 +27,18 @@ def main():
 
     st.title("Beta π² Trading")
 
-    description = "Beta π² est l’espace innovant de π² Trading, conçu pour les investisseurs curieux d’explorer de nouvelles opportunités et maximiser leurs stratégies. Cette section propose un générateur aléatoire de portefeuilles, idéal pour tester des idées originales et audacieuses. L’utilisateur sélectionne un indice de référence, un intervalle pour le nombre de titres à inclure (par exemple, entre 15 et 20) et le nombre de simulations souhaitées. La plateforme génère alors des portefeuilles aux pondérations aléatoires et identifie celui ayant affiché les meilleures performances sur les cinq dernières années. Avec enthousiasme, π² Trading permet de récupérer les composantes du portefeuille gagnant et d’accéder aux données clés habituelles, comme dans les autres sections, pour des décisions stratégiques éclairées."
+    description = (
+    "Beta Forecast est une fonctionnalité avancée de π² Trading qui permet aux utilisateurs "
+    "de réaliser des prévisions précises des prix d'actions à l'aide de la biliothèque Prophet. "
+    "Après avoir sélectionné une entreprise parmi une liste préexistante, l'utilisateur "
+    "peut définir un horizon de prévision (de 30 à 365 jours). L'application récupère les "
+    "données historiques correspondantes et génère des prévisions accompagnées d'intervalles "
+    "de confiance. Un tableau des métriques clés, incluant le prix actuel, les prévisions de "
+    "prix minimum, maximum, et moyen, est affiché pour faciliter l'analyse. Enfin, une jauge "
+    "de recommandation intuitive aide à interpréter les prévisions et à prendre des décisions "
+    "d'investissement stratégiques. L'utilisateur peut également télécharger les résultats "
+    "en format CSV pour une exploration ultérieure."
+    )
 
     justified_description = f"""
     <div style='text-align: justify; text-justify: inter-word;'>
