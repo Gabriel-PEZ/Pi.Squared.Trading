@@ -97,10 +97,18 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
+presentation = "Nous sommes deux étudiants de l’ENSAE Paris, animés par une passion commune pour l’analyse quantitative, la finance et la programmation orientée objet. Face à la complexité croissante des outils financiers et au coût élevé des plateformes réservées aux investisseurs institutionnels, nous avons décidé de développer une solution innovante. Notre objectif est de regrouper, au sein d’une seule plateforme, les fonctionnalités souvent payantes et fragmentées d’autres outils, afin de les rendre accessibles à des investisseurs individuels comme nous.\n\n Grâce à l’intégration de données fiables et actualisées en temps réel, notre plateforme aide les utilisateurs à optimiser leurs prises de décision, qu’il s’agisse de construire un portefeuille performant, d’anticiper les mouvements du marché ou d’évaluer des opportunités d’investissement. Nous croyons fermement que la finance doit être plus transparente, inclusive et accessible à tous. Avec π² Trading, nous voulons démocratiser l’accès à des outils financiers avancés et offrir une expérience utilisateur intuitive pour que chacun puisse investir avec confiance et efficacité."
+
+justified_presenation = f"""
+    <div style='text-align: justify; text-justify: inter-word;'>
+        {presentation}
+    </div>
+    """
+st.markdown(justified_presenation, unsafe_allow_html=True)
 
 st.markdown("""
     <div style='text-align: center; margin-top: 20px; font-size: 18px;'>
-        Nous sommes des étudiants à l'ENSAE Paris, passionnés par l'analyse quantitative, la finance et les technologies innovantes. Notre objectif est de transformer les stratégies d'investissement grâce à des outils financiers avancés.
+        
     </div>
     """, unsafe_allow_html=True)
 

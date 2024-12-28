@@ -11,17 +11,16 @@ from utils.optimizer_utils import calculate_FE, plot_FE, plot_portfolio_performa
 
 
 description_page = (
-    "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille "
-    "créé dans la section Portfolio Visualizer pour une analyse approfondie. Le "
-    "portefeuille est résumé à travers un tableau récapitulatif des principales "
-    "statistiques et un graphique illustrant la répartition des poids entre les "
-    "entreprises. Ensuite, π² Trading calcule la frontière d’efficience à l’aide "
-    "de la Modern Portfolio Theory pour optimiser les rendements. L’utilisateur "
-    "peut définir le nombre de simulations (de 1 000 à 20 000) pour plus de "
-    "précision et ajuster le taux sans risque, récupéré automatiquement par API "
-    "ou saisi manuellement. La plateforme affiche ensuite la frontière d’efficience "
-    "avec la position actuelle du portefeuille et propose un portefeuille optimal, "
-    "soit pour minimiser la volatilité, soit pour maximiser le ratio Sharpe."
+    "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille"
+    "créé dans la section Portfolio Visualizer pour une analyse approfondie. Le"
+    "portefeuille est résumé à travers un tableau récapitulatif des principales"
+    "statistiques et un graphique illustrant la répartition des poids entre les"
+    "entreprises. Ensuite, π² Trading calcule la frontière d’efficience à l’aide"
+    "de la Modern Portfolio Theory pour optimiser les rendements. La plateforme"
+    "affiche ensuite la frontière d’efficience avec la position actuelle du portefeuille"
+    "et propose un portefeuille optimal, soit pour minimiser la volatilité, soit pour"
+    "maximiser le ratio Sharpe. Les rendements des différents portefeuilles ainsi"
+    "obtenus sont représentés graphiquement sur une échelle de temps 10 ans."
 )
 
 
@@ -52,7 +51,8 @@ def main():
 
     risk_free_rate = get_risk_free_rate()
     st.write(
-        f"*Note à l'utilisateur* : par défaut, le taux sans risque considéré est celui "
+        f"*Note à l'utilisateur* : par défaut, l'historique des données utilisé est fixé à 10 ans. "
+        f"Le taux sans risque considéré est celui "
         f"du rendement des obligations US à 10 ans, obtenu depuis l'API FRED i.e. *r* = "
         f"{risk_free_rate:.3%}."
     )
