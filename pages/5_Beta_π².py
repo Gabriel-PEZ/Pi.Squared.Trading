@@ -5,12 +5,11 @@ import yfinance as yf
 import pandas as pd 
 from prophet import Prophet
 import plotly.graph_objects as go 
-import matplotlib.pyplot as plt 
 import datetime as dt
 import numpy as np
 
+
 def main():
-    
     #CSS pour ajuster la largeur de la zone de contenu
     st.markdown(
         """
