@@ -54,7 +54,7 @@ services = [
         {"name": "Stock Picking", "description": "La solution pour construire un portefeuille sur-mesure, avec des données fiables pour des décisions éclairées.", "icon": "📈"},
         {"name": "Portfolio Visualizer", "description": "Analysez votre portefeuille avec des outils visuels clairs et des insights puissants pour maximiser vos performances.", "icon": "📊"},
         {"name": "Portfolio Optimizer", "description": "Optimisez votre portefeuille grâce à la frontière d’efficience, pour maximiser vos rendements et réduire vos risques.", "icon": "⚙️"},
-        {"name": "Beta π²", "description": "Notre espace innovation, avec le générateur de portefeuilles aléatoires pour dévoiler des opportunités gagnantes.", "icon": "💰"}
+        {"name": "Beta π²", "description": "Notre espace innovation, anticipez les prix d'actions grâce à des prévisions avancées pour optimiser vos décisions d'investissement.", "icon": "💰"}
     ]
 
 num_services = len(services)

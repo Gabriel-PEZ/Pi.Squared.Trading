@@ -6,8 +6,8 @@ import yfinance as yf
 import plotly.graph_objs as go
 
 def main():
-    if 'wishlist' not in st.session_state:
-        st.session_state.wishlist = []
+    if 'watchlist' not in st.session_state:
+        st.session_state.watchlist = []
     
     #CSS pour ajuster la largeur de la zone de contenu
     st.markdown(
@@ -116,23 +116,23 @@ def main():
                         st.metric("Rendement Dividende", 'N/A')
                 with col4:
 
-                    #Bouton wishlit
-                    if ticker.upper() in st.session_state.wishlist:
-                        wishlist_label = "★"  
-                        wishlist_action = "retirer"
-                        tooltip = "Retirer de la Wishlist"
+                    #Bouton watchlit
+                    if ticker.upper() in st.session_state.watchlist:
+                        watchlist_label = "★"  
+                        watchlist_action = "retirer"
+                        tooltip = "Retirer de la Watchlist"
                     else:
-                        wishlist_label = "☆"  
-                        wishlist_action = "ajouter"
-                        tooltip = "Ajouter à la Wishlist"
+                        watchlist_label = "☆"  
+                        watchlist_action = "ajouter"
+                        tooltip = "Ajouter à la Watchlist"
     
-                    if st.button(wishlist_label, key=f"wishlist_{ticker.upper()}"):
-                        if ticker.upper() in st.session_state.wishlist:
-                            st.session_state.wishlist.remove(ticker.upper())
-                            st.success(f"{ticker.upper()} a été retiré de votre wishlist.")
+                    if st.button(watchlist_label, key=f"watchlist_{ticker.upper()}"):
+                        if ticker.upper() in st.session_state.watchlist:
+                            st.session_state.watchlist.remove(ticker.upper())
+                            st.success(f"{ticker.upper()} a été retiré de votre watchlist.")
                         else:
-                            st.session_state.wishlist.append(ticker.upper())
-                            st.success(f"{ticker.upper()} a été ajouté à votre wishlist.")
+                            st.session_state.watchlist.append(ticker.upper())
+                            st.success(f"{ticker.upper()} a été ajouté à votre watchlist.")
     
                 #Résumé de l'entreprise
                 st.markdown("### Résumé de l'entreprise")
