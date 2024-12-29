@@ -1,4 +1,5 @@
 import pandas as pd
+import folium
 
 
 def obtenir_liste_entreprises(url, nom_indice):
@@ -155,3 +156,64 @@ def nettoyage_ibex35(df_ibex35):
     df_ibex35['Ind'] = 'IBEX 35'
 
     return df_ibex35
+
+
+def map_index(df):
+    """
+    Associe des indices boursiers à leurs pays, calcule la répartition des entreprises par pays,
+    et génère une carte interactive avec les données visualisées.
+
+    Arguments:
+    - df (pandas.DataFrame): DataFrame contenant les indices.
+
+    Retourne:
+    - folium.Map: Carte interactive avec les marqueurs des entreprises par pays.
+    """
+    # Définir le dictionnaire des indices aux pays
+    index_to_country = {
+        'S&P 500': 'United States',
+        'CAC 40': 'France',
+        'DAX': 'Germany',
+        'FTSE MIB': 'Italy',
+        'FTSE 100': 'United Kingdom',
+        'IBEX 35': 'Spain'
+    }
+
+    # Définir les coordonnées pour les capitales de ces pays
+    country_coordinates = {
+        'United States': (38.9072, -77.0369),  # Washington, D.C.
+        'France': (48.8566, 2.3522),           # Paris
+        'Germany': (52.5200, 13.4050),         # Berlin
+        'Italy': (41.9028, 12.4964),           # Rome
+        'United Kingdom': (51.5074, -0.1278),  # Londres
+        'Spain': (40.4168, -3.7038)            # Madrid
+    }
+
+    # Ajouter une colonne 'Country' basée sur l'indice
+    df['Country'] = [index_to_country[ind] for ind in df['Ind']]
+
+    # Compter le nombre d'entreprises par pays
+    country_counts = df['Country'].value_counts().reset_index()
+    country_counts.columns = ['Country', 'Count']
+
+    # Créer une carte (GPT)
+    map = folium.Map(location=[48.8566, 2.3522], zoom_start=3)
+
+    # Ajouter des données par pays (GPT)
+    for _, row in country_counts.iterrows():
+        country = row['Country']
+        count = row['Count']
+        if country in country_coordinates:
+            folium.CircleMarker(
+                location=country_coordinates[country],
+                radius=10,
+                popup=f"{country}: {count} entreprises",
+                color='blue',
+                fill=True,
+                fill_color='blue'
+            ).add_to(map)
+
+    # Afficher la carte
+    map.save('index.html')
+
+    return map
