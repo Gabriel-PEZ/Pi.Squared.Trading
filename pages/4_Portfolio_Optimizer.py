@@ -231,7 +231,7 @@ def main():
             st.write("### Portefeuille avec Sharpe Maximal")
             plot_pie(max_sharpe_portfolio_df, 'Actions')
 
-        st.write("### Performance des ≠ portefeuilles en 10 Y")
+        st.write("### Comparaison des Performances des Portefeuilles sur 10 Ans")
         fig = plot_portfolio_performance(
             tickers=tickers,
             weights=weights,
