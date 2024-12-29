@@ -1,5 +1,8 @@
 import streamlit as st
 
+#L'ENSEMBLE DU CSS ET HTML CONTENU DANS LE PROJET ONT ETE ENTIEREMENT REALISE PAR CHATGPT
+#Le code Streamlit a été réalisé à l'aide de la documentation https://docs.streamlit.io/
+
 st.set_page_config(
     page_title="π²Trading",
     page_icon="💹",

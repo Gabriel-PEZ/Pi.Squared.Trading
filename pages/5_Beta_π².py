@@ -176,6 +176,8 @@ def main():
         text_color = "darkred"
 
     num_levels = 100 
+
+    #Ce graphique à été réalisé à l'aide de ChatGPT
     fig_gauge = go.Figure(go.Indicator(
         mode="gauge", 
         value=niveau,

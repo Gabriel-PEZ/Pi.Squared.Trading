@@ -1,8 +1,9 @@
 # utils/graph_utils.py
-
 import plotly.graph_objs as go
 import plotly.express as px
 import streamlit as st
+
+#Ces deux graphiques ont d'abord été implémentés par nous-même puis amélioré à l'aide de ChatGPT
 
 def plot_performance(portfolio_cumulative):
     fig = go.Figure()
