@@ -24,7 +24,7 @@ def main():
         unsafe_allow_html=True,
     )
 
-    st.title("Beta π² Trading")
+    st.title("Beta Forecast")
 
     description = (
         "Beta Forecast est une fonctionnalité avancée de π² Trading (actuellement en version beta) qui permet aux utilisateurs "
@@ -50,12 +50,35 @@ def main():
 
     df = pd.read_csv("/home/onyxia/work/Pi.Squared.Trading/Data/data_pisquared.csv")
 
-    entreprise = st.selectbox("Choisissez une entreprise :", df['Company'])
+    #entreprise = st.selectbox("Choisissez une entreprise :", df['Company'])
+    #Sélection de l'indice
+    st.header("Filtrer par Indice")
+    indices = df['Ind'].unique().tolist()
+    selected_indices = st.multiselect(
+        "Choisissez un ou plusieurs indices",
+        options=indices,
+        default=indices 
+    )##
+
+    if selected_indices:
+        filtered_companies = df[df['Ind'].isin(selected_indices)]
+    else:
+        filtered_companies = df.copy()
+
+    if filtered_companies.empty:
+        st.warning("Aucune entreprise trouvée pour les indices sélectionnés.")
+
+    #Sélection entreprise
+    companies = filtered_companies["Company"].tolist()
+    entreprise = st.selectbox("Choisissez une entreprise :", companies)
+
+    #Afficher le ticker associé
+    ticker = filtered_companies[filtered_companies["Company"] == entreprise]["Ticker"].values[0]
 
     #Pour que l'utilisateur puisse choisir la période de prévision
     horizon = st.slider("Horizon de prévision (en jours) :", min_value=30, max_value=365, value=90)
 
-    ticker = df.loc[df['Company'] == entreprise, 'Ticker'].values[0]
+    #ticker = df.loc[df['Company'] == entreprise, 'Ticker'].values[0]
 
     #Pour obtenir la date d'aujourd'hui
     current_date = str(dt.date.today())

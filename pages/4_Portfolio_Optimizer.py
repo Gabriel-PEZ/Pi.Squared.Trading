@@ -9,6 +9,7 @@ from utils.graph_utils import plot_performance, plot_pie
 from utils.optimizer_utils import calculate_PP, get_risk_free_rate
 from utils.optimizer_utils import calculate_FE, plot_FE, plot_portfolio_performance
 
+#Frontière d'efficience codé à l'aide de : https://youtu.be/Isutk-wqJfE?si=a2HVgMUsLGivkm0E
 
 description_page = (
     "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille"
