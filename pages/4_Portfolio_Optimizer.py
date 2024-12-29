@@ -12,15 +12,15 @@ from utils.optimizer_utils import calculate_FE, plot_FE, plot_portfolio_performa
 #Frontière d'efficience codé à l'aide de : https://youtu.be/Isutk-wqJfE?si=a2HVgMUsLGivkm0E
 
 description_page = (
-    "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille"
-    "créé dans la section Portfolio Visualizer pour une analyse approfondie. Le"
-    "portefeuille est résumé à travers un tableau récapitulatif des principales"
-    "statistiques et un graphique illustrant la répartition des poids entre les"
-    "entreprises. Ensuite, π² Trading calcule la frontière d’efficience à l’aide"
-    "de la Modern Portfolio Theory pour optimiser les rendements. La plateforme"
-    "affiche ensuite la frontière d’efficience avec la position actuelle du portefeuille"
-    "et propose un portefeuille optimal, soit pour minimiser la volatilité, soit pour"
-    "maximiser le ratio Sharpe. Les rendements des différents portefeuilles ainsi"
+    "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille "
+    "créé dans la section Portfolio Visualizer pour une analyse approfondie. Le "
+    "portefeuille est résumé à travers un tableau récapitulatif des principales "
+    "statistiques et un graphique illustrant la répartition des poids entre les "
+    "entreprises. Ensuite, π² Trading calcule la frontière d’efficience à l’aide "
+    "de la Modern Portfolio Theory pour optimiser les rendements. La plateforme "
+    "affiche ensuite la frontière d’efficience avec la position actuelle du portefeuille "
+    "et propose un portefeuille optimal, soit pour minimiser la volatilité, soit pour "
+    "maximiser le ratio Sharpe. Les rendements des différents portefeuilles ainsi "
     "obtenus sont représentés graphiquement sur une échelle de temps 10 ans."
 )
 
