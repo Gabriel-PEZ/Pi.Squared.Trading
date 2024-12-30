@@ -174,7 +174,7 @@ def calculate_FE(returns, cov_matrix, risk_free_rate, portfolio_weights):
     return portfolios, min_volatility_portfolio, max_sharpe_portfolio, current_portfolio_metrics
 
 
-#Graphique obtenu à l'aide de ChatGPT
+# FE améliorée à l'aide de ChatGPT
 def plot_FE(portfolios, min_volatility_portfolio, max_sharpe_portfolio, current_portfolio_metrics,
             individual_volatility, individual_returns, asset_names):
     """

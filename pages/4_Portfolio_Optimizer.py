@@ -9,7 +9,7 @@ from utils.graph_utils import plot_performance, plot_pie
 from utils.optimizer_utils import calculate_PP, get_risk_free_rate
 from utils.optimizer_utils import calculate_FE, plot_FE, plot_portfolio_performance
 
-#Frontière d'efficience codé à l'aide de : https://youtu.be/Isutk-wqJfE?si=a2HVgMUsLGivkm0E
+# Frontière d'efficience codé à l'aide de : https://youtu.be/Isutk-wqJfE?si=a2HVgMUsLGivkm0E
 
 description_page = (
     "Portfolio Optimizer permet aux utilisateurs de récupérer le portefeuille "
@@ -168,10 +168,6 @@ def main():
                 st.error(f"Une erreur est survenue lors de l'optimisation : {e}")
 
         st.write("### Optimisation du portefeuille avec MPT")
-        st.write(
-            "*Note à l'utilisateur* : Par défaut, l'historique utilisé est celui des "
-            "10 dernières années."
-        )
 
         data = st.session_state['portfolio']
         tickers = data['Actions'].tolist()
@@ -182,7 +178,6 @@ def main():
         individual_volatility = np.sqrt(np.diag(cov_matrix))
 
         # Simuler les portefeuilles
-
         portfolios, min_vol_pf, max_sharpe_pf, current_portfolio_metrics = calculate_FE(
             returns=returns,
             cov_matrix=cov_matrix,
@@ -243,7 +238,7 @@ def main():
 
     else:
         st.info(
-            "Veuillez créer un portefeuille dans la section **Création de Portefeuille** "
+            "Veuillez créer un portefeuille dans la section **Portfolio Visualizer**"
             "avant de procéder à l'optimisation."
         )
 
