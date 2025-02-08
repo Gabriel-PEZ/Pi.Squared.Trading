@@ -15,7 +15,7 @@ def load_css_file(css_file_path):
         css_content = f.read()
     return css_content
 
-css_content = load_css_file("/home/onyxia/work/Pi.Squared.Trading/style/styles.css")
+css_content = load_css_file("/style/styles.css")
 
 st.markdown(f"<style>{css_content}</style>", unsafe_allow_html=True)
 
